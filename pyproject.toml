@@ -1,0 +1,8 @@
+[project]
+name = "teds-nihongo-workbook"
+version = "0.1.0"
+description = "Ted's Japanese language learning workbook built with Pelican"
+requires-python = ">=3.10"
+dependencies = [
+    "pelican[markdown]>=4.11.0",
+]

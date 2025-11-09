@@ -4,9 +4,12 @@ A static website generator for Japanese language learning materials, built with 
 
 ## Commands
 
-- `uv run pelican content` - Build the site
-- `uv run pelican -r -l` - Start development server with auto-reload
-- `uv run pelican content -s publishconf.py` - Build for production
+Use the [dev.sh](dev.sh) script to manage the site:
+
+- `./dev.sh serve` - Start development server with auto-reload
+- `./dev.sh build` - Build the site (development)
+- `./dev.sh build-prod` - Build the site (production)
+- `./dev.sh clean` - Clean the output directory
 
 ## Structure
 

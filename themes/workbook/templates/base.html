@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Pelican" />
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/custom.css" />
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body id="index" class="home">
+    <header id="banner" class="body">
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+    </header><!-- /#banner -->
+
+    <div class="page-container">
+        <aside id="sidebar">
+            <h3>All Articles</h3>
+            <ul class="article-nav">
+            {% for art in articles %}
+                <li {% if article is defined and art == article %}class="active"{% endif %}{% if page is defined and art.title == page.title %}class="active"{% endif %}>
+                    <a href="{{ SITEURL }}/{{ art.url }}">{{ art.title }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </aside>
+
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer id="contentinfo" class="body">
+        <p>&copy; 2025 {{ SITENAME }}</p>
+    </footer><!-- /#contentinfo -->
+</body>
+</html>

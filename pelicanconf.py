@@ -39,4 +39,4 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['say_hi']
 
 # Theme
-THEME = 'themes/custom'
+THEME = 'themes/workbook'

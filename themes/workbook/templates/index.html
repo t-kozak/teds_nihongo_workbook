@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - Interactive Japanese Learning Workbook{% endblock %}
+
+{% block content %}
+<section id="content" class="body">
+    <article>
+        <h1>Welcome to Ted's 日本語 Workbook</h1>
+
+        <p>This is an interactive workbook for learning Japanese. Here you'll find articles, notes, and exercises documenting my journey in studying 日本語 (Nihongo).</p>
+
+        <h2>What You'll Find Here</h2>
+
+        <p>This workbook contains:</p>
+        <ul>
+            <li><strong>Learning Notes</strong> - Detailed explanations of Japanese grammar, vocabulary, and writing systems</li>
+            <li><strong>Practice Exercises</strong> - Interactive practice materials for hiragana, katakana, and kanji</li>
+            <li><strong>Progress Tracking</strong> - Documentation of my learning journey and milestones</li>
+            <li><strong>Study Resources</strong> - Curated links and materials for Japanese language learners</li>
+        </ul>
+
+        <h2>Recent Articles</h2>
+
+        <p>Browse the latest additions to the workbook:</p>
+
+        <ul class="article-list">
+        {% for article in articles_page.object_list %}
+            <li>
+                <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                <span class="article-date">- {{ article.locale_date }}</span>
+                {% if article.summary %}
+                <p class="article-summary">{{ article.summary }}</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+
+        <hr>
+
+        <p><em>Navigate through the articles using the sidebar on article pages, or explore by browsing the list above.</em></p>
+    </article>
+</section><!-- /#content -->
+{% endblock %}

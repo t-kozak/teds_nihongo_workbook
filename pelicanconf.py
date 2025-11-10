@@ -1,12 +1,12 @@
-AUTHOR = 'Ted K'
+AUTHOR = "Ted K"
 SITENAME = "Ted's 日本語 Workbook"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'Australia/Sydney'
+TIMEZONE = "Australia/Sydney"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -35,8 +35,8 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 # Plugins
-PLUGIN_PATHS = ['plugins']
-PLUGINS = ['say_hi', 'furigana']
+PLUGIN_PATHS = ["plugins"]
+PLUGINS = ["furigana"]
 
 # Theme
-THEME = 'themes/workbook'
+THEME = "themes/workbook"

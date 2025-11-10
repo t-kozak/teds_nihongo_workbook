@@ -1,46 +1,74 @@
-Generate for me a markdown file that will be a Japanese lesson for specific subject described below.
+Generate a markdown file for a Japanese lesson on the subject described below.
 
-The article will be used by a pelican, the static website generator to generate the webpage.
+The article will be used by Pelican, a static website generator, to generate a webpage.
 
-Prefix the article with the markdown style metadata. Define the following Title (generate), 
-Date (now), Modified (now), Category (generate), Tags (generate),  Author: (use fixed: "Ted K. via Claude"),
-Summary (generate)
+Prefix the article with markdown-style metadata. Include the following fields:
+- Title: (generate an appropriate title)
+- Date: (use current date)
+- Modified: (use current date)
+- Category: (generate based on lesson content)
+- Tags: (generate relevant tags)
+- Author: "Ted K. via Claude" (use exactly as written)
+- Summary: (generate a brief summary)
 
-Generate following sections:
-1. Context/summary in english
-   A brief overview of what will be covered in the lesson
-2. Grammar explanation (optional)
-   If the lesson description below explicitly mention some grammar concepts to be covered - please write a 
-   section explaining those concepts. Use mixture of English and Japanese where it makes sense
-3. Useful phrases
-   A list of example phrases relevant to the content of the lesson. Phrases should follow the format:
-   ```1. ${The phrase in Japanese}
-         _(${direct translation in english})_
-         ${any additional context or description}
+Generate the following sections:
+
+1. Context/Summary (in English)
+   Provide a brief overview of what will be covered in the lesson
+
+2. Grammar Explanation (optional)
+   If the lesson description below explicitly mentions grammar concepts to be covered, write a
+   section explaining those concepts. Use a mixture of English and Japanese where appropriate
+
+3. Useful Phrases
+   Provide a list of example phrases relevant to the lesson content. Each phrase should follow this format:
    ```
-4. Example dialogues 
-   Include 1 - 3 example dialogues also relevant to the lesson subject
-   Each dialog should follow following format:
-   ```## Dialog $N: ${Title}
-
-      ${some brief description in english for context}
-
-      - ${Name of character}: ${the content of dialogue}
-      - ${Name of character}: ${the content of dialogue}
-      - ...
+   1. ${The phrase in Japanese} _(${English translation})_
+      
+        ${any additional context or description, in English}
    ```
-5. Wordbank
-   For all the useful words relevant to the lesson subject, create a wordbank, a list of words with their 
-   english translation and some context in english. The site generator has functionality to render these into 
-   pretty widgets. Use the following format:
-   ```<wordbank>
-   ${word_in_japanes}: ${direct translation to english} (${any additional description for context})
-      </wordbank>
-   ```
-   It's important to note that for the wordbank we care only about pairs of words with the same meaning. As in, 
-   a lot of Japanese words can have multiple meanings that can be expressed in English. Here, we care only about 
-   a single meaning relevant to the lesson subject.
+   Important - whitespace matters here, as it follows the markdown convention 
 
+4. Dialogues
+   Include 1-3 example dialogues relevant to the lesson subject.
+   Each dialogue should follow this format:
+   ```
+   ## Dialogue $N: ${Title}
+
+   ${Brief description in English for context}
+
+   - ${Character name}: ${Dialogue content}
+   - ${Character name}: ${Dialogue content}
+   - ...
+   ```
+
+5. Short story
+Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson.
+
+6. Wordbank
+   Create a wordbank containing useful words relevant to the lesson subject. Include each word's
+   English translation and contextual information. The site generator will render these as
+   interactive widgets. Use the following format:
+   ```
+   <wordbank>
+   - ${word_in_Japanese}: ${direct translation to English} (${additional description for context})
+   </wordbank>
+   ```
+
+   Important: For the wordbank, focus only on word pairs with a single, specific meaning.
+   While many Japanese words have multiple English translations, include only the meaning
+   that is relevant to this lesson subject.
+
+General notes: 
+- when writing in Japanese, for word, phrases or any reading material - always use kanji when appropriate. 
+  The website generator has a plugin that creates furigana or romanji if requested by the user.
+- Please use H1 ("#") and H2 ("##") for sections (e.g. dialogs, short story, phrases) and sub-sections (dialog 1, dialog 2)
 
 Given the context above, generate a lesson article for the following lesson description:
 
+
+Let's make a lesson about learning. So I want to use as little english in my Japanese conversation with my tutor as possible. From that perspective, I would like to learn:
+* asking questions about meaning of a word, or in general given concept
+* asking to repeat what was said
+* asking someone to speak slower
+* general "lesson" terminology - notebooks, stationary, class, equipment

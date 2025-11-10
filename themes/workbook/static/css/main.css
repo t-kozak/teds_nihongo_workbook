@@ -146,7 +146,7 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; max-width: 800px;}
+.body {clear: both; margin: 0 auto; max-width: 1200px;}
 img { max-width: 100%; }
 img.right, figure.right, div.figure.align-right {
     float: right;
@@ -276,7 +276,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     margin-bottom: 2em;
     overflow: hidden;
     padding: 20px 20px;
-    max-width: 760px;
+    
 
     border-radius: 10px;
     -moz-border-radius: 10px;

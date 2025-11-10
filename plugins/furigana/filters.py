@@ -64,6 +64,44 @@ def _process_text_for_furigana(text, tagger):
     if not text.strip():
         return text
 
+    # Split text into Japanese and non-Japanese segments
+    # Japanese characters include: Hiragana, Katakana, Kanji, and Japanese punctuation
+    japanese_pattern = re.compile(
+        r"[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u3400-\u4DBF\u3000-\u303F]+"
+    )
+
+    output = []
+    last_end = 0
+
+    for match in japanese_pattern.finditer(text):
+        # Add any non-Japanese text before this match (preserve as-is)
+        if match.start() > last_end:
+            output.append(text[last_end : match.start()])
+
+        # Process the Japanese segment with fugashi
+        japanese_segment = match.group()
+        output.append(_process_japanese_segment(japanese_segment, tagger))
+
+        last_end = match.end()
+
+    # Add any remaining non-Japanese text
+    if last_end < len(text):
+        output.append(text[last_end:])
+
+    return "".join(output)
+
+
+def _process_japanese_segment(text, tagger):
+    """
+    Process a Japanese text segment to add furigana to kanji words.
+
+    Args:
+        text: Japanese text string (hiragana, katakana, kanji)
+        tagger: Configured fugashi Tagger instance
+
+    Returns:
+        Text with ruby annotations added to kanji words
+    """
     # Parse text with morphological analyzer
     words = tagger(text)
 

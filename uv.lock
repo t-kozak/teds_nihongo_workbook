@@ -3071,6 +3071,15 @@ wheels = [
 ]
 
 [[package]]
+name = "tdqm"
+version = "0.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/5a/38/58c9e22b95e98666fe29f35e217ab6126a03798dadf3f4f8f3e5f898510b/tdqm-0.0.1.tar.gz", hash = "sha256:f050004a76b1d22f70b78209b48781353c82440215b6ba7d22b1f499b05a0101", size = 1388, upload-time = "2020-08-19T20:16:22.191Z" }
+
+[[package]]
 name = "teds-nihongo-workbook"
 version = "0.1.0"
 source = { virtual = "." }
@@ -3080,6 +3089,7 @@ dependencies = [
     { name = "marvin" },
     { name = "pelican", extra = ["markdown"] },
     { name = "pytest" },
+    { name = "tdqm" },
     { name = "unidic-lite" },
     { name = "uuid" },
 ]
@@ -3091,6 +3101,7 @@ requires-dist = [
     { name = "marvin" },
     { name = "pelican", extras = ["markdown"], specifier = ">=4.11.0" },
     { name = "pytest" },
+    { name = "tdqm" },
     { name = "unidic-lite", specifier = ">=1.0.8" },
     { name = "uuid" },
 ]

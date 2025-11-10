@@ -153,7 +153,7 @@ A student needs to borrow classroom supplies.
 
 # Wordbank
 
-
+<wordbank>
 - ノート: notebook (a bound book for writing notes)
 - 教科書: textbook (the main book used for studying a subject)
 - ペン: pen (writing instrument with ink)
@@ -188,3 +188,4 @@ A student needs to borrow classroom supplies.
 - 読み方: reading/pronunciation (how to read something)
 - 練習: practice (repeated exercise to improve)
 - 勉強: study (act of learning)
+</wordbank>

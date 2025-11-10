@@ -36,7 +36,11 @@ DEFAULT_PAGINATION = 10
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["furigana"]
+PLUGINS = ["furigana", "wordbank_flashcards"]
+
+# Wordbank Flashcards Plugin Configuration
+# Set to True to disable wordbank processing (useful for autoreload/dev server)
+WORDBANK_SKIP_PROCESSING = False
 
 # Theme
 THEME = "themes/workbook"

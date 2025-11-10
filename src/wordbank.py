@@ -1,4 +1,5 @@
 import json
+import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -240,7 +241,7 @@ class WordBank:
             details: The word details to generate an image for
         """
         # Determine the file name
-        file_name = details.en_translation.replace(" ", "_") + ".jpg"
+        file_name = re.sub(r"[^a-zA-Z0-9]", "_", details.en_translation) + ".jpg"
         output_file = (
             Path(__file__).parent.parent.absolute()
             / "content"

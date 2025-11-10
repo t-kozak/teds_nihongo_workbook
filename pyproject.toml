@@ -10,5 +10,6 @@ dependencies = [
     "marvin",
     "pytest",
     "google-genai",
-    "uuid"
+    "uuid",
+    "tdqm",
 ]

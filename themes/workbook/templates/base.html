@@ -7,6 +7,7 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/custom.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/furigana.css" />
     {% block extra_head %}{% endblock %}
 </head>
 
@@ -25,6 +26,13 @@
                 </li>
             {% endfor %}
             </ul>
+
+            <div class="furigana-controls">
+                <label for="furigana-toggle">
+                    <input type="checkbox" id="furigana-toggle" checked>
+                    Show Hiragana Readings
+                </label>
+            </div>
         </aside>
 
         {% block content %}{% endblock %}
@@ -33,5 +41,7 @@
     <footer id="contentinfo" class="body">
         <p>&copy; 2025 {{ SITENAME }}</p>
     </footer><!-- /#contentinfo -->
+
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/furigana-toggle.js"></script>
 </body>
 </html>

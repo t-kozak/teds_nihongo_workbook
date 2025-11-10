@@ -1,16 +1,17 @@
 """
-SayHi Plugin for Pelican
+Furigana Plugin for Pelican
 
-Registers custom Jinja2 filters for greeting functionality.
+Registers custom Jinja2 filters for adding furigana (hiragana readings)
+above kanji characters using HTML ruby annotations.
 """
 from pelican import signals
-from .filters import say_hi
+from .filters import add_furigana
 
 
 def add_filters(pelican):
     """Add custom filters to Pelican's Jinja environment."""
     pelican.env.filters.update({
-        'say_hi': say_hi,
+        'add_furigana': add_furigana,
     })
 
 

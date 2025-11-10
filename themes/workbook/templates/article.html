@@ -19,8 +19,8 @@
             </div>
         </header>
 
-        <div class="entry-content">
-            {{ article.content }}
+        <div class="entry-content" id="article-content">
+            {{ article.content | add_furigana | safe }}
         </div>
     </article>
 </section>

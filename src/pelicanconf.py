@@ -36,7 +36,7 @@ DEFAULT_PAGINATION = 10
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['say_hi']
+PLUGINS = ['say_hi', 'furigana']
 
 # Theme
 THEME = 'themes/workbook'

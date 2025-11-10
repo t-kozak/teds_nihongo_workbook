@@ -9,11 +9,11 @@ case "$1" in
     ;;
   build)
     echo "Building site..."
-    uv run pelican content -o output -s pelicanconf.py
+    uv run pelican content -o output -s src/pelicanconf.py
     ;;
   build-prod)
     echo "Building site for production..."
-    uv run pelican content -s publishconf.py
+    uv run pelican content -s src/publishconf.py
     ;;
   clean)
     echo "Cleaning output..."

@@ -13,7 +13,7 @@ case "$1" in
     ;;
   build-prod)
     echo "Building site for production..."
-    uv run pelican content -o doc -s publishconf.py
+    uv run pelican content -o docs -s publishconf.py
     ;;
   clean)
     echo "Cleaning output..."

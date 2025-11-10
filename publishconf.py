@@ -8,7 +8,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = "/teds_nihongo_workbook"
+SITEURL = "https://world.teds-stuff.xyz/teds_nihongo_workbook/"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"

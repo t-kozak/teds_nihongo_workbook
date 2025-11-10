@@ -1,6 +1,7 @@
 """Custom Jinja2 filters for adding furigana to Japanese text."""
 
 import re
+
 import fugashi
 from markupsafe import Markup
 
@@ -27,11 +28,11 @@ def add_furigana(html_content):
         return html_content
 
     # Initialize fugashi tagger for morphological analysis
-    tagger = fugashi.Tagger()
+    tagger = fugashi.Tagger()  # type:ignore
 
     # Pattern to match text outside of HTML tags
     # We need to process text nodes but preserve HTML structure
-    html_tag_pattern = re.compile(r'(<[^>]+>)')
+    html_tag_pattern = re.compile(r"(<[^>]+>)")
 
     # Split content into HTML tags and text segments
     segments = html_tag_pattern.split(str(html_content))
@@ -45,7 +46,7 @@ def add_furigana(html_content):
             # This is a text node - process it for furigana
             processed_segments.append(_process_text_for_furigana(segment, tagger))
 
-    result = ''.join(processed_segments)
+    result = "".join(processed_segments)
     return Markup(result)
 
 
@@ -71,7 +72,7 @@ def _process_text_for_furigana(text, tagger):
         orig = word.surface  # Original text
 
         # Get katakana reading and convert to hiragana
-        kana = word.feature.kana if hasattr(word.feature, 'kana') else None
+        kana = word.feature.kana if hasattr(word.feature, "kana") else None
 
         if kana:
             hira = _katakana_to_hiragana(kana)
@@ -82,12 +83,12 @@ def _process_text_for_furigana(text, tagger):
         # Check if this segment contains kanji
         if _contains_kanji(orig):
             # Wrap with ruby annotation
-            output.append(f'<ruby>{orig}<rt>{hira}</rt></ruby>')
+            output.append(f"<ruby>{orig}<rt>{hira}</rt></ruby>")
         else:
             # No kanji - preserve as-is
             output.append(orig)
 
-    return ''.join(output)
+    return "".join(output)
 
 
 def _katakana_to_hiragana(text):
@@ -110,7 +111,7 @@ def _katakana_to_hiragana(text):
             hiragana.append(chr(code - 0x60))
         else:
             hiragana.append(char)
-    return ''.join(hiragana)
+    return "".join(hiragana)
 
 
 def _contains_kanji(text):
@@ -127,5 +128,5 @@ def _contains_kanji(text):
     Returns:
         True if text contains kanji, False otherwise
     """
-    kanji_pattern = re.compile(r'[\u4E00-\u9FFF\u3400-\u4DBF]')
+    kanji_pattern = re.compile(r"[\u4E00-\u9FFF\u3400-\u4DBF]")
     return bool(kanji_pattern.search(text))

@@ -26,9 +26,14 @@ class WordbankProcessor:
         r"^\s*-\s*(.+?):\s*(.+?)\s*\((.+?)\)\s*$", re.MULTILINE
     )
 
-    def __init__(self):
-        """Initialize the processor with a WordBank instance."""
+    def __init__(self, siteurl: str = ""):
+        """Initialize the processor with a WordBank instance.
+
+        Args:
+            siteurl: The SITEURL from Pelican settings for generating correct paths
+        """
         self.wordbank = WordBank()
+        self.siteurl = siteurl
         # Cache to store propagated words during first pass
         self._propagated_cache = {}
 
@@ -113,10 +118,10 @@ class WordbankProcessor:
         """
         # Determine image path
         if details.image_file:
-            image_path = f"/images/wordbank/{details.image_file}"
+            image_path = f"{self.siteurl}/images/wordbank/{details.image_file}"
         else:
             # Fallback to a placeholder or empty image
-            image_path = "/images/wordbank/placeholder.jpg"
+            image_path = f"{self.siteurl}/images/wordbank/placeholder.jpg"
 
         # Escape HTML special characters
         word_escaped = self._escape_html(details.word)
@@ -125,7 +130,7 @@ class WordbankProcessor:
         # Generate audio button HTML if audio file exists
         audio_button = ""
         if details.audio_file:
-            audio_path = f"/audio/wordbank/{details.audio_file}"
+            audio_path = f"{self.siteurl}/audio/wordbank/{details.audio_file}"
             audio_button = f"""<audio class="flashcard-audio" style="display: none;">
             <source src="{audio_path}" type="audio/aac">
             Your browser does not support the audio element.

@@ -15,13 +15,20 @@ from .processor import WordbankProcessor
 
 # Global processor instance to share cache across all articles
 _processor = None
+_current_siteurl = None
 
 
-def get_processor():
-    """Get or create the global WordbankProcessor instance."""
-    global _processor
-    if _processor is None:
-        _processor = WordbankProcessor()
+def get_processor(siteurl: str = ""):
+    """Get or create the global WordbankProcessor instance.
+
+    Args:
+        siteurl: The SITEURL from Pelican settings
+    """
+    global _processor, _current_siteurl
+    # Recreate processor if SITEURL has changed
+    if _processor is None or _current_siteurl != siteurl:
+        _processor = WordbankProcessor(siteurl)
+        _current_siteurl = siteurl
     return _processor
 
 
@@ -45,8 +52,13 @@ def process_wordbank_content(content):
     if not hasattr(content, '_content'):
         return
 
-    # Get the processor
-    processor = get_processor()
+    # Get SITEURL from settings
+    siteurl = ""
+    if hasattr(content, 'settings'):
+        siteurl = content.settings.get('SITEURL', '')
+
+    # Get the processor with the correct SITEURL
+    processor = get_processor(siteurl)
 
     # Process the content
     try:

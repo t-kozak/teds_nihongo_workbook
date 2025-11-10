@@ -8,6 +8,9 @@ from google import genai  # type: ignore
 from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.providers.google import GoogleProvider
 
+from tools import load_google_api_key
+from tts import TTS
+
 
 @dataclass
 class WordbankWordDetails:
@@ -18,6 +21,7 @@ class WordbankWordDetails:
     description: str
     image_description: str
     image_file: str | None = None
+    audio_file: str | None = None
 
 
 # Prompt template for generating flashcard details
@@ -53,28 +57,9 @@ Remember: This is for a flashcard learning system. The word + English translatio
 Provide the complete details as a structured response."""
 
 
-def _load_google_api_key() -> str:
-    """Load Google AI Studio API key from .env file."""
-    env_path = Path(__file__).parent.parent / ".env"
-
-    if not env_path.exists():
-        raise FileNotFoundError(f".env file not found at {env_path}")
-
-    with open(env_path, "r") as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith("#"):
-                if "=" in line:
-                    key, value = line.split("=", 1)
-                    if key.strip() == "GOOGLE_AI_STUDIO_KEY":
-                        return value.strip()
-
-    raise ValueError("GOOGLE_AI_STUDIO_KEY not found in .env file")
-
-
 def _create_default_agent() -> marvin.Agent:
     """Create the default Google Gemini agent."""
-    google_api_key = _load_google_api_key()
+    google_api_key = load_google_api_key()
     return marvin.Agent(
         model=GoogleModel(
             model_name="gemini-2.5-pro", provider=GoogleProvider(api_key=google_api_key)
@@ -104,13 +89,14 @@ class WordBank:
         """
         if data_path is None:
             self.data_path = (
-                Path(__file__).parent / "data" / "wordbank.jsonl"
+                Path(__file__).parent.parent / "data" / "wordbank.jsonl"
             ).absolute()
         else:
             self.data_path = Path(data_path).absolute()
 
         self.agent = agent if agent is not None else _create_default_agent()
-        self.imagen = genai.Client(api_key=_load_google_api_key())
+        self.imagen = genai.Client(api_key=load_google_api_key())
+        self.tts = TTS()
         self._cache: dict[tuple[str, str], WordbankWordDetails] | None = None
 
     def get_all(self) -> list["WordbankWordDetails"]:
@@ -227,6 +213,7 @@ class WordBank:
         """
         result = self._generate_word_details(word, en_translation, description)
         self._generate_img(result)
+        self._generate_audio(result)
         self.upsert(result)
         return result
 
@@ -287,6 +274,48 @@ Generate the following flashcard image:
         details.image_file = file_name
         for n, generated_image in enumerate(result.generated_images):
             generated_image.image.save(output_file)
+
+    def _generate_audio(self, details: WordbankWordDetails):
+        """
+        Generate audio pronunciation for the word.
+
+        Checks if the audio already exists on disk before generating.
+        If the audio file exists, skips generation.
+
+        Args:
+            details: The word details to generate audio for
+        """
+        # Determine the file name
+        file_name = re.sub(r"[^a-zA-Z0-9]", "_", details.en_translation) + ".aac"
+        output_file = (
+            Path(__file__).parent.parent.absolute()
+            / "content"
+            / "audio"
+            / "wordbank"
+            / file_name
+        )
+
+        # Check if audio already exists
+        if details.audio_file and output_file.exists():
+            print(f"Audio file already exists at {output_file} - skipping generation")
+            return
+
+        # Generate new audio
+        print(f"Generating new audio for '{details.word}'")
+
+        # Ensure the output directory exists
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+
+        try:
+            # Generate audio using TTS
+            self.tts.generate(details.word, output_file)
+
+            # Update the details with the audio file name
+            details.audio_file = file_name
+        except Exception as e:
+            # Handle TTS generation errors gracefully (e.g., preview API limitations)
+            print(f"Warning: Failed to generate audio for '{details.word}': {e}")
+            print("Continuing without audio file...")
 
     def _load(self) -> dict[tuple[str, str], WordbankWordDetails]:
         """Load all wordbank data from JSONL file into memory."""

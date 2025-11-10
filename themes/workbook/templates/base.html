@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/custom.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/furigana.css" />
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/flashcards.css" />
     {% block extra_head %}{% endblock %}
 </head>
 
@@ -43,5 +44,7 @@
     </footer><!-- /#contentinfo -->
 
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/furigana-toggle.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/flashcards.js"></script>
+    {% block extra_scripts %}{% endblock %}
 </body>
 </html>

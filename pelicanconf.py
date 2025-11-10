@@ -34,6 +34,9 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
+# Static paths - directories to copy to output
+STATIC_PATHS = ["images", "audio"]
+
 # Plugins
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["furigana", "wordbank_flashcards"]

@@ -122,6 +122,21 @@ class WordbankProcessor:
         word_escaped = self._escape_html(details.word)
         en_translation_escaped = self._escape_html(details.en_translation)
 
+        # Generate audio button HTML if audio file exists
+        audio_button = ""
+        if details.audio_file:
+            audio_path = f"/audio/wordbank/{details.audio_file}"
+            audio_button = f"""<audio class="flashcard-audio" style="display: none;">
+            <source src="{audio_path}" type="audio/aac">
+            Your browser does not support the audio element.
+        </audio>
+        <button class="flashcard-audio-btn" aria-label="Play pronunciation">
+            <svg focusable="false" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"></path>
+                <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"></path>
+            </svg>
+        </button>"""
+
         # Generate example sentences HTML
         examples_html = ""
         if details.examples:
@@ -136,7 +151,7 @@ class WordbankProcessor:
 <div class="flashcard" data-word="{word_escaped}" data-translation="{en_translation_escaped}">
     <div class="flashcard-front">
         <img src="{image_path}" alt="{en_translation_escaped}" loading="lazy">
-        <div class="flashcard-word-jp">{word_escaped}</div>
+        <div class="flashcard-word-jp">{word_escaped}{audio_button}</div>
     </div>
     <div class="flashcard-back" style="display: none;">
         <div class="flashcard-word-en">{en_translation_escaped}</div>
@@ -163,163 +178,11 @@ class WordbankProcessor:
         for details in word_details_list:
             cards_html += self.generate_flashcard_html(details)
 
-        # Complete HTML with container, CSS, and JavaScript
+        # Complete HTML with container
         complete_html = f"""
 <div class="wordbank-container">
     {cards_html}
 </div>
-
-<style>
-.wordbank-container {{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
-    max-width: 100%;
-}}
-
-.flashcard {{
-    width: 100%;
-    height: 360px;
-    perspective: 1000px;
-    cursor: pointer;
-    position: relative;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}}
-
-.flashcard:hover {{
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}}
-
-.flashcard-front, .flashcard-back {{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-}}
-
-.flashcard-front img {{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}}
-
-.flashcard-word-jp {{
-    position: relative;
-    z-index: 2;
-    font-size: 28px;
-    font-weight: bold;
-    color: #1a202c;
-    padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.92);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(4px);
-    margin: 0 15px 5px 15px;
-}}
-
-.flashcard-back {{
-    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
-    padding: 20px;
-    overflow-y: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
-}}
-
-.flashcard-word-en {{
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c5282;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    word-wrap: break-word;
-    box-sizing: border-box;
-}}
-
-.flashcard-examples-label {{
-    font-size: 14px;
-    font-weight: 600;
-    color: #4a5568;
-    margin-bottom: 8px;
-    width: 100%;
-    box-sizing: border-box;
-}}
-
-.flashcard-examples {{
-    font-size: 14px;
-    color: #2d3748;
-    text-align: left;
-    padding-left: 20px;
-    margin: 0;
-    list-style-type: disc;
-    width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
-}}
-
-.flashcard-examples li {{
-    margin-bottom: 10px;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
-}}
-</style>
-
-<script>
-(function() {{
-    document.addEventListener('DOMContentLoaded', function() {{
-        const flashcards = document.querySelectorAll('.flashcard');
-
-        flashcards.forEach(function(card) {{
-            card.addEventListener('click', function() {{
-                const front = this.querySelector('.flashcard-front');
-                const back = this.querySelector('.flashcard-back');
-
-                if (front.style.display === 'none') {{
-                    // Currently showing back, flip to front
-                    front.style.display = 'flex';
-                    back.style.display = 'none';
-                }} else {{
-                    // Currently showing front, flip to back
-                    // First, reset all other cards to front
-                    flashcards.forEach(function(otherCard) {{
-                        if (otherCard !== card) {{
-                            const otherFront = otherCard.querySelector('.flashcard-front');
-                            const otherBack = otherCard.querySelector('.flashcard-back');
-                            otherFront.style.display = 'flex';
-                            otherBack.style.display = 'none';
-                        }}
-                    }});
-
-                    // Now flip this card to back
-                    front.style.display = 'none';
-                    back.style.display = 'flex';
-                }}
-            }});
-        }});
-    }});
-}})();
-</script>
 """
 
         return complete_html

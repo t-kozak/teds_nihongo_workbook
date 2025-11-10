@@ -1,0 +1,130 @@
+/* Custom layout styles for sidebar navigation */
+
+.page-container {
+    display: flex;
+    gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#sidebar {
+    flex: 0 0 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+#sidebar h3 {
+    color: #C74350;
+    font-size: 1.429em;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+#sidebar .article-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .article-nav li {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#sidebar .article-nav li.active a {
+    color: #C74350;
+    font-weight: bold;
+}
+
+#sidebar .article-nav a:link,
+#sidebar .article-nav a:visited {
+    color: #000305;
+    text-decoration: none;
+    display: block;
+    padding: 0.3em 0.5em;
+    border-left: 3px solid transparent;
+}
+
+#sidebar .article-nav a:hover,
+#sidebar .article-nav a:active {
+    background-color: #F5F4EF;
+    border-left-color: #C74350;
+    color: #C74350;
+}
+
+#sidebar .article-nav li.active a:link,
+#sidebar .article-nav li.active a:visited {
+    border-left-color: #C74350;
+}
+
+.article-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Adjust content area for article pages */
+.page-container #content {
+    margin: 0;
+}
+
+/* Footer updates */
+#contentinfo {
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+
+#contentinfo p {
+    margin: 0.5em 0;
+}
+
+/* Index page article list */
+.article-list {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.article-list li {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+}
+
+.article-list li:last-child {
+    border-bottom: none;
+}
+
+.article-list a {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.article-date {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.article-summary {
+    margin-top: 0.5em;
+    color: #444;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        flex: 1;
+        position: relative;
+        top: 0;
+    }
+}

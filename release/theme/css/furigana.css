@@ -1,0 +1,66 @@
+/**
+ * Furigana (Ruby Annotation) Styles
+ *
+ * Styles for displaying hiragana readings above kanji characters
+ * and toggle controls for showing/hiding them.
+ */
+
+/* Ruby annotation styles */
+ruby {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    vertical-align: text-bottom;
+    line-height: 1;
+}
+
+rt {
+    display: block;
+    font-size: 0.6em;
+    line-height: 1.2;
+    text-align: center;
+    color: #666;
+    margin-bottom: 0.2em;
+}
+
+/* Hide furigana when toggle is unchecked */
+.hide-furigana rt {
+    display: none;
+}
+
+/* Furigana controls styling */
+.furigana-controls {
+    margin: 1em 0;
+    padding: 0.75em 1em;
+    background-color: #f5f5f5;
+    border-left: 4px solid #4a90e2;
+    border-radius: 4px;
+}
+
+.furigana-controls label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    font-size: 0.95em;
+    color: #333;
+    user-select: none;
+}
+
+.furigana-controls input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+/* Ensure ruby annotations don't break layout */
+.entry-content ruby {
+    white-space: nowrap;
+}
+
+/* Print styles - always show furigana when printing */
+@media print {
+    rt {
+        display: block !important;
+    }
+}

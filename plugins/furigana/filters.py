@@ -1,7 +1,7 @@
 """Custom Jinja2 filters for adding furigana to Japanese text."""
 
 import re
-from pykakasi import kakasi
+import fugashi
 from markupsafe import Markup
 
 
@@ -26,8 +26,8 @@ def add_furigana(html_content):
     if not html_content:
         return html_content
 
-    # Initialize kakasi for kanji-to-hiragana conversion
-    kks = kakasi()
+    # Initialize fugashi tagger for morphological analysis
+    tagger = fugashi.Tagger()
 
     # Pattern to match text outside of HTML tags
     # We need to process text nodes but preserve HTML structure
@@ -43,19 +43,19 @@ def add_furigana(html_content):
             processed_segments.append(segment)
         else:
             # This is a text node - process it for furigana
-            processed_segments.append(_process_text_for_furigana(segment, kks))
+            processed_segments.append(_process_text_for_furigana(segment, tagger))
 
     result = ''.join(processed_segments)
     return Markup(result)
 
 
-def _process_text_for_furigana(text, kks):
+def _process_text_for_furigana(text, tagger):
     """
     Process a text segment to add furigana to kanji words.
 
     Args:
         text: Plain text string (not containing HTML tags)
-        kks: Configured kakasi instance
+        tagger: Configured fugashi Tagger instance
 
     Returns:
         Text with ruby annotations added to kanji words
@@ -63,13 +63,21 @@ def _process_text_for_furigana(text, kks):
     if not text.strip():
         return text
 
-    # Convert text to get word-level segmentation
-    result = kks.convert(text)
+    # Parse text with morphological analyzer
+    words = tagger(text)
 
     output = []
-    for item in result:
-        orig = item['orig']  # Original text
-        hira = item['hira']  # Hiragana reading
+    for word in words:
+        orig = word.surface  # Original text
+
+        # Get katakana reading and convert to hiragana
+        kana = word.feature.kana if hasattr(word.feature, 'kana') else None
+
+        if kana:
+            hira = _katakana_to_hiragana(kana)
+        else:
+            # No reading available, use original text
+            hira = orig
 
         # Check if this segment contains kanji
         if _contains_kanji(orig):
@@ -80,6 +88,29 @@ def _process_text_for_furigana(text, kks):
             output.append(orig)
 
     return ''.join(output)
+
+
+def _katakana_to_hiragana(text):
+    """
+    Convert katakana characters to hiragana.
+
+    Args:
+        text: String containing katakana characters
+
+    Returns:
+        String with katakana converted to hiragana
+    """
+    hiragana = []
+    for char in text:
+        code = ord(char)
+        # Katakana range: U+30A0 to U+30FF
+        # Hiragana range: U+3040 to U+309F
+        # Offset is 0x60 (96)
+        if 0x30A0 <= code <= 0x30FF:
+            hiragana.append(chr(code - 0x60))
+        else:
+            hiragana.append(char)
+    return ''.join(hiragana)
 
 
 def _contains_kanji(text):

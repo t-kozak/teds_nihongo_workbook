@@ -19,9 +19,9 @@
 body {
     background: #F5F4EF;
     color: #000305;
-    font-size: 87.5%; /* Base font size: 14px */
+    font-size: 100%; /* Base font size: 16px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.429;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     text-align: left;
@@ -102,6 +102,36 @@ li { margin-top: 0.5em;
 dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
+
+/* Dialogue styling */
+dl.dialogue {
+    margin: 1.5em 0;
+    padding: 1em;
+    background: #f9f9f9;
+    border-left: 4px solid #C74350;
+    border-radius: 5px;
+}
+
+dl.dialogue dt {
+    font-weight: bold;
+    color: #C74350;
+    margin-top: 1em;
+}
+
+dl.dialogue dt:first-child {
+    margin-top: 0;
+}
+
+dl.dialogue dd {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+div.dialogue-audio {
+    margin-top: 1em;
+    text-align: center;
+}
 
 pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
 

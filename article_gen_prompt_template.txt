@@ -23,27 +23,39 @@ Generate the following sections:
 3. Useful Phrases
    Provide a list of example phrases relevant to the lesson content. Each phrase should follow this format:
    ```
-   1. ${The phrase in Japanese} _(${English translation})_
+   1. <tts>${The phrase in Japanese}</tts> _(${English translation})_
       
         ${any additional context or description, in English}
    ```
-   Important - whitespace matters here, as it follows the markdown convention 
+   Important - whitespace matters here, as it follows the markdown convention.
 
 4. Dialogues
-   Include 1-3 example dialogues relevant to the lesson subject.
+   Include 1 or more dialogues relevant to the lesson subject. 
    Each dialogue should follow this format:
    ```
    ## Dialogue $N: ${Title}
 
    ${Brief description in English for context}
-
-   - ${Character name}: ${Dialogue content}
-   - ${Character name}: ${Dialogue content}
+   <tts type="dialogue" speakers="${speaker1}:${voice1},${speaker2}:${voice2},...">
+   - ${speaker1}: ${Dialogue content}
+   - ${speaker2}: ${Dialogue content}
    - ...
+   </tts>
    ```
+   For the tts tag, the speakers attribute configures speakers and the voices they use. You can use the following voices:
+   - Zephyr - female character
+   - Puck - male character
+   - Leda - younger female character
+   - Gacrux - older female character
+   - Sadaltager - older male character
 
 5. Short story
-Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson.
+Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson. Please wrap the content of the story in a tts tag:
+```
+<tts type="full">
+${story}
+</tts>
+```
 
 6. Wordbank
    Create a wordbank containing useful words relevant to the lesson subject. Include each word's
@@ -66,9 +78,12 @@ General notes:
 
 Given the context above, generate a lesson article for the following lesson description:
 
+A lesson covering interactions at a restaurant
 
-Let's make a lesson about learning. So I want to use as little english in my Japanese conversation with my tutor as possible. From that perspective, I would like to learn:
-* asking questions about meaning of a word, or in general given concept
-* asking to repeat what was said
-* asking someone to speak slower
-* general "lesson" terminology - notebooks, stationary, class, equipment
+I would like to cover things like:
+- making reservations and changes to the reservations
+- ordering foods, starting from simple "this" and "that" please 
+- a lot of wording around different dishes, dish types etc.
+- checking how spicy something is 
+
+Please generate the content as a markdown artefact I can copy or download.

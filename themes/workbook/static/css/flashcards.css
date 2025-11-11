@@ -79,11 +79,22 @@
     transition: all 0.2s ease;
     flex-shrink: 0;
     padding: 0;
+    position: relative;
+}
+
+.flashcard-audio-btn img {
+    width: 16px;
+    height: 16px;
+    display: block;
+    pointer-events: none;
+    position: static !important;
+    object-fit: none !important;
 }
 
 .flashcard-audio-btn svg {
     fill: #2c5282;
     transition: fill 0.2s ease;
+    pointer-events: none;
 }
 
 .flashcard-audio-btn:hover {

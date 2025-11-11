@@ -165,8 +165,8 @@ class WordbankProcessor:
             <source src="{audio_path}" type="audio/aac">
             Your browser does not support the audio element.
         </audio>
-        <button class="flashcard-audio-btn" aria-label="Play pronunciation">
-            <img src="{speaker_icon_path}" alt="Play" width="16" height="16">
+        <button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();">
+            <img src="{speaker_icon_path}" alt="Play" width="16" height="16" style="pointer-events: none;">
         </button>"""
             else:
                 print(f"Warning: Audio file not found for '{details.word}' - skipping audio button: {details.audio_file}")

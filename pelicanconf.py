@@ -39,14 +39,16 @@ STATIC_PATHS = ["images", "audio"]
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["furigana", "wordbank_flashcards"]
+PLUGINS = [
+    "tts_filter",
+    "furigana",
+    "wordbank_flashcards",
+]
 
-# Wordbank Flashcards Plugin Configuration
-# Set to True to disable wordbank processing entirely
-WORDBANK_SKIP_PROCESSING = False
-# Set to True to skip word propagation (image/audio generation) during development
-# This will only generate HTML from existing wordbank cache
-WORDBANK_DEV_MODE = True
+# Content Generation Configuration
+# Set to True to generate images/audio (production mode)
+# Set to False to use cached content only (development mode)
+GENERATE_CONTENT = False
 
 # Theme
 THEME = "themes/workbook"

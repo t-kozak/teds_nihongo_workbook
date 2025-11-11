@@ -29,7 +29,13 @@
 &lt;h1&gt;Useful Phrases&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;どういう意味ですか。 &lt;em&gt;(What does it mean?)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ffd1e164be1aef29f3d543350f4d2411.aac" type="audio/aac"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+&lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+&lt;/a&gt;どういう意味ですか。 &lt;em&gt;(What does it mean?)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Use this when you want to know the meaning of a word or phrase that was just mentioned.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -113,19 +119,30 @@
 &lt;/ul&gt;
 &lt;h2&gt;Dialogue 3: Asking About Classroom Items&lt;/h2&gt;
 &lt;p&gt;A student needs to borrow classroom supplies.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;学生：先生、「eraser」は日本語で何と言いますか。&lt;/li&gt;
-&lt;li&gt;先生：「消しゴム」と言います。&lt;/li&gt;
-&lt;li&gt;学生：消しゴム...もう一度書いていただけますか。&lt;/li&gt;
-&lt;li&gt;先生：はい。けしごむ。消しゴムです。&lt;/li&gt;
-&lt;li&gt;学生：ありがとうございます。消しゴムを借りてもいいですか。&lt;/li&gt;
-&lt;li&gt;先生：もちろん、どうぞ。&lt;/li&gt;
-&lt;li&gt;学生：ありがとうございます。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;- **学生**: 先生、「eraser」は日本語で何と言いますか。
+- **先生**: 「消しゴム」と言います。
+- **学生**: 消しゴム...もう一度書いていただけますか。
+- **先生**: はい。けしごむ。消しゴムです。
+- **学生**: ありがとうございます。消しゴムを借りてもいいですか。
+- **先生**: もちろん、どうぞ。
+- **学生**: ありがとうございます。
+
+&lt;div style="margin-top: 1em;"&gt;
+    &lt;audio controls class="tts-audio-dialogue"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/3178d4fba44bc303ee200d624b777278.aac" type="audio/aac"&gt;
+        Your browser does not support the audio element.
+    &lt;/audio&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;h1&gt;Short Story&lt;/h1&gt;
 &lt;h2&gt;初めての授業&lt;/h2&gt;
 &lt;p&gt;今日は田中先生との初めての日本語の授業です。教室に入って、ノートとペンを机の上に置きました。先生が話し始めましたが、とても速くて、よく聞き取れませんでした。「すみません、もう少しゆっくり話していただけますか」とお願いしました。先生は優しく笑って、ゆっくり話してくれました。&lt;/p&gt;
-&lt;p&gt;授業の中で、「宿題」という言葉の意味がわかりませんでした。「先生、『宿題』はどういう意味ですか」と質問しました。先生は黒板に漢字を書いて、「homework」という意味だと教えてくれました。その後、先生は「来週までに教科書の10ページから15ページを読んでください。それが宿題です」と言いました。最初は難しいと思いましたが、先生がゆっくり説明してくれたので、よくわかりました。これからも日本語でたくさん質問して、上手になりたいです。&lt;/p&gt;
+&lt;p&gt;授業の中で、「宿題」という言葉の意味がわかりませんでした。「先生、『宿題』はどういう意味ですか」と質問しました。先生は黒板に漢字を書いて、「homework」という意味だと教えてくれました。その後、先生は「来週までに教科書の10ページから15ページを読んでください。それが宿題です」と言いました。最初は難しいと思いましたが、先生がゆっくり説明してくれたので、よくわかりました。これからも日本語でたくさん質問して、上手になりたいです。
+&lt;div style="margin-top: 1em;"&gt;
+    &lt;audio controls class="tts-audio-full"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ccf2fa0fbdb21f834769370b63b4cbd1.aac" type="audio/aac"&gt;
+        Your browser does not support the audio element.
+    &lt;/audio&gt;
+&lt;/div&gt;&lt;/p&gt;
 &lt;h1&gt;Wordbank&lt;/h1&gt;
 &lt;p&gt;
 &lt;div class="wordbank-container"&gt;
@@ -138,10 +155,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -157,10 +171,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -176,10 +187,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -195,10 +203,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -214,10 +219,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -233,10 +235,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -252,10 +251,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -271,10 +267,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -290,10 +283,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -309,10 +299,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -328,10 +315,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -347,10 +331,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -366,10 +347,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -385,10 +363,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -404,10 +379,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -423,10 +395,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -442,10 +411,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -461,10 +427,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -480,10 +443,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -499,10 +459,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -518,10 +475,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -537,10 +491,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -556,10 +507,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -575,10 +523,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -594,10 +539,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -613,10 +555,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -632,10 +571,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -651,10 +587,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -670,10 +603,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -689,10 +619,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -708,10 +635,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -727,10 +651,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -746,10 +667,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -765,10 +683,7 @@
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation"&gt;
-            &lt;svg focusable="false" width="16" height="16" viewBox="0 0 24 24"&gt;
-                &lt;path d="M3 9v6h4l5 5V4L7 9H3zm7-.17v6.34L7.83 13H5v-2h2.83L10 8.83zM16.5 12A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02z"&gt;&lt;/path&gt;
-                &lt;path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;

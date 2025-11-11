@@ -46,7 +46,7 @@ The pattern **～ていただけますか** is a very polite way to make request
 
 # Useful Phrases
 
-1. どういう意味ですか。 _(What does it mean?)_
+1. <tts type="inline">どういう意味ですか。</tts> _(What does it mean?)_
    
      Use this when you want to know the meaning of a word or phrase that was just mentioned.
 
@@ -112,6 +112,7 @@ The pattern **～ていただけますか** is a very polite way to make request
 
 A student is reading a text and encounters an unfamiliar word during a tutoring session.
 
+
 - 学生：先生、すみません。質問があります。
 - 先生：はい、どうぞ。
 - 学生：「熱心」はどういう意味ですか。
@@ -135,6 +136,7 @@ A student is having difficulty following the teacher's explanation.
 
 A student needs to borrow classroom supplies.
 
+<tts type="dialogue" speakers="学生:Zephyr,先生:Puck">
 - 学生：先生、「eraser」は日本語で何と言いますか。
 - 先生：「消しゴム」と言います。
 - 学生：消しゴム...もう一度書いていただけますか。
@@ -142,14 +144,17 @@ A student needs to borrow classroom supplies.
 - 学生：ありがとうございます。消しゴムを借りてもいいですか。
 - 先生：もちろん、どうぞ。
 - 学生：ありがとうございます。
+</tts>
 
 # Short Story
 
 ## 初めての授業
 
+<tts type="full">
 今日は田中先生との初めての日本語の授業です。教室に入って、ノートとペンを机の上に置きました。先生が話し始めましたが、とても速くて、よく聞き取れませんでした。「すみません、もう少しゆっくり話していただけますか」とお願いしました。先生は優しく笑って、ゆっくり話してくれました。
 
 授業の中で、「宿題」という言葉の意味がわかりませんでした。「先生、『宿題』はどういう意味ですか」と質問しました。先生は黒板に漢字を書いて、「homework」という意味だと教えてくれました。その後、先生は「来週までに教科書の10ページから15ページを読んでください。それが宿題です」と言いました。最初は難しいと思いましたが、先生がゆっくり説明してくれたので、よくわかりました。これからも日本語でたくさん質問して、上手になりたいです。
+</tts>
 
 # Wordbank
 

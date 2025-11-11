@@ -11,6 +11,7 @@ from google.genai import Client, types
 from tools import load_google_api_key
 
 _DEFAULT_MODEL = "gemini-2.5-flash-preview-tts"
+_DEFAULT_VOICE = "Zephyr"
 
 
 class TTS:
@@ -21,7 +22,7 @@ class TTS:
         )
         self.tagger = fugashi.Tagger()  # type: ignore
 
-    def generate(self, content: str, output: Path):
+    def generate(self, content: str, output: Path, voice: str = _DEFAULT_VOICE):
         """Generate TTS audio and save as AAC format.
 
         Converts any kanji in the input text to hiragana before generating speech.
@@ -50,7 +51,123 @@ class TTS:
             ],
             speech_config=types.SpeechConfig(
                 voice_config=types.VoiceConfig(
-                    prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name="Zephyr")
+                    prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=voice)
+                )
+            ),
+        )
+
+        # Collect all audio chunks
+        audio_data = None
+        mime_type = None
+
+        for chunk in self.client.models.generate_content_stream(
+            model=self.model,
+            contents=contents,
+            config=generate_content_config,
+        ):
+            if (
+                chunk.candidates is None
+                or chunk.candidates[0].content is None
+                or chunk.candidates[0].content.parts is None
+            ):
+                continue
+            if (
+                chunk.candidates[0].content.parts[0].inline_data
+                and chunk.candidates[0].content.parts[0].inline_data.data
+            ):
+                inline_data = chunk.candidates[0].content.parts[0].inline_data
+                audio_data = inline_data.data
+                mime_type = inline_data.mime_type
+                break
+
+        if audio_data is None or mime_type is None:
+            raise RuntimeError("No audio data generated")
+
+        # Convert to WAV format first if needed
+        file_extension = mimetypes.guess_extension(mime_type)
+        if file_extension is None:
+            wav_data = self._convert_to_wav(audio_data, mime_type)
+        else:
+            wav_data = audio_data
+
+        # Write WAV to temporary file and convert to AAC
+        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_wav:
+            temp_wav.write(wav_data)
+            temp_wav_path = temp_wav.name
+
+        try:
+            # Convert WAV to AAC using ffmpeg
+            ffmpeg_converter = (
+                FFmpeg()
+                .option("y")
+                .input(temp_wav_path)
+                .output(str(output), {"codec:a": "aac", "b:a": "128k"})
+            )
+            ffmpeg_converter.execute()
+        finally:
+            # Clean up temporary WAV file
+            Path(temp_wav_path).unlink()
+
+    def generate_dialogue(
+        self,
+        speaker_cfg: dict[str, str],
+        dialogue: list[tuple[str, str]],
+        output: Path | str,
+    ):
+        """Generate multi-speaker dialogue audio and save as AAC format.
+
+        Converts any kanji in the dialogue text to hiragana before generating speech.
+
+        Args:
+            speaker_cfg: Mapping from speaker name to voice name (e.g., {"Speaker 1": "Zephyr"})
+            dialogue: List of tuples with (speaker_name, text) for each dialogue turn
+            output: Path where the AAC audio file should be saved
+        """
+        # Convert output to Path if it's a string
+        if isinstance(output, str):
+            output = Path(output)
+
+        # Build the dialogue text with speaker labels
+        dialogue_lines = []
+        for speaker, text in dialogue:
+            # Convert kanji to hiragana for each dialogue line
+            hiragana_text = self._kanji_to_hiragana(text)
+            dialogue_lines.append(f"{speaker}: {hiragana_text}")
+
+        dialogue_text = "\n".join(dialogue_lines)
+        print(f"Generating multi-speaker TTS for dialogue:\n{dialogue_text}")
+
+        # Configure speaker voice configs
+        speaker_voice_configs = []
+        for speaker_name, voice_name in speaker_cfg.items():
+            speaker_voice_configs.append(
+                types.SpeakerVoiceConfig(
+                    speaker=speaker_name,
+                    voice_config=types.VoiceConfig(
+                        prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                            voice_name=voice_name
+                        )
+                    ),
+                )
+            )
+
+        # Generate audio using Gemini TTS with multi-speaker config
+        contents = [
+            types.Content(
+                role="user",
+                parts=[
+                    types.Part.from_text(text=dialogue_text),
+                ],
+            ),
+        ]
+        generate_content_config = types.GenerateContentConfig(
+            temperature=1,
+            response_modalities=[
+                "audio",
+            ],
+            speech_config=types.SpeechConfig(
+                multi_speaker_voice_config=types.MultiSpeakerVoiceConfig(
+                    speaker_voice_configs=speaker_voice_configs
                 )
             ),
         )
@@ -289,7 +406,28 @@ class TTS:
 
 if __name__ == "__main__":
     tts = TTS()
+
+    # Test single speaker generation
+    print("Testing single speaker TTS...")
     tts.generate(
         'Say the following, as an pronunciation example: "今日, 今日"',
         Path("sample.aac"),
     )
+
+    # Test multi-speaker dialogue generation
+    print("\nTesting multi-speaker dialogue TTS...")
+    tts.generate_dialogue(
+        speaker_cfg={
+            "Student": "Puck",
+            "Teacher": "Zephyr",
+        },
+        dialogue=[
+            ("Student", "おはようございます、先生"),
+            ("Teacher", "おはよう。今日は元気ですか？"),
+            ("Student", "はい、元気です。ありがとうございます"),
+            ("Teacher", "それは良かったです。勉強を始めましょう"),
+        ],
+        output=Path("dialogue.aac"),
+    )
+
+    print("\nGenerated files: sample.aac, dialogue.aac")

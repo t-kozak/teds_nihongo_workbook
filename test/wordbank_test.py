@@ -25,7 +25,6 @@ def sample_word_details():
         examples=["猫が好きです。", "猫は可愛いです。"],
         description="A common domestic pet animal",
         image_description="A cute cat sitting on a windowsill",
-        image_file="",
     )
 
 
@@ -39,7 +38,6 @@ def another_word_details():
         examples=["犬を飼っています。", "犬が走っています。"],
         description="A common domestic pet animal, loyal companion",
         image_description="A friendly dog playing in a park",
-        image_file="",
     )
 
 
@@ -117,7 +115,6 @@ def test_upsert_update_existing_word(temp_wordbank, sample_word_details):
         examples=["新しい例文です。"],
         description="Updated description",
         image_description="Updated image description",
-        image_file="new-uuid",
     )
     temp_wordbank.upsert(updated_details)
 
@@ -213,7 +210,6 @@ def test_multiple_meanings_same_word(temp_wordbank):
         examples=["I run every morning."],
         description="To move swiftly on foot",
         image_description="A person running",
-        image_file="",
     )
 
     # Add "run" as a noun
@@ -224,7 +220,6 @@ def test_multiple_meanings_same_word(temp_wordbank):
         examples=["He scored a run."],
         description="A point in cricket",
         image_description="A cricket player scoring",
-        image_file="",
     )
 
     temp_wordbank.upsert(run_verb)
@@ -260,7 +255,6 @@ def test_special_characters_in_words(temp_wordbank):
         examples=["Je suis content d'être ici."],
         description="French verb meaning to be",
         image_description="A person existing",
-        image_file="",
     )
 
     temp_wordbank.upsert(special_word)
@@ -287,7 +281,6 @@ def test_cache_consistency(temp_wordbank, sample_word_details):
         examples=["新しい例文。"],
         description="Updated",
         image_description="Updated",
-        image_file="uuid",
     )
     temp_wordbank.upsert(updated)
 

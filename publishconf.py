@@ -11,6 +11,9 @@ from pelicanconf import *
 SITEURL = "https://world.teds-stuff.xyz/teds_nihongo_workbook"
 RELATIVE_URLS = False
 
+# Production mode - enable full word propagation with image/audio generation
+WORDBANK_DEV_MODE = False
+
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 

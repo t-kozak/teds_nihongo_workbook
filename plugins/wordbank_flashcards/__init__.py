@@ -18,16 +18,17 @@ _processor = None
 _current_siteurl = None
 
 
-def get_processor(siteurl: str = ""):
+def get_processor(siteurl: str = "", dev_mode: bool = False):
     """Get or create the global WordbankProcessor instance.
 
     Args:
         siteurl: The SITEURL from Pelican settings
+        dev_mode: If True, skip word propagation and only use cached data
     """
     global _processor, _current_siteurl
-    # Recreate processor if SITEURL has changed
+    # Recreate processor if SITEURL has changed or dev_mode settings changed
     if _processor is None or _current_siteurl != siteurl:
-        _processor = WordbankProcessor(siteurl)
+        _processor = WordbankProcessor(siteurl, dev_mode)
         _current_siteurl = siteurl
     return _processor
 
@@ -52,13 +53,15 @@ def process_wordbank_content(content):
     if not hasattr(content, '_content'):
         return
 
-    # Get SITEURL from settings
+    # Get SITEURL and dev_mode from settings
     siteurl = ""
+    dev_mode = False
     if hasattr(content, 'settings'):
         siteurl = content.settings.get('SITEURL', '')
+        dev_mode = content.settings.get('WORDBANK_DEV_MODE', False)
 
-    # Get the processor with the correct SITEURL
-    processor = get_processor(siteurl)
+    # Get the processor with the correct SITEURL and dev_mode
+    processor = get_processor(siteurl, dev_mode)
 
     # Process the content
     try:

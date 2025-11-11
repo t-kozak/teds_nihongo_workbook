@@ -6,8 +6,7 @@ from pathlib import Path
 
 import fugashi
 from ffmpeg import FFmpeg
-from google import genai  # type: ignore
-from google.genai import types
+from google.genai import Client, types
 
 from tools import load_google_api_key
 
@@ -15,7 +14,7 @@ from tools import load_google_api_key
 class TTS:
     def __init__(self, model: str | None = None) -> None:
         self.model = model or "gemini-2.5-flash-preview-tts"
-        self.client = genai.Client(
+        self.client = Client(
             api_key=load_google_api_key(),
         )
         self.tagger = fugashi.Tagger()  # type: ignore
@@ -288,4 +287,7 @@ class TTS:
 
 if __name__ == "__main__":
     tts = TTS()
-    tts.generate("今日", Path("output.aac"))
+    tts.generate(
+        'Say the following, as an pronunciation example: "今日, 今日"',
+        Path("sample.aac"),
+    )

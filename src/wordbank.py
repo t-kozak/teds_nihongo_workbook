@@ -1,5 +1,5 @@
+import hashlib
 import json
-import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -9,7 +9,11 @@ from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.providers.google import GoogleProvider
 
 from tools import load_google_api_key
+from tti import TTI
 from tts import TTS
+
+IMG_FORMAT = "jpg"
+AUDIO_FORMAT = "aac"
 
 
 @dataclass
@@ -20,41 +24,21 @@ class WordbankWordDetails:
     examples: list[str]
     description: str
     image_description: str
-    image_file: str | None = None
-    audio_file: str | None = None
 
+    @property
+    def hash(self):
+        # Create MD5 hash from word + translation, truncated to 12 characters
+        # This gives us an ASCII-safe unique identifier for filenames
+        combined = f"{self.word}:{self.en_translation}"
+        return hashlib.md5(combined.encode("utf-8")).hexdigest()[:12]
 
-# Prompt template for generating flashcard details
-FLASHCARD_GENERATION_PROMPT = """You are creating flashcard materials for language learners.
+    @property
+    def image_file(self) -> str:
+        return f"{self.hash}.{IMG_FORMAT}"
 
-Given the following information about a word:
-- Language: Japanese
-- Word: {word}
-- English translation: {en_translation}
-- Context/Description: {description}
-
-Generate complete flashcard details with the following requirements:
-
-1. **Description**: The meaning focuses on the specific sense indicated by the English translation and context. If the provided description is insufficient or unclear, expand it to be more complete and helpful for learners. The description should clearly explain this particular meaning of the word.
-
-2. **Examples**: Generate 2-3 natural example sentences that demonstrate how this word is used in this specific meaning. The examples should:
-   - Be realistic and practical for learners
-   - Show the word in different contexts
-   - Be at an appropriate difficulty level for intermediate learners
-   - Use the word in its original language (not translated)
-
-3. **Image Description**: Create a description of a scene that would help learners memorize this specific meaning of the word. This description will be used to generate an image using AI image diffusion systems. The description should:
-   - Focus on the essence and meaning rather than artistic style
-   - Describe a clear, memorable scene that represents the concept
-   - Be concrete and visual
-   - Help distinguish this meaning from other meanings of the word
-   - Be detailed enough for image generation (2-4 sentences)
-   - Avoid style instructions (like "photorealistic" or "cartoon") - focus only on content
-   - If the word is noun, minimise the amount of other objects in the description not to dillute the message
-
-Remember: This is for a flashcard learning system. The word + English translation + description together represent ONE specific meaning, not all possible meanings of the word.
-
-Provide the complete details as a structured response."""
+    @property
+    def audio_file(self) -> str:
+        return f"{self.hash}.{AUDIO_FORMAT}"
 
 
 def _create_default_agent() -> marvin.Agent:
@@ -97,6 +81,7 @@ class WordBank:
         self.agent = agent if agent is not None else _create_default_agent()
         self.imagen = genai.Client(api_key=load_google_api_key())
         self.tts = TTS()
+        self.tti = TTI()
         self._cache: dict[tuple[str, str], WordbankWordDetails] | None = None
 
     def get_all(self) -> list["WordbankWordDetails"]:
@@ -228,13 +213,12 @@ class WordBank:
             details: The word details to generate an image for
         """
         # Determine the file name
-        file_name = re.sub(r"[^a-zA-Z0-9]", "_", details.en_translation) + ".jpg"
         output_file = (
             Path(__file__).parent.parent.absolute()
             / "content"
             / "images"
             / "wordbank"
-            / file_name
+            / details.image_file
         )
 
         # Check if image already exists
@@ -244,36 +228,8 @@ class WordBank:
 
         # Generate new image
         print(f"Generating new image for '{details.word}'")
-        prompt = f"""
-You are used to generate images for flash cards used to learn new words in foreign languages.
-Use a simple, infographic visual style. Do not include any additional text, labels, unless 
-explicitly requested in the image description.
-
-Generate the following flashcard image:
-{details.image_description}
-
-"""
-        result = self.imagen.models.generate_images(
-            model="models/imagen-4.0-generate-001",
-            prompt=prompt,
-            config=dict(
-                number_of_images=1,
-                output_mime_type="image/jpeg",
-                aspect_ratio="1:1",
-                image_size="1K",
-            ),
-        )
-
-        if not result.generated_images:
-            print("No images generated.")
-            return
-
-        if len(result.generated_images) != 1:
-            print("Number of images generated does not match the requested number.")
-
-        details.image_file = file_name
-        for n, generated_image in enumerate(result.generated_images):
-            generated_image.image.save(output_file)
+        prompt = IMG_GEN_PROMPT.format(word_descr=details.image_description)
+        self.tti.generate(prompt, output_file)
 
     def _generate_audio(self, details: WordbankWordDetails):
         """
@@ -286,13 +242,12 @@ Generate the following flashcard image:
             details: The word details to generate audio for
         """
         # Determine the file name
-        file_name = re.sub(r"[^a-zA-Z0-9]", "_", details.en_translation) + ".aac"
         output_file = (
             Path(__file__).parent.parent.absolute()
             / "content"
             / "audio"
             / "wordbank"
-            / file_name
+            / details.audio_file
         )
 
         # Check if audio already exists
@@ -308,10 +263,13 @@ Generate the following flashcard image:
 
         try:
             # Generate audio using TTS
-            self.tts.generate(details.word, output_file)
+            prompt = AUDIO_GEN_PROMPT.format(
+                word=details.word, example=details.examples[0]
+            )
+            self.tts.generate(prompt, output_file)
 
             # Update the details with the audio file name
-            details.audio_file = file_name
+
         except Exception as e:
             # Handle TTS generation errors gracefully (e.g., preview API limitations)
             print(f"Warning: Failed to generate audio for '{details.word}': {e}")
@@ -351,13 +309,56 @@ Generate the following flashcard image:
                 f.write("\n")
 
 
-def main():
+# Prompt template for generating flashcard details
+FLASHCARD_GENERATION_PROMPT = """You are creating flashcard materials for language learners.
+
+Given the following information about a word:
+- Language: Japanese
+- Word: {word}
+- English translation: {en_translation}
+- Context/Description: {description}
+
+Generate complete flashcard details with the following requirements:
+
+1. **Description**: The meaning focuses on the specific sense indicated by the English translation and context. If the provided description is insufficient or unclear, expand it to be more complete and helpful for learners. The description should clearly explain this particular meaning of the word.
+
+2. **Examples**: Generate 2-3 natural example sentences that demonstrate how this word is used in this specific meaning. The examples should:
+   - Be realistic and practical for learners
+   - Show the word in different contexts
+   - Be at an appropriate difficulty level for intermediate learners
+   - Use the word in its original language (not translated)
+
+3. **Image Description**: Create a description of a scene that would help learners memorize this specific meaning of the word. This description will be used to generate an image using AI image diffusion systems. The description should:
+   - Focus on the essence and meaning rather than artistic style
+   - Describe a clear, memorable scene that represents the concept
+   - Be concrete and visual
+   - Help distinguish this meaning from other meanings of the word
+   - Be detailed enough for image generation (2-4 sentences)
+   - Avoid style instructions (like "photorealistic" or "cartoon") - focus only on content
+   - If the word is noun, minimise the amount of other objects in the description not to dillute the message
+
+Remember: This is for a flashcard learning system. The word + English translation + description together represent ONE specific meaning, not all possible meanings of the word.
+
+Provide the complete details as a structured response."""
+
+
+IMG_GEN_PROMPT = """{word_descr}
+Generate the image as a colourful illustration, with minimal amount of details. 
+
+Make sure that all of the image area is illustrated, that there is no white background.
+
+Make sure that the image is perfect 1:1 aspect ratio and fills the square completely, without any 
+gaps for corner radius or padding.
+"""
+
+AUDIO_GEN_PROMPT = (
+    'Say the following, as an pronunciation example: "{word}, {word}. {example}"'
+)
+
+
+if __name__ == "__main__":
     temp_wordbank = WordBank(data_path="./test_data.jsonl")
     temp_wordbank.propagate("猫", "cat", "The common household pet - a cat")
 
     for itm in temp_wordbank.get_all():
         print(itm)
-
-
-if __name__ == "__main__":
-    main()

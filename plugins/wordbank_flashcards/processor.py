@@ -6,6 +6,7 @@ and generation of interactive HTML flashcards.
 """
 
 import re
+from pathlib import Path
 
 from tqdm import tqdm
 
@@ -26,14 +27,16 @@ class WordbankProcessor:
         r"^\s*-\s*(.+?):\s*(.+?)\s*\((.+?)\)\s*$", re.MULTILINE
     )
 
-    def __init__(self, siteurl: str = ""):
+    def __init__(self, siteurl: str = "", dev_mode: bool = False):
         """Initialize the processor with a WordBank instance.
 
         Args:
             siteurl: The SITEURL from Pelican settings for generating correct paths
+            dev_mode: If True, skip word propagation and only generate HTML from cache
         """
         self.wordbank = WordBank()
         self.siteurl = siteurl
+        self.dev_mode = dev_mode
         # Cache to store propagated words during first pass
         self._propagated_cache = {}
 
@@ -95,10 +98,25 @@ class WordbankProcessor:
                 results.append(self._propagated_cache[cache_key])
                 continue
 
-            # Propagate the word (this handles caching internally)
-            details = self.wordbank.propagate(
-                japanese_word, english_translation, context
-            )
+            # In dev mode, only fetch from cache without propagating
+            if self.dev_mode:
+                details = self.wordbank.get(japanese_word, english_translation)
+                if details is None:
+                    # Word not in cache - skip image/audio generation in dev mode
+                    # Create minimal details object for HTML generation
+                    details = WordbankWordDetails(
+                        word=japanese_word,
+                        en_translation=english_translation,
+                        language_code="ja",  # Default to Japanese
+                        examples=[],
+                        description=context,
+                        image_description="",  # Empty in dev mode
+                    )
+            else:
+                # Production mode: Propagate the word (generates images/audio)
+                details = self.wordbank.propagate(
+                    japanese_word, english_translation, context
+                )
 
             # Cache the result
             self._propagated_cache[cache_key] = details
@@ -114,24 +132,35 @@ class WordbankProcessor:
             details: The word details
 
         Returns:
-            HTML string for the flashcard
+            HTML string for the flashcard, or empty string if image file doesn't exist
         """
-        # Determine image path
+        # Check if image file exists - skip flashcard if not
         if details.image_file:
+            image_file_path = (
+                Path(__file__).parent.parent.parent / "content" / "images" / "wordbank" / details.image_file
+            )
+            if not image_file_path.exists():
+                print(f"Warning: Skipping flashcard for '{details.word}' - image file not found: {details.image_file}")
+                return ""
             image_path = f"{self.siteurl}/images/wordbank/{details.image_file}"
         else:
-            # Fallback to a placeholder or empty image
-            image_path = f"{self.siteurl}/images/wordbank/placeholder.jpg"
+            # No image file specified - skip this flashcard
+            print(f"Warning: Skipping flashcard for '{details.word}' - no image file specified")
+            return ""
 
         # Escape HTML special characters
         word_escaped = self._escape_html(details.word)
         en_translation_escaped = self._escape_html(details.en_translation)
 
-        # Generate audio button HTML if audio file exists
+        # Generate audio button HTML only if audio file exists on disk
         audio_button = ""
         if details.audio_file:
-            audio_path = f"{self.siteurl}/audio/wordbank/{details.audio_file}"
-            audio_button = f"""<audio class="flashcard-audio" style="display: none;">
+            audio_file_path = (
+                Path(__file__).parent.parent.parent / "content" / "audio" / "wordbank" / details.audio_file
+            )
+            if audio_file_path.exists():
+                audio_path = f"{self.siteurl}/audio/wordbank/{details.audio_file}"
+                audio_button = f"""<audio class="flashcard-audio" style="display: none;">
             <source src="{audio_path}" type="audio/aac">
             Your browser does not support the audio element.
         </audio>
@@ -141,6 +170,8 @@ class WordbankProcessor:
                 <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77 0-4.28-2.99-7.86-7-8.77z"></path>
             </svg>
         </button>"""
+            else:
+                print(f"Warning: Audio file not found for '{details.word}' - skipping audio button: {details.audio_file}")
 
         # Generate example sentences HTML
         examples_html = ""
@@ -178,10 +209,12 @@ class WordbankProcessor:
         Returns:
             Complete HTML section with container, cards, CSS, and JavaScript
         """
-        # Generate individual flashcards
+        # Generate individual flashcards, filtering out empty ones (missing images)
         cards_html = ""
         for details in word_details_list:
-            cards_html += self.generate_flashcard_html(details)
+            card_html = self.generate_flashcard_html(details)
+            if card_html:  # Only add non-empty flashcards
+                cards_html += card_html
 
         # Complete HTML with container
         complete_html = f"""

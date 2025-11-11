@@ -10,10 +10,12 @@ from google.genai import Client, types
 
 from tools import load_google_api_key
 
+_DEFAULT_MODEL = "gemini-2.5-flash-preview-tts"
+
 
 class TTS:
     def __init__(self, model: str | None = None) -> None:
-        self.model = model or "gemini-2.5-flash-preview-tts"
+        self.model = model or _DEFAULT_MODEL
         self.client = Client(
             api_key=load_google_api_key(),
         )

@@ -5,10 +5,13 @@ from google.genai.types import GenerateImagesConfig
 
 from tools import load_google_api_key
 
+_DEFAULT_MODEL = "models/imagen-4.0-generate-001"
+
 
 class TTI:
     def __init__(self):
         self.imagen = Client(api_key=load_google_api_key())
+        self.model = _DEFAULT_MODEL
 
     def generate(self, prompt: str, output_file: Path | str):
         """
@@ -33,7 +36,7 @@ class TTI:
         print(f"Generating new image for '{prompt}'")
 
         result = self.imagen.models.generate_images(
-            model="models/imagen-4.0-generate-001",
+            model=self.model,
             prompt=prompt,
             config=GenerateImagesConfig(
                 number_of_images=1,

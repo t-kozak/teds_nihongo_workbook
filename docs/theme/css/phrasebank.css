@@ -1,0 +1,128 @@
+/**
+ * Phrasebank Styles
+ * Card-based layout for Japanese phrases with translations
+ */
+
+/* Container for the phrase list */
+.phrase-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+/* Individual phrase card */
+.phrase-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.phrase-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Japanese text container */
+.phrase-japanese {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.phrase-japanese p {
+    margin: 0;
+}
+
+/* Fix ruby baseline alignment */
+.phrase-japanese ruby {
+    vertical-align: text-bottom;
+}
+
+.phrase-japanese rt {
+    line-height: 1.2;
+}
+
+/* Audio icon inline with Japanese text */
+.phrase-japanese .audio-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* English translation */
+.phrase-translation {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.phrase-translation p {
+    margin: 0;
+}
+
+/* Context/description text */
+.phrase-context {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.phrase-context p {
+    margin: 0;
+}
+
+/* Responsive layout for tablets and smaller */
+@media (max-width: 768px) {
+    .phrase-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .phrase-card {
+        padding: 1.25rem;
+    }
+
+    .phrase-japanese {
+        font-size: 1.3rem;
+    }
+
+    .phrase-translation {
+        font-size: 1rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .phrase-list {
+        gap: 0.75rem;
+        margin: 1rem 0;
+    }
+
+    .phrase-card {
+        padding: 1rem;
+    }
+
+    .phrase-japanese {
+        font-size: 1.2rem;
+    }
+
+    .phrase-translation {
+        font-size: 0.95rem;
+    }
+
+    .phrase-context {
+        font-size: 0.85rem;
+    }
+}

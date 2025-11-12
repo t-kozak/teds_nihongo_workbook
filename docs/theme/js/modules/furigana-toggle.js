@@ -50,6 +50,8 @@ export function initFuriganaToggle() {
         return;
     }
 
+    let commandKeyPressed = false;
+
     /**
      * Handle toggle change event
      */
@@ -59,6 +61,36 @@ export function initFuriganaToggle() {
         savePreference(visible);
     }
 
+    /**
+     * Handle keyboard events for Command key press/hold
+     */
+    function handleKeyDown(event) {
+        // Check for Command key (metaKey on Mac) or Ctrl key on other platforms
+        if ((event.metaKey || event.ctrlKey) && !commandKeyPressed) {
+            commandKeyPressed = true;
+            content.classList.remove('hide-furigana');
+        }
+    }
+
+    function handleKeyUp(event) {
+        // Check if Command/Ctrl key was released
+        if (!event.metaKey && !event.ctrlKey && commandKeyPressed) {
+            commandKeyPressed = false;
+            // Restore the state based on the toggle
+            applyFuriganaState(toggle.checked, content);
+        }
+    }
+
+    /**
+     * Handle window blur to reset command key state
+     */
+    function handleBlur() {
+        if (commandKeyPressed) {
+            commandKeyPressed = false;
+            applyFuriganaState(toggle.checked, content);
+        }
+    }
+
     // Initialize: Load saved preference and apply it
     const savedPreference = loadPreference();
     toggle.checked = savedPreference;
@@ -66,4 +98,9 @@ export function initFuriganaToggle() {
 
     // Listen for changes
     toggle.addEventListener('change', handleToggleChange);
+
+    // Listen for Command/Ctrl key press and hold
+    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener('keyup', handleKeyUp);
+    window.addEventListener('blur', handleBlur);
 }

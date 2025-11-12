@@ -34,125 +34,36 @@ When reporting issues, use the particle が (ga) to mark the subject that has th
 
 # Useful Phrases
 
-## Making Reservations
-
-1. <tts>予約をお願いします</tts> _(I'd like to make a reservation)_
-   
-   Basic phrase to initiate a reservation
-
-2. <tts>二泊三日で予約したいのですが</tts> _(I'd like to make a reservation for two nights, three days)_
-   
-   Specifying the length of stay (two nights is the standard way to express a three-day trip)
-
-3. <tts>シングルルームを一室お願いします</tts> _(One single room, please)_
-   
-   Requesting a specific room type
-
-4. <tts>朝食付きのプランはありますか</tts> _(Do you have a plan that includes breakfast?)_
-   
-   Asking about meal options
-
-5. <tts>予約の変更をお願いしたいのですが</tts> _(I'd like to change my reservation)_
-   
-   Initiating a reservation modification
-
-6. <tts>チェックイン日を一日遅らせることはできますか</tts> _(Is it possible to delay the check-in date by one day?)_
-   
-   Requesting a date change
-
-7. <tts>予約をキャンセルしたいのですが</tts> _(I'd like to cancel my reservation)_
-   
-   Canceling a reservation
-
-## Check-in and Check-out
-
-8. <tts>チェックインをお願いします</tts> _(I'd like to check in, please)_
-   
-     Starting the check-in process
-
-9. <tts>田中という名前で予約しています</tts> _(I have a reservation under the name Tanaka)_
-   
-     Providing your reservation name
-
-10. <tts>パスポートが必要ですか</tts> _(Do you need my passport?)_
-    
-      Asking about required documentation
-
-11. <tts>WiFiのパスワードを教えていただけますか</tts> _(Could you tell me the WiFi password?)_
-    
-      Essential for modern travelers
-
-12. <tts>朝食は何時から何時までですか</tts> _(What time is breakfast served?)_
-    
-      Asking about meal times
-
-13. <tts>チェックアウトは何時ですか</tts> _(What time is checkout?)_
-    
-      Confirming checkout time
-
-14. <tts>チェックアウトを延長することはできますか</tts> _(Is it possible to extend checkout?)_
-    
-      Requesting a late checkout
-
-15. <tts>荷物を預かっていただけますか</tts> _(Could you hold my luggage?)_
-    
-      Requesting luggage storage
-
-## Reporting Issues
-
-16. <tts>部屋に問題があります</tts> _(There's a problem with my room)_
-    
-      General statement about room issues
-
-17. <tts>エアコンが動きません</tts> _(The air conditioner isn't working)_
-    
-      Reporting a broken AC
-
-18. <tts>お湯が出ません</tts> _(Hot water isn't coming out)_
-    
-      Common plumbing issue
-
-19. <tts>WiFiに繋がりません</tts> _(I can't connect to the WiFi)_
-    
-      Internet connectivity problem
-
-20. <tts>隣の部屋がうるさいです</tts> _(The room next door is noisy)_
-    
-      Noise complaint
-
-21. <tts>部屋を変えていただけますか</tts> _(Could you change my room?)_
-    
-      Requesting a room change
-
-22. <tts>タオルが足りません</tts> _(There aren't enough towels)_
-    
-      Requesting additional amenities
-
-## Asking for Help and Recommendations
-
-23. <tts>タクシーを呼んでいただけますか</tts> _(Could you call a taxi for me?)_
-    
-      Essential phrase for transportation
-
-24. <tts>駅までの行き方を教えていただけますか</tts> _(Could you tell me how to get to the station?)_
-    
-      Asking for directions
-
-25. <tts>この住所まで行きたいのですが</tts> _(I'd like to go to this address)_
-    
-      Showing an address and requesting help
-
-26. <tts>近くのおすすめのレストランはありますか</tts> _(Are there any recommended restaurants nearby?)_
-    
-      Asking for dining recommendations
-
-27. <tts>地図をいただけますか</tts> _(Could I have a map?)_
-    
-      Requesting a local map
-
-28. <tts>観光案内所はどこですか</tts> _(Where is the tourist information center?)_
-    
-      Finding tourist resources
+<phrasebank>
+- 予約をお願いします: I'd like to make a reservation (Basic phrase to initiate a reservation)
+- 二泊三日で予約したいのですが: I'd like to make a reservation for two nights, three days (Specifying the length of stay)
+- シングルルームを一室お願いします: One single room, please (Requesting a specific room type)
+- 朝食付きのプランはありますか: Do you have a plan that includes breakfast? (Asking about meal options)
+- 予約の変更をお願いしたいのですが: I'd like to change my reservation (Initiating a reservation modification)
+- チェックイン日を一日遅らせることはできますか: Is it possible to delay the check-in date by one day? (Requesting a date change)
+- 予約をキャンセルしたいのですが: I'd like to cancel my reservation (Canceling a reservation)
+- チェックインをお願いします: I'd like to check in, please (Starting the check-in process)
+- 田中という名前で予約しています: I have a reservation under the name Tanaka (Providing your reservation name)
+- パスポートが必要ですか: Do you need my passport? (Asking about required documentation)
+- WiFiのパスワードを教えていただけますか: Could you tell me the WiFi password? (Essential for modern travelers)
+- 朝食は何時から何時までですか: What time is breakfast served? (Asking about meal times)
+- チェックアウトは何時ですか: What time is checkout? (Confirming checkout time)
+- チェックアウトを延長することはできますか: Is it possible to extend checkout? (Requesting a late checkout)
+- 荷物を預かっていただけますか: Could you hold my luggage? (Requesting luggage storage)
+- 部屋に問題があります: There's a problem with my room (General statement about room issues)
+- エアコンが動きません: The air conditioner isn't working (Reporting a broken AC)
+- お湯が出ません: Hot water isn't coming out (Common plumbing issue)
+- WiFiに繋がりません: I can't connect to the WiFi (Internet connectivity problem)
+- 隣の部屋がうるさいです: The room next door is noisy (Noise complaint)
+- 部屋を変えていただけますか: Could you change my room? (Requesting a room change)
+- タオルが足りません: There aren't enough towels (Requesting additional amenities)
+- タクシーを呼んでいただけますか: Could you call a taxi for me? (Essential phrase for transportation)
+- 駅までの行き方を教えていただけますか: Could you tell me how to get to the station? (Asking for directions)
+- この住所まで行きたいのですが: I'd like to go to this address (Showing an address and requesting help)
+- 近くのおすすめのレストランはありますか: Are there any recommended restaurants nearby? (Asking for dining recommendations)
+- 地図をいただけますか: Could I have a map? (Requesting a local map)
+- 観光案内所はどこですか: Where is the tourist information center? (Finding tourist resources)
+</phrasebank>
 
 # Dialogues
 

@@ -24,7 +24,14 @@ rt {
 
 /* Hide furigana when toggle is unchecked */
 .hide-furigana rt {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Show furigana with smooth transition */
+rt {
+    opacity: 1;
+    transition: opacity 0.2s ease;
 }
 
 /* Furigana controls styling */

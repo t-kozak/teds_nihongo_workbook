@@ -21,13 +21,15 @@ Generate the following sections:
    section explaining those concepts. Use a mixture of English and Japanese where appropriate
 
 3. Useful Phrases
-   Provide a list of example phrases relevant to the lesson content. Each phrase should follow this format:
+   Provide a list of example phrases relevant to the lesson content using the phrasebank plugin format:
    ```
-   1. <tts>${The phrase in Japanese}</tts> _(${English translation})_
-      
-        ${any additional context or description, in English}
+   <phrasebank>
+   - ${phrase in Japanese}: ${English translation} (${additional context or description in English})
+   </phrasebank>
    ```
-   Important - whitespace matters here, as it follows the markdown convention.
+   Each phrase should be on its own line starting with a dash, with the Japanese phrase followed by a colon,
+   then the English translation, and finally contextual information in parentheses. The site generator will
+   render these as interactive widgets with text-to-speech functionality.
 
 4. Dialogues
    Include 1 or more dialogues relevant to the lesson subject. 

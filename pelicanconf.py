@@ -40,6 +40,7 @@ STATIC_PATHS = ["images", "audio"]
 # Plugins
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
+    "phrasebank",
     "tts_filter",
     "furigana",
     "wordbank_flashcards",

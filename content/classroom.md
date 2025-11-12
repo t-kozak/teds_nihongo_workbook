@@ -40,45 +40,18 @@ You can add **もう一度** (one more time) or **もっとゆっくり** (more 
 
 ## Useful Phrases
 
-1. <tts>これはどういう意味ですか。</tts> _(What does this mean?)_
-   
-     The most essential phrase for asking about word meanings.
-
-2. <tts>この漢字はどう読みますか。</tts> _(How do you read this kanji?)_
-   
-     Use this when you need help with kanji pronunciation.
-
-3. <tts>もう一度言ってください。</tts> _(Please say that one more time.)_
-   
-     A polite way to ask for repetition.
-
-4. <tts>もっとゆっくり話してください。</tts> _(Please speak more slowly.)_
-   
-     Essential when your tutor is speaking too quickly.
-
-5. <tts>例文を教えてください。</tts> _(Please give me an example sentence.)_
-   
-     Ask for context through example sentences.
-
-6. <tts>この言葉はどういう時に使いますか。</tts> _(When do you use this word?)_
-   
-     Learn about appropriate usage contexts.
-
-7. <tts>発音を確認してもいいですか。</tts> _(May I check the pronunciation?)_
-   
-     Politely ask to verify your pronunciation.
-
-8. <tts>これとこれの違いは何ですか。</tts> _(What's the difference between this and this?)_
-   
-     Compare similar words or concepts.
-
-9. <tts>もう少し説明してください。</tts> _(Please explain a bit more.)_
-   
-     When you need additional clarification.
-
-10. <tts>書いてもらえますか。</tts> _(Could you write it down for me?)_
-    
-     Helpful when you need to see the written form.
+<phrasebank>
+- これはどういう意味ですか。: What does this mean? (The most essential phrase for asking about word meanings)
+- この漢字はどう読みますか。: How do you read this kanji? (Use this when you need help with kanji pronunciation)
+- もう一度言ってください。: Please say that one more time. (A polite way to ask for repetition)
+- もっとゆっくり話してください。: Please speak more slowly. (Essential when your tutor is speaking too quickly)
+- 例文を教えてください。: Please give me an example sentence. (Ask for context through example sentences)
+- この言葉はどういう時に使いますか。: When do you use this word? (Learn about appropriate usage contexts)
+- 発音を確認してもいいですか。: May I check the pronunciation? (Politely ask to verify your pronunciation)
+- これとこれの違いは何ですか。: What's the difference between this and this? (Compare similar words or concepts)
+- もう少し説明してください。: Please explain a bit more. (When you need additional clarification)
+- 書いてもらえますか。: Could you write it down for me? (Helpful when you need to see the written form)
+</phrasebank>
 
 ## Dialogues
 

@@ -43,65 +43,23 @@ Restaurants typically use polite Japanese. Key polite forms include:
 
 # Useful Phrases
 
-1. <tts>予約をしたいのですが。</tts> _(I'd like to make a reservation.)_
-   
-    Use this when calling a restaurant to make a reservation.
-
-2. <tts>四人で今晩七時にお願いします。</tts> _(For four people at 7 PM tonight, please.)_
-   
-    Specify the number of people and time when making your reservation.
-
-3. <tts>予約の変更をお願いできますか。</tts> _(Could I change my reservation, please?)_
-   
-    Use this phrase when you need to modify an existing reservation.
-
-4. <tts>人数を三人に変更したいです。</tts> _(I'd like to change the number of people to three.)_
-   
-    Specify what you want to change about your reservation.
-
-5. <tts>これをください。</tts> _(This, please.)_
-   
-    The simplest way to order when pointing at a menu item or display.
-
-6. <tts>それは何ですか。</tts> _(What is that?)_
-   
-    Ask about a dish you see on another table or in the display case.
-
-7. <tts>おすすめは何ですか。</tts> _(What do you recommend?)_
-   
-    A useful phrase to get the server's suggestion.
-
-8. <tts>これは辛いですか。</tts> _(Is this spicy?)_
-   
-    Essential for those who are sensitive to spicy food.
-
-9. <tts>辛さは調整できますか。</tts> _(Can you adjust the spice level?)_
-   
-    Many restaurants can modify the spiciness level for you.
-
-10. <tts>辛くしないでください。</tts> _(Please don't make it spicy.)_
-    
-     Request a non-spicy version of a dish.
-
-11. <tts>少し辛くしてください。</tts> _(Please make it a little spicy.)_
-    
-     For those who want just a bit of heat.
-
-12. <tts>とても辛くしてください。</tts> _(Please make it very spicy.)_
-    
-     For spicy food lovers!
-
-13. <tts>お水をもう一杯いただけますか。</tts> _(Could I have another glass of water, please?)_
-    
-     Request additional drinks during your meal.
-
-14. <tts>お会計お願いします。</tts> _(Check, please.)_
-    
-     Signal that you're ready to pay.
-
-15. <tts>別々でお願いします。</tts> _(Separate checks, please.)_
-    
-     Request to split the bill when dining with others.
+<phrasebank>
+- 予約をしたいのですが。: I'd like to make a reservation. (Use this when calling a restaurant to make a reservation)
+- 四人で今晩七時にお願いします。: For four people at 7 PM tonight, please. (Specify the number of people and time when making your reservation)
+- 予約の変更をお願いできますか。: Could I change my reservation, please? (Use this phrase when you need to modify an existing reservation)
+- 人数を三人に変更したいです。: I'd like to change the number of people to three. (Specify what you want to change about your reservation)
+- これをください。: This, please. (The simplest way to order when pointing at a menu item or display)
+- それは何ですか。: What is that? (Ask about a dish you see on another table or in the display case)
+- おすすめは何ですか。: What do you recommend? (A useful phrase to get the server's suggestion)
+- これは辛いですか。: Is this spicy? (Essential for those who are sensitive to spicy food)
+- 辛さは調整できますか。: Can you adjust the spice level? (Many restaurants can modify the spiciness level for you)
+- 辛くしないでください。: Please don't make it spicy. (Request a non-spicy version of a dish)
+- 少し辛くしてください。: Please make it a little spicy. (For those who want just a bit of heat)
+- とても辛くしてください。: Please make it very spicy. (For spicy food lovers!)
+- お水をもう一杯いただけますか。: Could I have another glass of water, please? (Request additional drinks during your meal)
+- お会計お願いします。: Check, please. (Signal that you're ready to pay)
+- 別々でお願いします。: Separate checks, please. (Request to split the bill when dining with others)
+</phrasebank>
 
 # Dialogues
 

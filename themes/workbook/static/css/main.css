@@ -72,6 +72,14 @@ p { margin-top: 1em;
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
 
+/* Furigana (ruby annotations) - make readings non-selectable */
+ruby rt {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 /* Lists */
 ul {
     list-style: outside disc;

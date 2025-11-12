@@ -5,9 +5,11 @@
 
 import { initFuriganaToggle } from './modules/furigana-toggle.js';
 import { initFlashcards } from './modules/flashcards.js';
+import { initWordSpanTooltips } from './modules/wordspan.js';
 
 // Initialize all features when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     initFuriganaToggle();
     initFlashcards();
+    initWordSpanTooltips();
 });

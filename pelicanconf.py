@@ -41,9 +41,10 @@ STATIC_PATHS = ["images", "audio"]
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = [
     "phrasebank",
-    "tts_filter",
-    "furigana",
     "wordbank_flashcards",
+    "tts_filter",
+    "wordspan",  # Must run before furigana to preserve word boundaries
+    "furigana",
 ]
 
 # Content Generation Configuration

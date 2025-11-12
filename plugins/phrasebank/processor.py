@@ -67,7 +67,7 @@ class PhrasebankProcessor:
         self, phrase_jp: str, translation_en: str, context: str
     ) -> str:
         """
-        Generate HTML for a single phrase using definition list markup.
+        Generate HTML for a single phrase using card-based markup.
 
         Args:
             phrase_jp: The Japanese phrase
@@ -75,7 +75,7 @@ class PhrasebankProcessor:
             context: The context/description
 
         Returns:
-            HTML string for the phrase (dt + 2x dd)
+            HTML string for the phrase card
         """
         # Escape HTML special characters
         translation_escaped = self._escape_html(translation_en)
@@ -83,9 +83,11 @@ class PhrasebankProcessor:
 
         # Wrap Japanese phrase in <tts> tag for audio generation
         # Don't escape the phrase_jp since it will be processed by TTS plugin
-        html = f"""    <dt><tts>{phrase_jp}</tts></dt>
-    <dd class="translation">{translation_escaped}</dd>
-    <dd class="context">{context_escaped}</dd>
+        html = f"""    <div class="phrase-card">
+        <div class="phrase-japanese"><p><tts>{phrase_jp}</tts></p></div>
+        <div class="phrase-translation"><p>{translation_escaped}</p></div>
+        <div class="phrase-context"><p>{context_escaped}</p></div>
+    </div>
 """
 
         return html
@@ -100,7 +102,7 @@ class PhrasebankProcessor:
             phrases: List of (phrase_jp, translation_en, context) tuples
 
         Returns:
-            Complete HTML section with definition list
+            Complete HTML section with card-based grid layout
         """
         # Generate individual phrases
         phrases_html = ""
@@ -109,9 +111,9 @@ class PhrasebankProcessor:
                 phrase_jp, translation_en, context
             )
 
-        # Complete HTML with dl container
-        complete_html = f"""<dl class="phrase-list">
-{phrases_html}</dl>
+        # Complete HTML with div container for grid layout
+        complete_html = f"""<div class="phrase-list">
+{phrases_html}</div>
 """
 
         return complete_html

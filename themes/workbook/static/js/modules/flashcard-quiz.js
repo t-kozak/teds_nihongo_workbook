@@ -76,8 +76,8 @@ class FlashcardQuiz {
      * Get unmemorized words
      */
     getUnmemorizedWords() {
-        return this.allWords.filter(word => {
-            const count = this.progress[word.word] || 0;
+        return this.allWords.filter(item => {
+            const count = this.progress[item.id] || 0;
             return count < this.threshold;
         });
     }
@@ -86,8 +86,8 @@ class FlashcardQuiz {
      * Get memorized words count
      */
     getMemorizedCount() {
-        return this.allWords.filter(word => {
-            const count = this.progress[word.word] || 0;
+        return this.allWords.filter(item => {
+            const count = this.progress[item.id] || 0;
             return count >= this.threshold;
         }).length;
     }
@@ -103,32 +103,32 @@ class FlashcardQuiz {
         }
 
         // Weight by least practiced (lower count = higher probability)
-        const weighted = unmemorized.map(word => ({
-            word,
-            weight: this.threshold - (this.progress[word.word] || 0)
+        const weighted = unmemorized.map(item => ({
+            item,
+            weight: this.threshold - (this.progress[item.id] || 0)
         }));
 
         // Simple weighted random selection
-        const totalWeight = weighted.reduce((sum, item) => sum + item.weight, 0);
+        const totalWeight = weighted.reduce((sum, entry) => sum + entry.weight, 0);
         let random = Math.random() * totalWeight;
 
-        for (const item of weighted) {
-            random -= item.weight;
+        for (const entry of weighted) {
+            random -= entry.weight;
             if (random <= 0) {
-                return item.word;
+                return entry.item;
             }
         }
 
-        // Fallback to first word
+        // Fallback to first item
         return unmemorized[0];
     }
 
     /**
      * Record answer
      */
-    recordAnswer(word, correct) {
+    recordAnswer(itemId, correct) {
         if (correct) {
-            this.progress[word] = (this.progress[word] || 0) + 1;
+            this.progress[itemId] = (this.progress[itemId] || 0) + 1;
             this.saveProgress();
         }
         // Don't decrement on wrong answers to avoid frustration
@@ -136,18 +136,25 @@ class FlashcardQuiz {
 
     /**
      * Normalize text for comparison (handles both kanji and hiragana)
+     * Strips HTML tags and normalizes whitespace
      */
     normalizeText(text) {
-        return text.trim().toLowerCase().replace(/\s+/g, '');
+        // Strip HTML tags (from wordspan plugin)
+        const withoutHTML = text.replace(/<[^>]*>/g, '');
+        // Remove all whitespace and convert to lowercase
+        return withoutHTML.trim().toLowerCase().replace(/\s+/g, '');
     }
 
     /**
-     * Check if answer is correct
+     * Check if answer is correct (checks against all possible answers)
      */
-    checkAnswer(userInput, correctWord) {
+    checkAnswer(userInput, possibleAnswers) {
         const normalized = this.normalizeText(userInput);
-        const correctNormalized = this.normalizeText(correctWord);
-        return normalized === correctNormalized;
+        // Check if user input matches any of the possible answers
+        return possibleAnswers.some(answer => {
+            const answerNormalized = this.normalizeText(answer);
+            return normalized === answerNormalized;
+        });
     }
 
     /**
@@ -340,25 +347,25 @@ class QuizUI {
      * Display next word
      */
     nextWord() {
-        const word = this.quiz.selectNextWord();
+        const item = this.quiz.selectNextWord();
 
-        if (!word) {
+        if (!item) {
             // Quiz complete!
             this.showCompletion();
             return;
         }
 
-        this.quiz.currentWord = word;
+        this.quiz.currentWord = item;
         this.isAnimating = false;
 
         // Update image
         const img = this.overlay.querySelector('.quiz-card-image');
-        img.src = word.imageUrl;
-        img.alt = word.translation;
+        img.src = item.question.imageUrl;
+        img.alt = item.question.text;
 
         // Update translation overlay
         const translation = this.overlay.querySelector('.quiz-card-translation');
-        translation.textContent = word.translation;
+        translation.textContent = item.question.text;
 
         // Clear input
         this.inputElement.value = '';
@@ -385,10 +392,10 @@ class QuizUI {
         }
 
         const userInput = this.inputElement.value;
-        const correct = this.quiz.checkAnswer(userInput, this.quiz.currentWord.word);
+        const correct = this.quiz.checkAnswer(userInput, this.quiz.currentWord.answers);
 
         // Record answer
-        this.quiz.recordAnswer(this.quiz.currentWord.word, correct);
+        this.quiz.recordAnswer(this.quiz.currentWord.id, correct);
 
         // Show feedback
         this.showFeedback(correct);
@@ -413,7 +420,7 @@ class QuizUI {
                 this.nextWord();
             }, 1500);
         } else {
-            // Show incorrect feedback with correct answer and continue button
+            // Show incorrect feedback with all correct answers and continue button
             feedback.className = 'quiz-feedback incorrect show';
 
             const incorrectText = document.createElement('div');
@@ -422,9 +429,13 @@ class QuizUI {
 
             const correctAnswer = document.createElement('div');
             correctAnswer.className = 'quiz-correct-answer';
-            // Use wordWithFurigana if available (shows kanji with hiragana reading)
-            const answerText = this.quiz.currentWord.wordWithFurigana || this.quiz.currentWord.word;
-            correctAnswer.textContent = `Correct answer: ${answerText}`;
+            // Show all possible answers (strip HTML tags for display)
+            const answers = this.quiz.currentWord.answers.map(ans => ans.replace(/<[^>]*>/g, ''));
+            if (answers.length === 1) {
+                correctAnswer.textContent = `Correct answer: ${answers[0]}`;
+            } else {
+                correctAnswer.textContent = `Correct answers: ${answers.join(', ')}`;
+            }
             feedback.appendChild(correctAnswer);
 
             const continueBtn = document.createElement('button');
@@ -475,13 +486,21 @@ export function initFlashcardQuiz() {
         return;
     }
 
-    // Setup each quiz button (there may be multiple wordbank sections)
+    // Setup each quiz button (there may be multiple quiz sections)
     quizButtons.forEach(button => {
-        const section = button.closest('.wordbank-section');
-        if (!section) return;
+        // Get the quiz data ID from the button's data attribute
+        const quizDataId = button.dataset.quizDataId;
+        if (!quizDataId) {
+            console.error('Quiz button missing data-quiz-data-id attribute');
+            return;
+        }
 
-        const dataScript = section.querySelector('.wordbank-quiz-data');
-        if (!dataScript) return;
+        // Find the corresponding quiz data script by ID
+        const dataScript = document.getElementById(quizDataId);
+        if (!dataScript) {
+            console.error(`Quiz data script not found: ${quizDataId}`);
+            return;
+        }
 
         let quizData;
         try {

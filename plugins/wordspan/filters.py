@@ -82,16 +82,29 @@ def wrap_japanese_words(html_content):
     # Counter for unique word IDs across the entire content
     word_counter = {"count": 0}
 
+    # Track whether we're inside a <script> tag
+    inside_script = False
+
     processed_segments = []
     for segment in segments:
-        # If this is an HTML tag, preserve it as-is
+        # If this is an HTML tag, check if it's a script tag
         if html_tag_pattern.match(segment):
+            # Check for opening or closing script tags
+            if segment.lower().startswith('<script'):
+                inside_script = True
+            elif segment.lower() == '</script>':
+                inside_script = False
             processed_segments.append(segment)
         else:
-            # This is a text node - process it for word wrapping
-            processed_segments.append(
-                _process_text_for_wordspan(segment, tagger, word_counter, translations)
-            )
+            # This is a text node - only process if not inside script tag
+            if inside_script:
+                # Inside script tag - preserve as-is
+                processed_segments.append(segment)
+            else:
+                # Outside script tag - process it for word wrapping
+                processed_segments.append(
+                    _process_text_for_wordspan(segment, tagger, word_counter, translations)
+                )
 
     result = "".join(processed_segments)
     print(f"[wordspan] Wrapped {word_counter['count']} Japanese words")

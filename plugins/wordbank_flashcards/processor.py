@@ -8,6 +8,7 @@ and generation of interactive HTML flashcards.
 import re
 from pathlib import Path
 
+import fugashi
 from tqdm import tqdm
 
 from wordbank import WordBank, WordbankWordDetails
@@ -39,6 +40,8 @@ class WordbankProcessor:
         self.dev_mode = dev_mode
         # Cache to store propagated words during first pass
         self._propagated_cache = {}
+        # Initialize fugashi tagger for furigana generation
+        self.tagger = fugashi.Tagger()  # type: ignore
 
     def extract_wordbank_sections(
         self, content: str
@@ -209,15 +212,45 @@ class WordbankProcessor:
         """
         # Generate individual flashcards, filtering out empty ones (missing images)
         cards_html = ""
+        quiz_data = []
+
         for details in word_details_list:
             card_html = self.generate_flashcard_html(details)
             if card_html:  # Only add non-empty flashcards
                 cards_html += card_html
 
-        # Complete HTML with container
+                # Prepare quiz data for this word
+                image_url = f"{self.siteurl}/images/wordbank/{details.image_file}" if details.image_file else ""
+                audio_url = f"{self.siteurl}/audio/wordbank/{details.audio_file}" if details.audio_file else ""
+
+                # Generate furigana version for words with kanji
+                word_with_furigana = self._generate_furigana_text(details.word)
+
+                quiz_data.append({
+                    "word": self._escape_html(details.word),
+                    "wordWithFurigana": self._escape_html(word_with_furigana),
+                    "translation": self._escape_html(details.en_translation),
+                    "imageUrl": image_url,
+                    "audioUrl": audio_url
+                })
+
+        # Convert quiz data to JSON for the script tag
+        import json
+        quiz_data_json = json.dumps(quiz_data)
+
+        # Complete HTML with header, quiz button, container, and data script
         complete_html = f"""
-<div class="wordbank-container">
-    {cards_html}
+<div class="wordbank-section">
+    <div class="wordbank-header">
+        <h2>Wordbank</h2>
+        <button class="quiz-button" type="button">Quiz</button>
+    </div>
+    <div class="wordbank-container">
+        {cards_html}
+    </div>
+    <script type="application/json" class="wordbank-quiz-data">
+        {quiz_data_json}
+    </script>
 </div>
 """
 
@@ -252,6 +285,64 @@ class WordbankProcessor:
             content = content.replace(full_match, html)
 
         return content
+
+    def _generate_furigana_text(self, word: str) -> str:
+        """
+        Generate furigana text for a Japanese word.
+
+        If the word contains kanji, returns format: "kanji (hiragana)"
+        If no kanji, returns just the word.
+
+        Args:
+            word: Japanese word (may contain kanji, hiragana, katakana)
+
+        Returns:
+            Formatted string with furigana, e.g., "意味 (いみ)" or just "です"
+        """
+        # Check if word contains kanji
+        if not self._contains_kanji(word):
+            return word
+
+        # Parse with fugashi to get reading
+        words = self.tagger(word)
+
+        # Build the hiragana reading
+        hiragana_parts = []
+        for w in words:
+            # Get katakana reading and convert to hiragana
+            kana = w.feature.kana if hasattr(w.feature, "kana") else None
+            if kana:
+                hiragana = self._katakana_to_hiragana(kana)
+                hiragana_parts.append(hiragana)
+            else:
+                # Fallback to original if no reading available
+                hiragana_parts.append(w.surface)
+
+        hiragana_reading = "".join(hiragana_parts)
+
+        # Return formatted as "kanji (hiragana)"
+        return f"{word} ({hiragana_reading})"
+
+    @staticmethod
+    def _contains_kanji(text: str) -> bool:
+        """Check if text contains any kanji characters."""
+        kanji_pattern = re.compile(r"[\u4E00-\u9FFF\u3400-\u4DBF]")
+        return bool(kanji_pattern.search(text))
+
+    @staticmethod
+    def _katakana_to_hiragana(text: str) -> str:
+        """Convert katakana characters to hiragana."""
+        hiragana = []
+        for char in text:
+            code = ord(char)
+            # Katakana range: U+30A0 to U+30FF
+            # Hiragana range: U+3040 to U+309F
+            # Offset is 0x60 (96)
+            if 0x30A0 <= code <= 0x30FF:
+                hiragana.append(chr(code - 0x60))
+            else:
+                hiragana.append(char)
+        return "".join(hiragana)
 
     @staticmethod
     def _escape_html(text: str) -> str:

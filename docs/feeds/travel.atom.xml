@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ted's 日本語 Workbook - Travel</title><link href="http://localhost:8080/" rel="alternate"/><link href="http://localhost:8080/feeds/travel.atom.xml" rel="self"/><id>http://localhost:8080/</id><updated>2025-11-11T00:00:00+11:00</updated><entry><title>Hotel and Accommodation Interactions in Japanese</title><link href="http://localhost:8080/hotel-and-accommodation-interactions-in-japanese.html" rel="alternate"/><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><author><name>Ted K. via Claude</name></author><id>tag:localhost,2025-11-11:/hotel-and-accommodation-interactions-in-japanese.html</id><summary type="html">&lt;p&gt;Learn essential Japanese phrases and expressions for interacting at hotels, resorts, and traditional inns, including making reservations, checking in and out, reporting problems, and requesting assistance.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Context/Summary&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ted's 日本語 Workbook - Travel</title><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/" rel="alternate"/><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/feeds/travel.atom.xml" rel="self"/><id>https://world.teds-stuff.xyz/teds_nihongo_workbook/</id><updated>2025-11-11T00:00:00+11:00</updated><entry><title>Hotel and Accommodation Interactions in Japanese</title><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/hotel-and-accommodation-interactions-in-japanese.html" rel="alternate"/><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><author><name>Ted K. via Claude</name></author><id>tag:world.teds-stuff.xyz,2025-11-11:/teds_nihongo_workbook/hotel-and-accommodation-interactions-in-japanese.html</id><summary type="html">&lt;p&gt;Learn essential Japanese phrases and expressions for interacting at hotels, resorts, and traditional inns, including making reservations, checking in and out, reporting problems, and requesting assistance.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Context/Summary&lt;/h1&gt;
 &lt;p&gt;This lesson covers essential language for navigating accommodations in Japan, from modern hotels to traditional ryokan (Japanese inns). You'll learn how to make and modify reservations, handle check-in and check-out procedures, report issues with your room or services, and request assistance with transportation and local recommendations. These phrases are crucial for any traveler to Japan, as they'll help you communicate effectively with hotel staff and ensure a comfortable stay.&lt;/p&gt;
 &lt;h1&gt;Grammar Explanation&lt;/h1&gt;
 &lt;h2&gt;Polite Request Forms&lt;/h2&gt;
@@ -27,315 +27,324 @@
 &lt;li&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word"&gt;湯&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="answer|appear|go|go out|graduate|leave|outside"&gt;出ません&lt;/span&gt; (oyu ga demasen) - "Hot water isn't coming out"&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;Useful Phrases&lt;/h1&gt;
-&lt;p&gt;&lt;div class="phrase-list"&gt;
+&lt;p&gt;&lt;div class="phrasebank-section"&gt;
+    &lt;div class="phrasebank-header"&gt;
+        &lt;h2&gt;Phrasebank&lt;/h2&gt;
+        &lt;button class="quiz-button" type="button" data-quiz-data-id="quiz-data-6f4ca41e39cb"&gt;Quiz&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="phrase-list"&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/2f3d96a6287246c59ed4acd5ba211721.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/2f3d96a6287246c59ed4acd5ba211721.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to make a reservation&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Basic phrase to initiate a reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/dde892546e9d4eca8612066de7863e16.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/dde892546e9d4eca8612066de7863e16.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="two"&gt;二&lt;/span&gt;&lt;span class="jp-word" data-en-translation="put on|spit|sweep|vomit"&gt;泊&lt;/span&gt;&lt;span class="jp-word" data-en-translation="three"&gt;三&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;日&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約したい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to make a reservation for two nights, three days&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Specifying the length of stay&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/ee45216039fbed2b25fbff8ae07b104a.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ee45216039fbed2b25fbff8ae07b104a.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;シングル&lt;/span&gt;&lt;span class="jp-word"&gt;ルーム&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word"&gt;一室&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;One single room, please&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting a specific room type&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/ab34ebe90b156c1cdf30af40ed4632ff.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ab34ebe90b156c1cdf30af40ed4632ff.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="breakfast"&gt;朝食&lt;/span&gt;&lt;span class="jp-word" data-en-translation="fortune|luck|month|moon|thrust"&gt;付き&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;プラン&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be|exist|possible"&gt;あります&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Do you have a plan that includes breakfast?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Asking about meal options&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/acc9584062d1c2318f7c83c52a37a523.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/acc9584062d1c2318f7c83c52a37a523.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="alter|alteration|change|modification|modify"&gt;変更&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;したい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to change my reservation&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Initiating a reservation modification&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/3bf96ea55b6ac2ccf920e6a6623e04f3.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/3bf96ea55b6ac2ccf920e6a6623e04f3.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;チェック&lt;/span&gt;&lt;span class="jp-word" data-en-translation="in|inn"&gt;イン&lt;/span&gt;&lt;span class="jp-word" data-en-translation="catch|day|extinguish|fire|goes out|put out|set|shuttle|sun"&gt;日&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="one"&gt;一&lt;/span&gt;&lt;span class="jp-word"&gt;日&lt;/span&gt;&lt;span class="jp-word"&gt;遅らせる&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-ing|affair|event|incident|matter|thing|to"&gt;こと&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be able to|can|completed|finished"&gt;できます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Is it possible to delay the check-in date by one day?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting a date change&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/ec0787608c11367619b5e67990de7dc9.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ec0787608c11367619b5e67990de7dc9.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word"&gt;キャンセルしたい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to cancel my reservation&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Canceling a reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/63907d521d4a428b8839a0e3cafcd8d5.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/63907d521d4a428b8839a0e3cafcd8d5.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;チェック&lt;/span&gt;&lt;span class="jp-word" data-en-translation="in|inn"&gt;イン&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to check in, please&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Starting the check-in process&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/324a34ab3fc3d5498529d6f03bb0595f.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/324a34ab3fc3d5498529d6f03bb0595f.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;田中&lt;/span&gt;&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="say"&gt;いう&lt;/span&gt;&lt;span class="jp-word" data-en-translation="name"&gt;名前&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be|enter|needed|required|roast|shoot"&gt;います&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I have a reservation under the name Tanaka&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Providing your reservation name&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/e1e444c4458c139f9a60448bf29c88be.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/e1e444c4458c139f9a60448bf29c88be.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="passport"&gt;パスポート&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="necessity|need"&gt;必要&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Do you need my passport?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Asking about required documentation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/cdcde8207bc078c3abf64e7e03a4ca29.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/cdcde8207bc078c3abf64e7e03a4ca29.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;WiFi&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="password"&gt;パスワード&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="teach"&gt;教え&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could you tell me the WiFi password?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Essential for modern travelers&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/56121d262f322ba766db840ff1ea9abc.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/56121d262f322ba766db840ff1ea9abc.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="breakfast"&gt;朝食&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="time|what"&gt;何時&lt;/span&gt;&lt;span class="jp-word" data-en-translation="from"&gt;から&lt;/span&gt;&lt;span class="jp-word" data-en-translation="how many"&gt;何&lt;/span&gt;&lt;span class="jp-word" data-en-translation="o’clock"&gt;時&lt;/span&gt;&lt;span class="jp-word" data-en-translation="as far as|till|to|until|up to"&gt;まで&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;What time is breakfast served?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Asking about meal times&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/6446ebe53a27ea53eb6cae61e24209a1.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/6446ebe53a27ea53eb6cae61e24209a1.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;チェックアウト&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="time|what"&gt;何時&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;What time is checkout?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Confirming checkout time&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/a4330ee9c5527f0e745c8ce2ae0a0fb5.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/a4330ee9c5527f0e745c8ce2ae0a0fb5.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;チェックアウト&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="extend|extention|lengthen|lengthening|prolong|prolongment"&gt;延長する&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-ing|affair|event|incident|matter|thing|to"&gt;こと&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be able to|can|completed|finished"&gt;できます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Is it possible to extend checkout?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting a late checkout&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/af589b5076680e50754ff0e779129562.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/af589b5076680e50754ff0e779129562.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;荷物&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word"&gt;預かっ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could you hold my luggage?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting luggage storage&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/6f81a2c699b1d8be1aa8233a126db744.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/6f81a2c699b1d8be1aa8233a126db744.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="apartment|chamber|room"&gt;部屋&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="issue|problem|question"&gt;問題&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be|exist|possible"&gt;あります&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;There&amp;#x27;s a problem with my room&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;General statement about room issues&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/94c173e29ee4d38fa55fdf6a176d2822.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/94c173e29ee4d38fa55fdf6a176d2822.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;エアコン&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="move"&gt;動きません&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;The air conditioner isn&amp;#x27;t working&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Reporting a broken AC&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/3e7b7aec5754cb60989c058dc8060201.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/3e7b7aec5754cb60989c058dc8060201.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word"&gt;湯&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="answer|appear|go|go out|graduate|leave|outside"&gt;出ません&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Hot water isn&amp;#x27;t coming out&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Common plumbing issue&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/65b4c608250e054fa457d66d510f5b98.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/65b4c608250e054fa457d66d510f5b98.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;WiFi&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word"&gt;繋がりません&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I can&amp;#x27;t connect to the WiFi&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Internet connectivity problem&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/cb2e89219515b85079e22fcd4f4a3ba0.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/cb2e89219515b85079e22fcd4f4a3ba0.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="neighbor|neighborhood|neighbour|neighbourhood|next"&gt;隣&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="apartment|chamber|room"&gt;部屋&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="annoying|noisy"&gt;うるさい&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;The room next door is noisy&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Noise complaint&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/dd7bde79ca34f9bb973af407d2f1ba13.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/dd7bde79ca34f9bb973af407d2f1ba13.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="apartment|chamber|room"&gt;部屋&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="change|come back|exchange|frog|go back|go home|renew|replace|return"&gt;変え&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could you change my room?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting a room change&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/aacb42b338a1dc2f773128b2243e091f.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/aacb42b338a1dc2f773128b2243e091f.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="towel"&gt;タオル&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="enough"&gt;足りません&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;There aren&amp;#x27;t enough towels&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting additional amenities&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/7d7476f6205c9d26d9da1aa28acd9bdb.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/7d7476f6205c9d26d9da1aa28acd9bdb.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="cab|taxi|taxicab"&gt;タクシー&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="call"&gt;呼ん&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could you call a taxi for me?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Essential phrase for transportation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/33cec7770b66ce651691129be225cab3.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/33cec7770b66ce651691129be225cab3.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="railway station|station"&gt;駅&lt;/span&gt;&lt;span class="jp-word" data-en-translation="as far as|till|to|until|up to"&gt;まで&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="come|go|pass away"&gt;行き&lt;/span&gt;&lt;span class="jp-word" data-en-translation="shoulder"&gt;方&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="teach"&gt;教え&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could you tell me how to get to the station?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Asking for directions&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/cf2db9c0f8bbda08fb619e618826e306.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/cf2db9c0f8bbda08fb619e618826e306.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="this"&gt;この&lt;/span&gt;&lt;span class="jp-word" data-en-translation="address|domicile|dwelling"&gt;住所&lt;/span&gt;&lt;span class="jp-word" data-en-translation="as far as|till|to|until|up to"&gt;まで&lt;/span&gt;&lt;span class="jp-word" data-en-translation="come|go|pass away"&gt;行きたい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to go to this address&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Showing an address and requesting help&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/3c47525239c2fc78c3bc398e70e5d5a8.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/3c47525239c2fc78c3bc398e70e5d5a8.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="almost|nearby|nearly|shortly"&gt;近く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="advance|advise|encourage|promote|recommend|suggest"&gt;すすめ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="restaurant"&gt;レストラン&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be|exist|possible"&gt;あります&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Are there any recommended restaurants nearby?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Asking for dining recommendations&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/8c0fb4114c9c314fd294e8a2b7a1a747.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/8c0fb4114c9c314fd294e8a2b7a1a747.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="map"&gt;地図&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could I have a map?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Requesting a local map&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="http://localhost:8080/audio/tts/8121244e3a2033120c98d0c3fa13bbc4.aac" type="audio/aac"&gt;
+    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/8121244e3a2033120c98d0c3fa13bbc4.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="sightseeing"&gt;観光&lt;/span&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内&lt;/span&gt;&lt;span class="jp-word"&gt;所&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="where"&gt;どこ&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Where is the tourist information center?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Finding tourist resources&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script type="application/json" class="quiz-data" id="quiz-data-6f4ca41e39cb"&gt;
+        [{"id": "c787f489746b", "question": {"text": "I'd like to make a reservation", "imageUrl": ""}, "answers": ["予約をお願いします", "よやくをおねがいします"]}, {"id": "f7d2e9cf372a", "question": {"text": "I'd like to make a reservation for two nights, three days", "imageUrl": ""}, "answers": ["二泊三日で予約したいのですが", "にはくみっかでよやくしたいのですが"]}, {"id": "4a81ea0392f2", "question": {"text": "One single room, please", "imageUrl": ""}, "answers": ["シングルルームを一室お願いします", "しんぐるる゜むをいっしつおねがいします"]}, {"id": "7bbd5fa9dfa9", "question": {"text": "Do you have a plan that includes breakfast?", "imageUrl": ""}, "answers": ["朝食付きのプランはありますか", "ちょうしょくつきのぷらんはありますか"]}, {"id": "025d129f0076", "question": {"text": "I'd like to change my reservation", "imageUrl": ""}, "answers": ["予約の変更をお願いしたいのですが", "よやくのへんこうをおねがいしたいのですが"]}, {"id": "e5f18ff33cdc", "question": {"text": "Is it possible to delay the check-in date by one day?", "imageUrl": ""}, "answers": ["チェックイン日を一日遅らせることはできますか", "ちぇっくいんひをいちにちおくらせることはできますか"]}, {"id": "533178bf98df", "question": {"text": "I'd like to cancel my reservation", "imageUrl": ""}, "answers": ["予約をキャンセルしたいのですが", "よやくをきゃんせるしたいのですが"]}, {"id": "e5a061c93ad9", "question": {"text": "I'd like to check in, please", "imageUrl": ""}, "answers": ["チェックインをお願いします", "ちぇっくいんをおねがいします"]}, {"id": "7f33bd0859f8", "question": {"text": "I have a reservation under the name Tanaka", "imageUrl": ""}, "answers": ["田中という名前で予約しています", "たなかというなまえでよやくしています"]}, {"id": "58cb3eb3e1dc", "question": {"text": "Do you need my passport?", "imageUrl": ""}, "answers": ["パスポートが必要ですか", "ぱすぽ゜とがひつようですか"]}, {"id": "5a807f0921ed", "question": {"text": "Could you tell me the WiFi password?", "imageUrl": ""}, "answers": ["WiFiのパスワードを教えていただけますか", "WiFiのぱすわ゜どをおしえていただけますか"]}, {"id": "d46d8cfdab40", "question": {"text": "What time is breakfast served?", "imageUrl": ""}, "answers": ["朝食は何時から何時までですか", "ちょうしょくはいつからなんじまでですか"]}, {"id": "03fa4c0042f5", "question": {"text": "What time is checkout?", "imageUrl": ""}, "answers": ["チェックアウトは何時ですか", "ちぇっくあうとはいつですか"]}, {"id": "104c073d44eb", "question": {"text": "Is it possible to extend checkout?", "imageUrl": ""}, "answers": ["チェックアウトを延長することはできますか", "ちぇっくあうとをえんちょうすることはできますか"]}, {"id": "1b5c593b519b", "question": {"text": "Could you hold my luggage?", "imageUrl": ""}, "answers": ["荷物を預かっていただけますか", "にもつをあずかっていただけますか"]}, {"id": "7c90693148da", "question": {"text": "There's a problem with my room", "imageUrl": ""}, "answers": ["部屋に問題があります", "へやにもんだいがあります"]}, {"id": "78670149def4", "question": {"text": "The air conditioner isn't working", "imageUrl": ""}, "answers": ["エアコンが動きません", "えあこんがうごきません"]}, {"id": "9f0d0eaa2663", "question": {"text": "Hot water isn't coming out", "imageUrl": ""}, "answers": ["お湯が出ません", "おゆがでません"]}, {"id": "7ffe2a24ea45", "question": {"text": "I can't connect to the WiFi", "imageUrl": ""}, "answers": ["WiFiに繋がりません", "WiFiにつながりません"]}, {"id": "56f9b07bf7f3", "question": {"text": "The room next door is noisy", "imageUrl": ""}, "answers": ["隣の部屋がうるさいです", "となりのへやがうるさいです"]}, {"id": "960d62518e5e", "question": {"text": "Could you change my room?", "imageUrl": ""}, "answers": ["部屋を変えていただけますか", "へやをかえていただけますか"]}, {"id": "6070a40a86d4", "question": {"text": "There aren't enough towels", "imageUrl": ""}, "answers": ["タオルが足りません", "たおるがたりません"]}, {"id": "685238734c13", "question": {"text": "Could you call a taxi for me?", "imageUrl": ""}, "answers": ["タクシーを呼んでいただけますか", "たくし゜をよんでいただけますか"]}, {"id": "ccef4ff116ff", "question": {"text": "Could you tell me how to get to the station?", "imageUrl": ""}, "answers": ["駅までの行き方を教えていただけますか", "えきまでのいきかたをおしえていただけますか"]}, {"id": "21c7ee578a86", "question": {"text": "I'd like to go to this address", "imageUrl": ""}, "answers": ["この住所まで行きたいのですが", "このじゅうしょまでいきたいのですが"]}, {"id": "5df19ece025e", "question": {"text": "Are there any recommended restaurants nearby?", "imageUrl": ""}, "answers": ["近くのおすすめのレストランはありますか", "ちかくのおすすめのれすとらんはありますか"]}, {"id": "912bdd0502fc", "question": {"text": "Could I have a map?", "imageUrl": ""}, "answers": ["地図をいただけますか", "ちずをいただけますか"]}, {"id": "c2fb183fea5a", "question": {"text": "Where is the tourist information center?", "imageUrl": ""}, "answers": ["観光案内所はどこですか", "かんこうあんないしょはどこですか"]}]
+    &lt;/script&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h1&gt;Dialogues&lt;/h1&gt;
@@ -367,7 +376,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="http://localhost:8080/audio/tts/399f8d9125a486663ac8bbae858e12fc.aac" type="audio/aac"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/399f8d9125a486663ac8bbae858e12fc.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -395,7 +404,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="http://localhost:8080/audio/tts/6ba51bcd66510911eeee23b68daa915e.aac" type="audio/aac"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/6ba51bcd66510911eeee23b68daa915e.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -421,7 +430,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="http://localhost:8080/audio/tts/e6c1385cfc3e15dea2eb8e9148a17200.aac" type="audio/aac"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/e6c1385cfc3e15dea2eb8e9148a17200.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -453,7 +462,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="http://localhost:8080/audio/tts/9f3a4424cb1392b444ef7b566afcd7be.aac" type="audio/aac"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/9f3a4424cb1392b444ef7b566afcd7be.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -463,23 +472,25 @@
 &lt;p&gt;&lt;span class="jp-word" data-en-translation="dinner|supper"&gt;夕食&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="apartment|chamber|room"&gt;部屋&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word"&gt;食べました&lt;/span&gt;。&lt;span class="jp-word"&gt;懐石&lt;/span&gt;&lt;span class="jp-word" data-en-translation="cook|cooking|food"&gt;料理&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="very"&gt;とても&lt;/span&gt;&lt;span class="jp-word" data-en-translation="delicious|tasty"&gt;美味しかっ&lt;/span&gt;&lt;span class="jp-word"&gt;た&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="quantity"&gt;量&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="cover|covert|many|much|numerous"&gt;多&lt;/span&gt;&lt;span class="jp-word" data-en-translation="cobia|cryptomeria"&gt;すぎ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word" data-en-translation="all|entire|whole"&gt;全部&lt;/span&gt;&lt;span class="jp-word"&gt;食べられませ&lt;/span&gt;&lt;span class="jp-word"&gt;ん&lt;/span&gt;&lt;span class="jp-word"&gt;でし&lt;/span&gt;&lt;span class="jp-word"&gt;た&lt;/span&gt;。&lt;span class="jp-word" data-en-translation="patch"&gt;次&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="catch|day|extinguish|fire|goes out|put out|set|shuttle|sun"&gt;日&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="morning"&gt;朝&lt;/span&gt;、&lt;span class="jp-word"&gt;チェックアウト&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="o’clock"&gt;時&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word"&gt;フロント&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;「&lt;span class="jp-word" data-en-translation="railway station|station"&gt;駅&lt;/span&gt;&lt;span class="jp-word" data-en-translation="as far as|till|to|until|up to"&gt;まで&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="come|go|pass away"&gt;行き&lt;/span&gt;&lt;span class="jp-word" data-en-translation="shoulder"&gt;方&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="teach"&gt;教え&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="ask|effective|hear|listen|work"&gt;聞きました&lt;/span&gt;。&lt;span class="jp-word"&gt;スタッフ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="kindness"&gt;親切&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="map"&gt;地図&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="show"&gt;見せ&lt;/span&gt;&lt;span class="jp-word"&gt;ながら&lt;/span&gt;&lt;span class="jp-word" data-en-translation="account|description|explain|explanation|illustrate"&gt;説明し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;くれました&lt;/span&gt;。&lt;span class="jp-word"&gt;エミリー&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-san|Miss|Mr.|Mrs.|Ms."&gt;さん&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;「&lt;span class="jp-word" data-en-translation="Japan|Japanese"&gt;日本&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hotel|inn|lodge"&gt;旅館&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="brilliant|cool|excellent|fine|great|stupendous|wonderful"&gt;素晴らしい&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="think"&gt;思いました&lt;/span&gt;。
 &lt;div style="margin-top: 1em;"&gt;
     &lt;audio controls class="tts-audio-full"&gt;
-        &lt;source src="http://localhost:8080/audio/tts/0c73ecf9443498baa3f30be435ae2a3f.aac" type="audio/aac"&gt;
+        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/0c73ecf9443498baa3f30be435ae2a3f.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;h1&gt;Wordbank&lt;/h1&gt;
 &lt;p&gt;
-&lt;div class="wordbank-container"&gt;
-    
+&lt;div class="wordbank-section"&gt;
+    &lt;button class="quiz-button" type="button" data-quiz-data-id="quiz-data-0795f8bc7407"&gt;Quiz&lt;/button&gt;
+    &lt;div class="wordbank-container"&gt;
+        
 &lt;div class="flashcard" data-word="予約" data-translation="reservation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/fc28f65a2fae.jpg" alt="reservation" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/fc28f65a2fae.jpg" alt="reservation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/fc28f65a2fae.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/fc28f65a2fae.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -489,13 +500,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="チェックイン" data-translation="check-in"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/2d74d17384af.jpg" alt="check-in" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2d74d17384af.jpg" alt="check-in" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;チェック&lt;/span&gt;&lt;span class="jp-word" data-en-translation="in|inn"&gt;イン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/2d74d17384af.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2d74d17384af.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -505,13 +516,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="チェックアウト" data-translation="check-out"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/f25ed6664ceb.jpg" alt="check-out" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f25ed6664ceb.jpg" alt="check-out" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;チェックアウト&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/f25ed6664ceb.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/f25ed6664ceb.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -521,13 +532,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="フロント" data-translation="front desk"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/e92a384a1609.jpg" alt="front desk" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e92a384a1609.jpg" alt="front desk" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;フロント&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/e92a384a1609.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e92a384a1609.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -537,13 +548,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="部屋" data-translation="room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/521711aaf1ac.jpg" alt="room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/521711aaf1ac.jpg" alt="room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="apartment|chamber|room"&gt;部屋&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/521711aaf1ac.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/521711aaf1ac.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -553,13 +564,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="和室" data-translation="Japanese-style room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/28dc3721e816.jpg" alt="Japanese-style room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/28dc3721e816.jpg" alt="Japanese-style room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;和室&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/28dc3721e816.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/28dc3721e816.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -569,13 +580,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="洋室" data-translation="Western-style room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/5b4d76213434.jpg" alt="Western-style room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5b4d76213434.jpg" alt="Western-style room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;洋室&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/5b4d76213434.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/5b4d76213434.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -585,13 +596,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="シングルルーム" data-translation="single room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/062e8e6adbb7.jpg" alt="single room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/062e8e6adbb7.jpg" alt="single room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;シングル&lt;/span&gt;&lt;span class="jp-word"&gt;ルーム&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/062e8e6adbb7.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/062e8e6adbb7.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -601,13 +612,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ツインルーム" data-translation="twin room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/5a889d80286e.jpg" alt="twin room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5a889d80286e.jpg" alt="twin room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;ツイン&lt;/span&gt;&lt;span class="jp-word"&gt;ルーム&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/5a889d80286e.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/5a889d80286e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -617,13 +628,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ダブルルーム" data-translation="double room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/204488a1f4ad.jpg" alt="double room" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/204488a1f4ad.jpg" alt="double room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;ダブル&lt;/span&gt;&lt;span class="jp-word"&gt;ルーム&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/204488a1f4ad.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/204488a1f4ad.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -633,13 +644,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="鍵" data-translation="key"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/2ccd72bd2eb5.jpg" alt="key" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2ccd72bd2eb5.jpg" alt="key" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="key"&gt;鍵&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/2ccd72bd2eb5.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2ccd72bd2eb5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -649,13 +660,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="朝食" data-translation="breakfast"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/ec8b3b8f880b.jpg" alt="breakfast" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/ec8b3b8f880b.jpg" alt="breakfast" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="breakfast"&gt;朝食&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/ec8b3b8f880b.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/ec8b3b8f880b.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -665,13 +676,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="夕食" data-translation="dinner"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/bba3866c9c07.jpg" alt="dinner" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/bba3866c9c07.jpg" alt="dinner" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="dinner|supper"&gt;夕食&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/bba3866c9c07.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/bba3866c9c07.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -681,13 +692,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="荷物" data-translation="luggage"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/74e38e6162f5.jpg" alt="luggage" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/74e38e6162f5.jpg" alt="luggage" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;荷物&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/74e38e6162f5.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/74e38e6162f5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -697,13 +708,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="宿泊" data-translation="lodging"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/bb64a36c9d74.jpg" alt="lodging" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/bb64a36c9d74.jpg" alt="lodging" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="accommodation|cf.|lodge|lodging|sojourn|stay"&gt;宿泊&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/bb64a36c9d74.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/bb64a36c9d74.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -713,13 +724,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="延長" data-translation="extension"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/e572adb88e9b.jpg" alt="extension" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e572adb88e9b.jpg" alt="extension" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="extend|extention|lengthen|lengthening|prolong|prolongment"&gt;延長&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/e572adb88e9b.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e572adb88e9b.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -729,13 +740,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="キャンセル" data-translation="cancellation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/df872aba5e6e.jpg" alt="cancellation" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/df872aba5e6e.jpg" alt="cancellation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cancellation"&gt;キャンセル&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/df872aba5e6e.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/df872aba5e6e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -745,13 +756,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="エアコン" data-translation="air conditioner"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/b873c4b656bf.jpg" alt="air conditioner" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/b873c4b656bf.jpg" alt="air conditioner" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;エアコン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/b873c4b656bf.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/b873c4b656bf.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -761,13 +772,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="WiFi" data-translation="WiFi"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/866462cb8d0b.jpg" alt="WiFi" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/866462cb8d0b.jpg" alt="WiFi" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;WiFi&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/866462cb8d0b.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/866462cb8d0b.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -777,13 +788,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="パスワード" data-translation="password"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/6ee1eb6bbe0a.jpg" alt="password" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/6ee1eb6bbe0a.jpg" alt="password" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="password"&gt;パスワード&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/6ee1eb6bbe0a.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/6ee1eb6bbe0a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -793,13 +804,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="タオル" data-translation="towel"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/5c77d2c245e0.jpg" alt="towel" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5c77d2c245e0.jpg" alt="towel" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="towel"&gt;タオル&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/5c77d2c245e0.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/5c77d2c245e0.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -809,13 +820,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="浴衣" data-translation="yukata"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/9d67d6abcc96.jpg" alt="yukata" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9d67d6abcc96.jpg" alt="yukata" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;浴衣&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/9d67d6abcc96.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/9d67d6abcc96.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -825,13 +836,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="温泉" data-translation="hot spring"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/2476d25cf185.jpg" alt="hot spring" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2476d25cf185.jpg" alt="hot spring" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="hot spring|spa"&gt;温泉&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/2476d25cf185.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2476d25cf185.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -841,13 +852,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="大浴場" data-translation="large public bath"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/a61fe45dbf42.jpg" alt="large public bath" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a61fe45dbf42.jpg" alt="large public bath" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;大&lt;/span&gt;&lt;span class="jp-word"&gt;浴場&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/a61fe45dbf42.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/a61fe45dbf42.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -857,13 +868,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="旅館" data-translation="ryokan"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/9ab628428a02.jpg" alt="ryokan" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9ab628428a02.jpg" alt="ryokan" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="hotel|inn|lodge"&gt;旅館&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/9ab628428a02.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/9ab628428a02.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -873,13 +884,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="タクシー" data-translation="taxi"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/776c46d2a1aa.jpg" alt="taxi" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/776c46d2a1aa.jpg" alt="taxi" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cab|taxi|taxicab"&gt;タクシー&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/776c46d2a1aa.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/776c46d2a1aa.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -889,13 +900,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="駅" data-translation="station"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/2431c61af983.jpg" alt="station" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2431c61af983.jpg" alt="station" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="railway station|station"&gt;駅&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/2431c61af983.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2431c61af983.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -905,13 +916,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="地図" data-translation="map"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/8c3c73fbab6e.jpg" alt="map" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8c3c73fbab6e.jpg" alt="map" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="map"&gt;地図&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/8c3c73fbab6e.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/8c3c73fbab6e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -921,13 +932,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="観光案内所" data-translation="tourist information center"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/ac62ddbe8694.jpg" alt="tourist information center" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/ac62ddbe8694.jpg" alt="tourist information center" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="sightseeing"&gt;観光&lt;/span&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内&lt;/span&gt;&lt;span class="jp-word"&gt;所&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/ac62ddbe8694.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/ac62ddbe8694.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -937,13 +948,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="近く" data-translation="nearby"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/138aefecee28.jpg" alt="nearby" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/138aefecee28.jpg" alt="nearby" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="almost|nearby|nearly|shortly"&gt;近く&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/138aefecee28.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/138aefecee28.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -953,13 +964,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="住所" data-translation="address"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/52188b801d29.jpg" alt="address" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/52188b801d29.jpg" alt="address" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="address|domicile|dwelling"&gt;住所&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/52188b801d29.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/52188b801d29.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -969,13 +980,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="問題" data-translation="problem"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/9c8d2ab8d5fe.jpg" alt="problem" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9c8d2ab8d5fe.jpg" alt="problem" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="issue|problem|question"&gt;問題&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/9c8d2ab8d5fe.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/9c8d2ab8d5fe.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -985,13 +996,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="故障" data-translation="breakdown"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/7b86adcd0683.jpg" alt="breakdown" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7b86adcd0683.jpg" alt="breakdown" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;故障&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/7b86adcd0683.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7b86adcd0683.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1001,13 +1012,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="うるさい" data-translation="noisy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/f5d4bbee3931.jpg" alt="noisy" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f5d4bbee3931.jpg" alt="noisy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="annoying|noisy"&gt;うるさい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/f5d4bbee3931.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/f5d4bbee3931.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1017,13 +1028,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="静か" data-translation="quiet"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/2a9f92d74d44.jpg" alt="quiet" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2a9f92d74d44.jpg" alt="quiet" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="calm|inaudible|quiet|quietly|silent"&gt;静か&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/2a9f92d74d44.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2a9f92d74d44.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1033,13 +1044,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="清潔" data-translation="clean"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/cbaabd539358.jpg" alt="clean" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/cbaabd539358.jpg" alt="clean" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cleanliness"&gt;清潔&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/cbaabd539358.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/cbaabd539358.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1049,13 +1060,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="快適" data-translation="comfortable"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/61eb51c8b351.jpg" alt="comfortable" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/61eb51c8b351.jpg" alt="comfortable" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;快適&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/61eb51c8b351.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/61eb51c8b351.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1065,13 +1076,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="親切" data-translation="kind"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/16d7211daa6d.jpg" alt="kind" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/16d7211daa6d.jpg" alt="kind" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="kindness"&gt;親切&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/16d7211daa6d.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/16d7211daa6d.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1081,13 +1092,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="予定" data-translation="plan"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/0c6bc73a4904.jpg" alt="plan" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0c6bc73a4904.jpg" alt="plan" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="estimate|expect|plan"&gt;予定&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/0c6bc73a4904.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/0c6bc73a4904.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1097,13 +1108,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="変更" data-translation="change"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/e20b94923392.jpg" alt="change" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e20b94923392.jpg" alt="change" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="alter|alteration|change|modification|modify"&gt;変更&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/e20b94923392.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e20b94923392.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1113,13 +1124,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="確認" data-translation="confirmation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/44cc9d58a32b.jpg" alt="confirmation" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/44cc9d58a32b.jpg" alt="confirmation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="confirmation|corroboration"&gt;確認&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/44cc9d58a32b.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/44cc9d58a32b.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1129,13 +1140,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="案内" data-translation="guidance"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="http://localhost:8080/images/wordbank/5fb4a229e8a7.jpg" alt="guidance" loading="lazy"&gt;
+        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5fb4a229e8a7.jpg" alt="guidance" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="http://localhost:8080/audio/wordbank/5fb4a229e8a7.aac" type="audio/aac"&gt;
+            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/5fb4a229e8a7.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1143,5 +1154,9 @@
         &lt;div class='flashcard-examples-label'&gt;Example sentences:&lt;/div&gt;&lt;ul class='flashcard-examples'&gt;&lt;li&gt;&lt;span class="jp-word"&gt;駅員&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="kindness"&gt;親切&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="platform"&gt;ホーム&lt;/span&gt;&lt;span class="jp-word" data-en-translation="as far as|till|to|until|up to"&gt;まで&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="road|way"&gt;道&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;くれた&lt;/span&gt;。&lt;/li&gt;&lt;li&gt;&lt;span class="jp-word" data-en-translation="tomorrow"&gt;明日&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="I"&gt;私&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="new"&gt;新しい&lt;/span&gt;&lt;span class="jp-word"&gt;キャンパス&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内します&lt;/span&gt;。&lt;/li&gt;&lt;li&gt;&lt;span class="jp-word" data-en-translation="boyfriend|he"&gt;彼&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="guidance|guide"&gt;案内&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;おかげ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;、&lt;span class="jp-word"&gt;迷わず&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word"&gt;博物&lt;/span&gt;&lt;span class="jp-word"&gt;館&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="adhere|arrival|ignite|incoming|installed|luck|lucky|possess|stick|thrust"&gt;着きました&lt;/span&gt;。&lt;/li&gt;&lt;/ul&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script type="application/json" class="quiz-data" id="quiz-data-0795f8bc7407"&gt;
+        [{"id": "cbe517913475", "question": {"text": "reservation", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/fc28f65a2fae.jpg"}, "answers": ["予約", "よやく"]}, {"id": "ab1a050930ae", "question": {"text": "check-in", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2d74d17384af.jpg"}, "answers": ["チェックイン"]}, {"id": "3cecfef29441", "question": {"text": "check-out", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f25ed6664ceb.jpg"}, "answers": ["チェックアウト"]}, {"id": "9f17f53c20da", "question": {"text": "front desk", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e92a384a1609.jpg"}, "answers": ["フロント"]}, {"id": "baae215c4f15", "question": {"text": "room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/521711aaf1ac.jpg"}, "answers": ["部屋", "へや"]}, {"id": "9d23e56c161d", "question": {"text": "Japanese-style room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/28dc3721e816.jpg"}, "answers": ["和室", "わしつ"]}, {"id": "c6e54ce504a3", "question": {"text": "Western-style room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5b4d76213434.jpg"}, "answers": ["洋室", "ようしつ"]}, {"id": "0df8ad454fbe", "question": {"text": "single room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/062e8e6adbb7.jpg"}, "answers": ["シングルルーム"]}, {"id": "f882e1c692ca", "question": {"text": "twin room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5a889d80286e.jpg"}, "answers": ["ツインルーム"]}, {"id": "0a4a59506231", "question": {"text": "double room", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/204488a1f4ad.jpg"}, "answers": ["ダブルルーム"]}, {"id": "e909d148f923", "question": {"text": "key", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2ccd72bd2eb5.jpg"}, "answers": ["鍵", "かぎ"]}, {"id": "b3718a61fda0", "question": {"text": "breakfast", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/ec8b3b8f880b.jpg"}, "answers": ["朝食", "ちょうしょく"]}, {"id": "9620a4001dd1", "question": {"text": "dinner", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/bba3866c9c07.jpg"}, "answers": ["夕食", "ゆうしょく"]}, {"id": "0ad32df16667", "question": {"text": "luggage", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/74e38e6162f5.jpg"}, "answers": ["荷物", "にもつ"]}, {"id": "26f4cc4f4c88", "question": {"text": "lodging", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/bb64a36c9d74.jpg"}, "answers": ["宿泊", "しゅくはく"]}, {"id": "a6f2449e1ebb", "question": {"text": "extension", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e572adb88e9b.jpg"}, "answers": ["延長", "えんちょう"]}, {"id": "da6c8205a3fb", "question": {"text": "cancellation", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/df872aba5e6e.jpg"}, "answers": ["キャンセル"]}, {"id": "f755a733da22", "question": {"text": "air conditioner", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/b873c4b656bf.jpg"}, "answers": ["エアコン"]}, {"id": "ad7ff5f58bf6", "question": {"text": "WiFi", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/866462cb8d0b.jpg"}, "answers": ["WiFi"]}, {"id": "44809083de35", "question": {"text": "password", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/6ee1eb6bbe0a.jpg"}, "answers": ["パスワード"]}, {"id": "e14ed216083c", "question": {"text": "towel", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5c77d2c245e0.jpg"}, "answers": ["タオル"]}, {"id": "aa04a0f20306", "question": {"text": "yukata", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9d67d6abcc96.jpg"}, "answers": ["浴衣", "ゆかた"]}, {"id": "f35fe4cb14bb", "question": {"text": "hot spring", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2476d25cf185.jpg"}, "answers": ["温泉", "おんせん"]}, {"id": "91ed493ae5b2", "question": {"text": "large public bath", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a61fe45dbf42.jpg"}, "answers": ["大浴場", "だいよくじょう"]}, {"id": "1c9f9a0c1b8d", "question": {"text": "ryokan", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9ab628428a02.jpg"}, "answers": ["旅館", "りょかん"]}, {"id": "ac86bdf1a2ca", "question": {"text": "taxi", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/776c46d2a1aa.jpg"}, "answers": ["タクシー"]}, {"id": "04acde3aad21", "question": {"text": "station", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2431c61af983.jpg"}, "answers": ["駅", "えき"]}, {"id": "108a8f0240a1", "question": {"text": "map", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8c3c73fbab6e.jpg"}, "answers": ["地図", "ちず"]}, {"id": "ffa4d50174d0", "question": {"text": "tourist information center", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/ac62ddbe8694.jpg"}, "answers": ["観光案内所", "かんこうあんないしょ"]}, {"id": "4646113da585", "question": {"text": "nearby", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/138aefecee28.jpg"}, "answers": ["近く", "ちかく"]}, {"id": "0853b1bf85cd", "question": {"text": "address", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/52188b801d29.jpg"}, "answers": ["住所", "じゅうしょ"]}, {"id": "6487209c3852", "question": {"text": "problem", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9c8d2ab8d5fe.jpg"}, "answers": ["問題", "もんだい"]}, {"id": "7833062c30de", "question": {"text": "breakdown", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7b86adcd0683.jpg"}, "answers": ["故障", "こしょう"]}, {"id": "1403c1e09d3a", "question": {"text": "noisy", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f5d4bbee3931.jpg"}, "answers": ["うるさい"]}, {"id": "131b34edae7d", "question": {"text": "quiet", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2a9f92d74d44.jpg"}, "answers": ["静か", "しずか"]}, {"id": "b6346c02aeef", "question": {"text": "clean", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/cbaabd539358.jpg"}, "answers": ["清潔", "せいけつ"]}, {"id": "de349278bef3", "question": {"text": "comfortable", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/61eb51c8b351.jpg"}, "answers": ["快適", "かいてき"]}, {"id": "3b06e5da343f", "question": {"text": "kind", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/16d7211daa6d.jpg"}, "answers": ["親切", "しんせつ"]}, {"id": "bc5a32157e22", "question": {"text": "plan", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0c6bc73a4904.jpg"}, "answers": ["予定", "よてい"]}, {"id": "46e3721c6370", "question": {"text": "change", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e20b94923392.jpg"}, "answers": ["変更", "へんこう"]}, {"id": "160a8fd5706e", "question": {"text": "confirmation", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/44cc9d58a32b.jpg"}, "answers": ["確認", "かくにん"]}, {"id": "258e7f03c44b", "question": {"text": "guidance", "imageUrl": "https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5fb4a229e8a7.jpg"}, "answers": ["案内", "あんない"]}]
+    &lt;/script&gt;
 &lt;/div&gt;
 &lt;/p&gt;</content><category term="Travel"/><category term="hotels"/><category term="accommodation"/><category term="ryokan"/><category term="travel"/><category term="reservations"/><category term="check-in"/><category term="customer service"/></entry></feed>

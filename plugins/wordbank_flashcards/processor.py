@@ -142,15 +142,23 @@ class WordbankProcessor:
         # Check if image file exists - skip flashcard if not
         if details.image_file:
             image_file_path = (
-                Path(__file__).parent.parent.parent / "content" / "images" / "wordbank" / details.image_file
+                Path(__file__).parent.parent.parent
+                / "content"
+                / "images"
+                / "wordbank"
+                / details.image_file
             )
             if not image_file_path.exists():
-                print(f"Warning: Skipping flashcard for '{details.word}' - image file not found: {details.image_file}")
+                print(
+                    f"Warning: Skipping flashcard for '{details.word}' - image file not found: {details.image_file}"
+                )
                 return ""
             image_path = f"{self.siteurl}/images/wordbank/{details.image_file}"
         else:
             # No image file specified - skip this flashcard
-            print(f"Warning: Skipping flashcard for '{details.word}' - no image file specified")
+            print(
+                f"Warning: Skipping flashcard for '{details.word}' - no image file specified"
+            )
             return ""
 
         # Escape HTML special characters
@@ -161,7 +169,11 @@ class WordbankProcessor:
         audio_button = ""
         if details.audio_file:
             audio_file_path = (
-                Path(__file__).parent.parent.parent / "content" / "audio" / "wordbank" / details.audio_file
+                Path(__file__).parent.parent.parent
+                / "content"
+                / "audio"
+                / "wordbank"
+                / details.audio_file
             )
             if audio_file_path.exists():
                 audio_path = f"{self.siteurl}/audio/wordbank/{details.audio_file}"
@@ -174,12 +186,16 @@ class WordbankProcessor:
             <img src="{speaker_icon_path}" alt="Play" width="16" height="16" style="pointer-events: none;">
         </button>"""
             else:
-                print(f"Warning: Audio file not found for '{details.word}' - skipping audio button: {details.audio_file}")
+                print(
+                    f"Warning: Audio file not found for '{details.word}' - skipping audio button: {details.audio_file}"
+                )
 
         # Generate example sentences HTML
         examples_html = ""
         if details.examples:
-            examples_html = "<div class='flashcard-examples-label'>Example sentences:</div>"
+            examples_html = (
+                "<div class='flashcard-examples-label'>Example sentences:</div>"
+            )
             examples_html += "<ul class='flashcard-examples'>"
             for example in details.examples:
                 example_escaped = self._escape_html(example)
@@ -222,7 +238,11 @@ class WordbankProcessor:
                 cards_html += card_html
 
                 # Prepare quiz data for this word in new generalized format
-                image_url = f"{self.siteurl}/images/wordbank/{details.image_file}" if details.image_file else ""
+                image_url = (
+                    f"{self.siteurl}/images/wordbank/{details.image_file}"
+                    if details.image_file
+                    else ""
+                )
 
                 # Build answers array with both kanji and hiragana-only variants
                 answers = [details.word]
@@ -253,14 +273,16 @@ class WordbankProcessor:
                 # Generate unique ID for this quiz item
                 item_id = self._generate_quiz_item_id(details.en_translation, answers)
 
-                quiz_data.append({
-                    "id": item_id,
-                    "question": {
-                        "text": details.en_translation,
-                        "imageUrl": image_url
-                    },
-                    "answers": answers
-                })
+                quiz_data.append(
+                    {
+                        "id": item_id,
+                        "question": {
+                            "text": details.en_translation,
+                            "imageUrl": image_url,
+                        },
+                        "answers": answers,
+                    }
+                )
 
         # Generate unique ID for the entire quiz data
         quiz_data_id = self._generate_quiz_data_id(quiz_data)
@@ -271,10 +293,7 @@ class WordbankProcessor:
         # Complete HTML with header, quiz button, container, and data script
         complete_html = f"""
 <div class="wordbank-section">
-    <div class="wordbank-header">
-        <h2>Wordbank</h2>
-        <button class="quiz-button" type="button" data-quiz-data-id="quiz-data-{quiz_data_id}">Quiz</button>
-    </div>
+    <button class="quiz-button" type="button" data-quiz-data-id="quiz-data-{quiz_data_id}">Quiz</button>
     <div class="wordbank-container">
         {cards_html}
     </div>
@@ -400,7 +419,7 @@ class WordbankProcessor:
         # Create a deterministic string representation
         content = f"{question_text}|{'|'.join(sorted(answers))}"
         # Generate SHA256 hash and take first 12 characters for brevity
-        return hashlib.sha256(content.encode('utf-8')).hexdigest()[:12]
+        return hashlib.sha256(content.encode("utf-8")).hexdigest()[:12]
 
     @staticmethod
     def _generate_quiz_data_id(quiz_data: list[dict]) -> str:
@@ -415,4 +434,4 @@ class WordbankProcessor:
         """
         # Use JSON serialization with sorted keys for deterministic hashing
         content = json.dumps(quiz_data, sort_keys=True, ensure_ascii=False)
-        return hashlib.sha256(content.encode('utf-8')).hexdigest()[:12]
+        return hashlib.sha256(content.encode("utf-8")).hexdigest()[:12]

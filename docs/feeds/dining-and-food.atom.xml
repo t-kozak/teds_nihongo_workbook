@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ted's 日本語 Workbook - Dining and Food</title><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/" rel="alternate"/><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/feeds/dining-and-food.atom.xml" rel="self"/><id>https://world.teds-stuff.xyz/teds_nihongo_workbook/</id><updated>2025-11-11T00:00:00+11:00</updated><entry><title>Restaurant Japanese: Ordering, Reservations, and Dining Out</title><link href="https://world.teds-stuff.xyz/teds_nihongo_workbook/restaurant-japanese-ordering-reservations-and-dining-out.html" rel="alternate"/><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><author><name>Ted K. via Claude</name></author><id>tag:world.teds-stuff.xyz,2025-11-11:/teds_nihongo_workbook/restaurant-japanese-ordering-reservations-and-dining-out.html</id><summary type="html">&lt;p&gt;A comprehensive lesson covering essential Japanese phrases and vocabulary for dining at restaurants, including making reservations, ordering food, asking about dishes, and discussing spice levels.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Context/Summary&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ted's 日本語 Workbook - Dining and Food</title><link href="http://localhost:8080/" rel="alternate"/><link href="http://localhost:8080/feeds/dining-and-food.atom.xml" rel="self"/><id>http://localhost:8080/</id><updated>2025-11-11T00:00:00+11:00</updated><entry><title>Restaurant Japanese: Ordering, Reservations, and Dining Out</title><link href="http://localhost:8080/restaurant-japanese-ordering-reservations-and-dining-out.html" rel="alternate"/><published>2025-11-11T00:00:00+11:00</published><updated>2025-11-11T00:00:00+11:00</updated><author><name>Ted K. via Claude</name></author><id>tag:localhost,2025-11-11:/restaurant-japanese-ordering-reservations-and-dining-out.html</id><summary type="html">&lt;p&gt;A comprehensive lesson covering essential Japanese phrases and vocabulary for dining at restaurants, including making reservations, ordering food, asking about dishes, and discussing spice levels.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Context/Summary&lt;/h1&gt;
 &lt;p&gt;This lesson focuses on practical Japanese for restaurant situations. You'll learn how to make and modify reservations, order food using demonstrative pronouns (&lt;span class="jp-word" data-en-translation="this"&gt;これ&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="it|that"&gt;それ&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="that"&gt;あれ&lt;/span&gt;), discuss various types of dishes and cuisines, and ask important questions about your food—particularly regarding spice levels. Whether you're dining at a casual eatery or a formal restaurant, these phrases will help you navigate the experience with confidence.&lt;/p&gt;
 &lt;h1&gt;Grammar Explanation&lt;/h1&gt;
 &lt;h2&gt;Demonstrative Pronouns: &lt;span class="jp-word" data-en-translation="this"&gt;これ&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="it|that"&gt;それ&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="that"&gt;あれ&lt;/span&gt;&lt;/h2&gt;
@@ -31,165 +31,165 @@
 &lt;p&gt;&lt;div class="phrase-list"&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/3d2167c7619f47670954ba886b5e1386.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/3d2167c7619f47670954ba886b5e1386.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;したい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to make a reservation.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Use this when calling a restaurant to make a reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/0a702b58d2c47ecff3eb5cf73b1f5037.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/0a702b58d2c47ecff3eb5cf73b1f5037.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="four"&gt;四&lt;/span&gt;&lt;span class="jp-word"&gt;人&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word"&gt;今晩&lt;/span&gt;&lt;span class="jp-word" data-en-translation="seven"&gt;七&lt;/span&gt;&lt;span class="jp-word" data-en-translation="o’clock"&gt;時&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;For four people at 7 PM tonight, please.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Specify the number of people and time when making your reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/1f7471a713c8a970b72ee28723b73f6e.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/1f7471a713c8a970b72ee28723b73f6e.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="alter|alteration|change|modification|modify"&gt;変更&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be able to|can|completed|finished"&gt;できます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could I change my reservation, please?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Use this phrase when you need to modify an existing reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/c111bf489c1dd1c6ec9c7dd632dcd56e.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/c111bf489c1dd1c6ec9c7dd632dcd56e.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;人数&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="three"&gt;三&lt;/span&gt;&lt;span class="jp-word"&gt;人&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="alter|alteration|change|modification|modify"&gt;変更したいです&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;I&amp;#x27;d like to change the number of people to three.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Specify what you want to change about your reservation&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/90b22b33f6d42e17191456c36922e7c5.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/90b22b33f6d42e17191456c36922e7c5.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="this"&gt;これ&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word"&gt;ください&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;This, please.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;The simplest way to order when pointing at a menu item or display&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/963710063cff5cb12003276765972319.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/963710063cff5cb12003276765972319.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="it|that"&gt;それ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="how many"&gt;何&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;What is that?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Ask about a dish you see on another table or in the display case&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/282cd405418aa91deb043a8598a056cd.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/282cd405418aa91deb043a8598a056cd.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="advance|advise|encourage|promote|recommend|suggest"&gt;すすめ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="how many"&gt;何&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;What do you recommend?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;A useful phrase to get the server&amp;#x27;s suggestion&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/d0a4351acf9797b663ef29319f7ef91a.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/d0a4351acf9797b663ef29319f7ef91a.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="this"&gt;これ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛い&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Is this spicy?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Essential for those who are sensitive to spicy food&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/308c7c0d1909f1adc9427ec4e35afcf4.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/308c7c0d1909f1adc9427ec4e35afcf4.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛&lt;/span&gt;&lt;span class="jp-word"&gt;さ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word"&gt;調整&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be able to|can|completed|finished"&gt;できます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Can you adjust the spice level?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Many restaurants can modify the spiciness level for you&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/dfcb412d4dec703588445393d05ef917.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/dfcb412d4dec703588445393d05ef917.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;しない&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word"&gt;ください&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Please don&amp;#x27;t make it spicy.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Request a non-spicy version of a dish&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/472ecf62149776d7e6026645a58b7738.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/472ecf62149776d7e6026645a58b7738.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="a little|a little bit"&gt;少し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;ください&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Please make it a little spicy.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;For those who want just a bit of heat&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/55fdad2ec358b76beb3a5cfa210aae4c.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/55fdad2ec358b76beb3a5cfa210aae4c.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="very"&gt;とても&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;&lt;span class="jp-word"&gt;ください&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Please make it very spicy.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;For spicy food lovers!&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/a5702337746275e6a1c5b8c37da002e7.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/a5702337746275e6a1c5b8c37da002e7.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="water"&gt;水&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="already|bother|bother it|dammit|damn|even"&gt;もう&lt;/span&gt;&lt;span class="jp-word" data-en-translation="a lot|full|much"&gt;一杯&lt;/span&gt;&lt;span class="jp-word"&gt;いただけます&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Could I have another glass of water, please?&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Request additional drinks during your meal&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/42f8c0e63db6592e0ad3b1d83e22b369.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/42f8c0e63db6592e0ad3b1d83e22b369.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="accounting"&gt;会計&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Check, please.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Signal that you&amp;#x27;re ready to pay&lt;/p&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="phrase-card"&gt;
         &lt;div class="phrase-japanese"&gt;&lt;p&gt;&lt;audio class="tts-audio" style="display: none;"&gt;
-    &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/85130b97c01f7325757cd0ec1722550a.aac" type="audio/aac"&gt;
+    &lt;source src="http://localhost:8080/audio/tts/85130b97c01f7325757cd0ec1722550a.aac" type="audio/aac"&gt;
     Your browser does not support the audio element.
 &lt;/audio&gt;
 &lt;a href="#" class="tts-audio-btn" style="text-decoration: none; border: none;" aria-label="Play pronunciation" onclick="event.preventDefault(); this.previousElementSibling.play();"&gt;
-    &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
+    &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="vertical-align: middle;"&gt;
 &lt;/a&gt;&lt;span class="jp-word"&gt;別々&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="wish"&gt;願い&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;します&lt;/span&gt;。&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-translation"&gt;&lt;p&gt;Separate checks, please.&lt;/p&gt;&lt;/div&gt;
         &lt;div class="phrase-context"&gt;&lt;p&gt;Request to split the bill when dining with others&lt;/p&gt;&lt;/div&gt;
@@ -223,7 +223,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/d97c6aa464c9a0cf090bebc67848f3f7.aac" type="audio/aac"&gt;
+        &lt;source src="http://localhost:8080/audio/tts/d97c6aa464c9a0cf090bebc67848f3f7.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -251,7 +251,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/612febc30ae42264e36097e5b729974e.aac" type="audio/aac"&gt;
+        &lt;source src="http://localhost:8080/audio/tts/612febc30ae42264e36097e5b729974e.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -292,7 +292,7 @@
 &lt;/dl&gt;
 &lt;div class="dialogue-audio"&gt;
     &lt;audio controls class="tts-audio-dialogue"&gt;
-        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/2231a4f6a1eae57b9315bb7c7ad74f67.aac" type="audio/aac"&gt;
+        &lt;source src="http://localhost:8080/audio/tts/2231a4f6a1eae57b9315bb7c7ad74f67.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -301,7 +301,7 @@
 &lt;p&gt;&lt;span class="jp-word"&gt;ウェイター&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-san|Miss|Mr.|Mrs.|Ms."&gt;さん&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;「&lt;span class="jp-word" data-en-translation="today"&gt;本日&lt;/span&gt;&lt;span class="jp-word" data-en-translation="'s|of|what"&gt;の&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="advance|advise|encourage|promote|recommend|suggest"&gt;すすめ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="how many"&gt;何&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="ask|effective|hear|listen|work"&gt;聞いたら&lt;/span&gt;、「&lt;span class="jp-word"&gt;シーフード&lt;/span&gt;&lt;span class="jp-word"&gt;パスタ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word"&gt;マルゲリータ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="pizza"&gt;ピザ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="advance|advise|encourage|promote|recommend|suggest"&gt;すすめです&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="say"&gt;言いました&lt;/span&gt;。&lt;span class="jp-word" data-en-translation="friend"&gt;友達&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;「&lt;span class="jp-word" data-en-translation="that"&gt;その&lt;/span&gt;&lt;span class="jp-word"&gt;パスタ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛い&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;&lt;span class="jp-word" data-en-translation="mosquito"&gt;か&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="ask|effective|hear|listen|work"&gt;聞く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;、「&lt;span class="jp-word" data-en-translation="nah|no|nope|uh-uh|yes|you're welcome"&gt;いいえ&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛く&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-n't|not"&gt;ない&lt;/span&gt;&lt;span class="jp-word"&gt;です&lt;/span&gt;。&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word" data-en-translation="algae|mourning|waterweed"&gt;も&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word"&gt;好み&lt;/span&gt;&lt;span class="jp-word" data-en-translation="at|in|with"&gt;で&lt;/span&gt;&lt;span class="jp-word" data-en-translation="chili pepper|red pepper"&gt;唐辛子&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="add|addition"&gt;追加&lt;/span&gt;&lt;span class="jp-word" data-en-translation="be able to|can|completed|finished"&gt;できます&lt;/span&gt;」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="answer|reply|respond"&gt;答えました&lt;/span&gt;。&lt;span class="jp-word" data-en-translation="I"&gt;私&lt;/span&gt;&lt;span class="jp-word"&gt;たち&lt;/span&gt;&lt;span class="jp-word" data-en-translation="blade|edge|leaf|leaves|needle|teeth|tooth|what about"&gt;は&lt;/span&gt;&lt;span class="jp-word" data-en-translation="both"&gt;両方&lt;/span&gt;&lt;span class="jp-word"&gt;を&lt;/span&gt;&lt;span class="jp-word" data-en-translation="order"&gt;注文し&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;、&lt;span class="jp-word"&gt;シェアする&lt;/span&gt;&lt;span class="jp-word" data-en-translation="-ing|affair|event|incident|matter|thing|to"&gt;こと&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="do|grind|lose|mill|pick|pocket|print|rub|scrub"&gt;しました&lt;/span&gt;。&lt;span class="jp-word" data-en-translation="cook|cooking|food"&gt;料理&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="come"&gt;来た&lt;/span&gt;&lt;span class="jp-word" data-en-translation="battle cry|time"&gt;とき&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="truth"&gt;本当&lt;/span&gt;&lt;span class="jp-word" data-en-translation="to"&gt;に&lt;/span&gt;&lt;span class="jp-word" data-en-translation="delicious|tasty"&gt;おいし&lt;/span&gt;&lt;span class="jp-word" data-en-translation="abut|nu|so|yars"&gt;そう&lt;/span&gt;&lt;span class="jp-word"&gt;でし&lt;/span&gt;&lt;span class="jp-word"&gt;た&lt;/span&gt;。「&lt;span class="jp-word"&gt;いただきます&lt;/span&gt;！」&lt;span class="jp-word" data-en-translation="and|that|with"&gt;と&lt;/span&gt;&lt;span class="jp-word" data-en-translation="say"&gt;言っ&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hand|palm"&gt;て&lt;/span&gt;、&lt;span class="jp-word" data-en-translation="cheerful|entertaining|fun|happy|merry|pleasant"&gt;楽しい&lt;/span&gt;&lt;span class="jp-word" data-en-translation="diet|dining|meal"&gt;食事&lt;/span&gt;&lt;span class="jp-word" data-en-translation="no matter whether|whether"&gt;が&lt;/span&gt;&lt;span class="jp-word" data-en-translation="begin|commence|dates|from|open|start"&gt;始まりました&lt;/span&gt;。
 &lt;div style="margin-top: 1em;"&gt;
     &lt;audio controls class="tts-audio-full"&gt;
-        &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/tts/ed7ae6cf5da80a32aa9d1eadaec82e39.aac" type="audio/aac"&gt;
+        &lt;source src="http://localhost:8080/audio/tts/ed7ae6cf5da80a32aa9d1eadaec82e39.aac" type="audio/aac"&gt;
         Your browser does not support the audio element.
     &lt;/audio&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -311,13 +311,13 @@
     
 &lt;div class="flashcard" data-word="予約" data-translation="reservation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/fc28f65a2fae.jpg" alt="reservation" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/fc28f65a2fae.jpg" alt="reservation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="book|booking|reservation|reserve|subscribe"&gt;予約&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/fc28f65a2fae.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/fc28f65a2fae.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -327,13 +327,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="変更" data-translation="change"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e20b94923392.jpg" alt="change" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e20b94923392.jpg" alt="change" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="alter|alteration|change|modification|modify"&gt;変更&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e20b94923392.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e20b94923392.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -343,13 +343,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="人数" data-translation="number of people"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e06192b33c30.jpg" alt="number of people" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e06192b33c30.jpg" alt="number of people" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;人数&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e06192b33c30.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e06192b33c30.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -359,13 +359,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="注文" data-translation="order"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8628e78325e9.jpg" alt="order" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/8628e78325e9.jpg" alt="order" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="order"&gt;注文&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/8628e78325e9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/8628e78325e9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -375,13 +375,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="メニュー" data-translation="menu"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/62cfeed369ee.jpg" alt="menu" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/62cfeed369ee.jpg" alt="menu" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;メニュー&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/62cfeed369ee.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/62cfeed369ee.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -391,13 +391,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="料理" data-translation="dish"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/524d442cd38a.jpg" alt="dish" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/524d442cd38a.jpg" alt="dish" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cook|cooking|food"&gt;料理&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/524d442cd38a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/524d442cd38a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -407,13 +407,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="定食" data-translation="set meal"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/c57153102adf.jpg" alt="set meal" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/c57153102adf.jpg" alt="set meal" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="set meal|table d'hôte"&gt;定食&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/c57153102adf.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/c57153102adf.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -423,13 +423,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="前菜" data-translation="appetizer"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e0a06cf912e9.jpg" alt="appetizer" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e0a06cf912e9.jpg" alt="appetizer" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="appetizer"&gt;前菜&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e0a06cf912e9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e0a06cf912e9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -439,13 +439,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="主菜" data-translation="main dish"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e6403d92e62e.jpg" alt="main dish" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e6403d92e62e.jpg" alt="main dish" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;主菜&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e6403d92e62e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e6403d92e62e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -455,13 +455,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="デザート" data-translation="dessert"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/6f471ba22f27.jpg" alt="dessert" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/6f471ba22f27.jpg" alt="dessert" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="dessert"&gt;デザート&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/6f471ba22f27.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/6f471ba22f27.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -471,13 +471,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="飲み物" data-translation="beverage"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/45d9bf028a0a.jpg" alt="beverage" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/45d9bf028a0a.jpg" alt="beverage" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="beverage|drink"&gt;飲み物&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/45d9bf028a0a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/45d9bf028a0a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -487,13 +487,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="お会計" data-translation="bill"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/00c45b098e8c.jpg" alt="bill" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/00c45b098e8c.jpg" alt="bill" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="accounting"&gt;会計&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/00c45b098e8c.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/00c45b098e8c.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -503,13 +503,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="これ" data-translation="this"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/29a97f9a5895.jpg" alt="this" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/29a97f9a5895.jpg" alt="this" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="this"&gt;これ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/29a97f9a5895.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/29a97f9a5895.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -519,13 +519,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="それ" data-translation="that"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/5037b5d23d5a.jpg" alt="that" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/5037b5d23d5a.jpg" alt="that" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="it|that"&gt;それ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/5037b5d23d5a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/5037b5d23d5a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -535,13 +535,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="あれ" data-translation="that over there"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/bc34cec1afdb.jpg" alt="that over there" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/bc34cec1afdb.jpg" alt="that over there" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="that"&gt;あれ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/bc34cec1afdb.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/bc34cec1afdb.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -551,13 +551,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="辛い" data-translation="spicy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/00415532b81c.jpg" alt="spicy" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/00415532b81c.jpg" alt="spicy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛い&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/00415532b81c.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/00415532b81c.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -567,13 +567,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="甘い" data-translation="sweet"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/abc0acf03d29.jpg" alt="sweet" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/abc0acf03d29.jpg" alt="sweet" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="sweet"&gt;甘い&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/abc0acf03d29.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/abc0acf03d29.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -583,13 +583,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="塩辛い" data-translation="salty"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/613593d2d4de.jpg" alt="salty" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/613593d2d4de.jpg" alt="salty" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="saline|salt|salty"&gt;塩辛い&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/613593d2d4de.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/613593d2d4de.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -599,13 +599,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="酸っぱい" data-translation="sour"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/c6097596c760.jpg" alt="sour" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/c6097596c760.jpg" alt="sour" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="sour"&gt;酸っぱい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/c6097596c760.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/c6097596c760.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -615,13 +615,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="苦い" data-translation="bitter"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f1016498eff3.jpg" alt="bitter" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/f1016498eff3.jpg" alt="bitter" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="bitter"&gt;苦い&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/f1016498eff3.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/f1016498eff3.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -631,13 +631,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="おいしい" data-translation="delicious"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e84ddb5f99e8.jpg" alt="delicious" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e84ddb5f99e8.jpg" alt="delicious" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="delicious|tasty"&gt;おいしい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e84ddb5f99e8.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e84ddb5f99e8.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -647,13 +647,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="まずい" data-translation="bad-tasting"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/91935b3d64a1.jpg" alt="bad-tasting" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/91935b3d64a1.jpg" alt="bad-tasting" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="poor"&gt;まずい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/91935b3d64a1.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/91935b3d64a1.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -663,13 +663,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="冷たい" data-translation="cold"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7a299819ae74.jpg" alt="cold" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/7a299819ae74.jpg" alt="cold" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="chilly|cold|cruel"&gt;冷たい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7a299819ae74.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/7a299819ae74.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -679,13 +679,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="温かい" data-translation="warm"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/769d1e2f29dd.jpg" alt="warm" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/769d1e2f29dd.jpg" alt="warm" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="warm"&gt;温かい&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/769d1e2f29dd.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/769d1e2f29dd.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -695,13 +695,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="熱い" data-translation="hot"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/d6852ebca3b5.jpg" alt="hot" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/d6852ebca3b5.jpg" alt="hot" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cordial|hearty|hot|kind|serious|thick"&gt;熱い&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/d6852ebca3b5.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/d6852ebca3b5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -711,13 +711,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="和食" data-translation="Japanese cuisine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/013626980e14.jpg" alt="Japanese cuisine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/013626980e14.jpg" alt="Japanese cuisine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;和食&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/013626980e14.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/013626980e14.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -727,13 +727,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="洋食" data-translation="Western cuisine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/3b9b3b842737.jpg" alt="Western cuisine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/3b9b3b842737.jpg" alt="Western cuisine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="Japanese-fashioned western food"&gt;洋食&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/3b9b3b842737.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/3b9b3b842737.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -743,13 +743,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="中華料理" data-translation="Chinese cuisine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e4ab8db5ff3f.jpg" alt="Chinese cuisine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e4ab8db5ff3f.jpg" alt="Chinese cuisine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="China|Chinese"&gt;中華&lt;/span&gt;&lt;span class="jp-word" data-en-translation="cook|cooking|food"&gt;料理&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e4ab8db5ff3f.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e4ab8db5ff3f.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -759,13 +759,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="イタリアン" data-translation="Italian cuisine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/4e9b0d95f3c4.jpg" alt="Italian cuisine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/4e9b0d95f3c4.jpg" alt="Italian cuisine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;イタリアン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/4e9b0d95f3c4.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/4e9b0d95f3c4.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -775,13 +775,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="フレンチ" data-translation="French cuisine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/89d063c7ec50.jpg" alt="French cuisine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/89d063c7ec50.jpg" alt="French cuisine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;フレンチ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/89d063c7ec50.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/89d063c7ec50.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -791,13 +791,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="カレー" data-translation="curry"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8a48e4bd0e71.jpg" alt="curry" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/8a48e4bd0e71.jpg" alt="curry" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;カレー&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/8a48e4bd0e71.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/8a48e4bd0e71.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -807,13 +807,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ラーメン" data-translation="ramen"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/fa5482378272.jpg" alt="ramen" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/fa5482378272.jpg" alt="ramen" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;ラーメン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/fa5482378272.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/fa5482378272.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -823,13 +823,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="お寿司" data-translation="sushi"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/4a494b0b0e24.jpg" alt="sushi" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/4a494b0b0e24.jpg" alt="sushi" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="sushi"&gt;寿司&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/4a494b0b0e24.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/4a494b0b0e24.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -839,13 +839,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="天ぷら" data-translation="tempura"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9d22bd504c65.jpg" alt="tempura" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/9d22bd504c65.jpg" alt="tempura" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;天ぷら&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/9d22bd504c65.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/9d22bd504c65.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -855,13 +855,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="刺身" data-translation="sashimi"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/98a70ba09895.jpg" alt="sashimi" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/98a70ba09895.jpg" alt="sashimi" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;刺身&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/98a70ba09895.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/98a70ba09895.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -871,13 +871,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="焼き肉" data-translation="yakiniku"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7ba3c5a82845.jpg" alt="yakiniku" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/7ba3c5a82845.jpg" alt="yakiniku" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;焼き肉&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7ba3c5a82845.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/7ba3c5a82845.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -887,13 +887,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="鍋" data-translation="hot pot"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8a6269e6c78a.jpg" alt="hot pot" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/8a6269e6c78a.jpg" alt="hot pot" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="pan"&gt;鍋&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/8a6269e6c78a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/8a6269e6c78a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -903,13 +903,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="丼" data-translation="rice bowl"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/b54d338727a5.jpg" alt="rice bowl" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/b54d338727a5.jpg" alt="rice bowl" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;丼&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/b54d338727a5.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/b54d338727a5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -919,13 +919,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="うどん" data-translation="udon"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/c640b114b2e9.jpg" alt="udon" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/c640b114b2e9.jpg" alt="udon" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="udon"&gt;うどん&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/c640b114b2e9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/c640b114b2e9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -935,13 +935,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="そば" data-translation="soba"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/c7dc3517b788.jpg" alt="soba" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/c7dc3517b788.jpg" alt="soba" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="buckwheat|nearby|neighboring|neighbouring|noodles|soba"&gt;そば&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/c7dc3517b788.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/c7dc3517b788.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -951,13 +951,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="パスタ" data-translation="pasta"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/4514613747e9.jpg" alt="pasta" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/4514613747e9.jpg" alt="pasta" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;パスタ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/4514613747e9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/4514613747e9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -967,13 +967,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ピザ" data-translation="pizza"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/3078f5be4273.jpg" alt="pizza" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/3078f5be4273.jpg" alt="pizza" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="pizza"&gt;ピザ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/3078f5be4273.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/3078f5be4273.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -983,13 +983,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="サラダ" data-translation="salad"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/2f1069225f69.jpg" alt="salad" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/2f1069225f69.jpg" alt="salad" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="salad"&gt;サラダ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/2f1069225f69.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/2f1069225f69.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -999,13 +999,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="スープ" data-translation="soup"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a1f84936b79b.jpg" alt="soup" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/a1f84936b79b.jpg" alt="soup" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="soup"&gt;スープ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/a1f84936b79b.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/a1f84936b79b.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1015,13 +1015,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ステーキ" data-translation="steak"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7d92b8328bb1.jpg" alt="steak" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/7d92b8328bb1.jpg" alt="steak" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="steak"&gt;ステーキ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7d92b8328bb1.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/7d92b8328bb1.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1031,13 +1031,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ハンバーグ" data-translation="hamburg steak"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0e1fbb59f5d5.jpg" alt="hamburg steak" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/0e1fbb59f5d5.jpg" alt="hamburg steak" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;ハンバーグ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/0e1fbb59f5d5.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/0e1fbb59f5d5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1047,13 +1047,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="魚" data-translation="fish"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/65ef12b2a179.jpg" alt="fish" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/65ef12b2a179.jpg" alt="fish" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="dish|fish"&gt;魚&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/65ef12b2a179.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/65ef12b2a179.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1063,13 +1063,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="肉" data-translation="meat"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/6c95d005ff0e.jpg" alt="meat" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/6c95d005ff0e.jpg" alt="meat" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="flesh|meat"&gt;肉&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/6c95d005ff0e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/6c95d005ff0e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1079,13 +1079,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="野菜" data-translation="vegetables"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/9c726c0f0fd9.jpg" alt="vegetables" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/9c726c0f0fd9.jpg" alt="vegetables" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="vegetable"&gt;野菜&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/9c726c0f0fd9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/9c726c0f0fd9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1095,13 +1095,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ご飯" data-translation="rice"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7e8ee96091c1.jpg" alt="rice" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/7e8ee96091c1.jpg" alt="rice" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;ご飯&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7e8ee96091c1.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/7e8ee96091c1.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1111,13 +1111,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="パン" data-translation="bread"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/1ceb30e65a04.jpg" alt="bread" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/1ceb30e65a04.jpg" alt="bread" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="bread"&gt;パン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/1ceb30e65a04.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/1ceb30e65a04.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1127,13 +1127,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="水" data-translation="water"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/284092535ae5.jpg" alt="water" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/284092535ae5.jpg" alt="water" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="water"&gt;水&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/284092535ae5.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/284092535ae5.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1143,13 +1143,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="お茶" data-translation="tea"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/25a6d9b7244f.jpg" alt="tea" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/25a6d9b7244f.jpg" alt="tea" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="brown|tea"&gt;茶&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/25a6d9b7244f.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/25a6d9b7244f.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1159,13 +1159,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="コーヒー" data-translation="coffee"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a731f2433f92.jpg" alt="coffee" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/a731f2433f92.jpg" alt="coffee" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="coffee"&gt;コーヒー&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/a731f2433f92.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/a731f2433f92.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1175,13 +1175,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ビール" data-translation="beer"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/72a4b7c84ecb.jpg" alt="beer" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/72a4b7c84ecb.jpg" alt="beer" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="beer"&gt;ビール&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/72a4b7c84ecb.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/72a4b7c84ecb.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1191,13 +1191,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ワイン" data-translation="wine"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/ef41c8b34906.jpg" alt="wine" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/ef41c8b34906.jpg" alt="wine" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="wine"&gt;ワイン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/ef41c8b34906.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/ef41c8b34906.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1207,13 +1207,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ジュース" data-translation="juice"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/b9ac402472b6.jpg" alt="juice" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/b9ac402472b6.jpg" alt="juice" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="deuce|juice"&gt;ジュース&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/b9ac402472b6.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/b9ac402472b6.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1223,13 +1223,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="おすすめ" data-translation="recommendation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a32a4b36bdfd.jpg" alt="recommendation" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/a32a4b36bdfd.jpg" alt="recommendation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="tail"&gt;お&lt;/span&gt;&lt;span class="jp-word" data-en-translation="advance|advise|encourage|promote|recommend|suggest"&gt;すすめ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/a32a4b36bdfd.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/a32a4b36bdfd.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1239,13 +1239,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="人気" data-translation="popular"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/71442e19103e.jpg" alt="popular" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/71442e19103e.jpg" alt="popular" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="popularity"&gt;人気&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/71442e19103e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/71442e19103e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1255,13 +1255,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="名物" data-translation="specialty"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/7db33707d69a.jpg" alt="specialty" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/7db33707d69a.jpg" alt="specialty" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;名物&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/7db33707d69a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/7db33707d69a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1271,13 +1271,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="季節" data-translation="season"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/a839a1e4fc29.jpg" alt="season" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/a839a1e4fc29.jpg" alt="season" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="season"&gt;季節&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/a839a1e4fc29.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/a839a1e4fc29.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1287,13 +1287,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="新鮮" data-translation="fresh"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f472581081a2.jpg" alt="fresh" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/f472581081a2.jpg" alt="fresh" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;新鮮&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/f472581081a2.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/f472581081a2.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1303,13 +1303,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="辛さ" data-translation="spiciness level"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/692e5b2e14e7.jpg" alt="spiciness level" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/692e5b2e14e7.jpg" alt="spiciness level" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="hard|painful"&gt;辛&lt;/span&gt;&lt;span class="jp-word"&gt;さ&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/692e5b2e14e7.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/692e5b2e14e7.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1319,13 +1319,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="甘口" data-translation="mild"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/27a1e332cfa9.jpg" alt="mild" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/27a1e332cfa9.jpg" alt="mild" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;甘口&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/27a1e332cfa9.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/27a1e332cfa9.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1335,13 +1335,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="中辛" data-translation="medium spicy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/f8394ed35af2.jpg" alt="medium spicy" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/f8394ed35af2.jpg" alt="medium spicy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;中辛&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/f8394ed35af2.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/f8394ed35af2.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1351,13 +1351,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="辛口" data-translation="spicy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e35b5872913f.jpg" alt="spicy" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e35b5872913f.jpg" alt="spicy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;辛口&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e35b5872913f.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e35b5872913f.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1367,13 +1367,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="激辛" data-translation="very spicy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/6429f4e2d167.jpg" alt="very spicy" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/6429f4e2d167.jpg" alt="very spicy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;激辛&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/6429f4e2d167.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/6429f4e2d167.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1383,13 +1383,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="量" data-translation="amount"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/089bad0dc5f2.jpg" alt="amount" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/089bad0dc5f2.jpg" alt="amount" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="quantity"&gt;量&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/089bad0dc5f2.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/089bad0dc5f2.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1399,13 +1399,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="大盛り" data-translation="large serving"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/1dac6ea0a1f1.jpg" alt="large serving" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/1dac6ea0a1f1.jpg" alt="large serving" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;大盛り&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/1dac6ea0a1f1.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/1dac6ea0a1f1.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1415,13 +1415,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="小盛り" data-translation="small serving"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/10a523941004.jpg" alt="small serving" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/10a523941004.jpg" alt="small serving" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;小盛り&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/10a523941004.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/10a523941004.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1431,13 +1431,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="普通盛り" data-translation="regular serving"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/c1cd2e6b178a.jpg" alt="regular serving" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/c1cd2e6b178a.jpg" alt="regular serving" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="average|common|general|mediocre|normal|ordinary|usual"&gt;普通&lt;/span&gt;&lt;span class="jp-word" data-en-translation="forest|harpoon|tren"&gt;盛り&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/c1cd2e6b178a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/c1cd2e6b178a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1447,13 +1447,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="アレルギー" data-translation="allergy"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/d38537048530.jpg" alt="allergy" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/d38537048530.jpg" alt="allergy" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="allergy"&gt;アレルギー&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/d38537048530.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/d38537048530.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1463,13 +1463,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="ベジタリアン" data-translation="vegetarian"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/68791a17e10d.jpg" alt="vegetarian" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/68791a17e10d.jpg" alt="vegetarian" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="vegetarian"&gt;ベジタリアン&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/68791a17e10d.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/68791a17e10d.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1479,13 +1479,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="席" data-translation="seat"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0cef151e8232.jpg" alt="seat" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/0cef151e8232.jpg" alt="seat" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cough"&gt;席&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/0cef151e8232.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/0cef151e8232.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1495,13 +1495,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="窓際" data-translation="window-side"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/d97b38eb894c.jpg" alt="window-side" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/d97b38eb894c.jpg" alt="window-side" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;窓際&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/d97b38eb894c.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/d97b38eb894c.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1511,13 +1511,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="禁煙" data-translation="non-smoking"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/3fa43d7e0139.jpg" alt="non-smoking" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/3fa43d7e0139.jpg" alt="non-smoking" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="abstain|give up|no smoking|stop"&gt;禁煙&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/3fa43d7e0139.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/3fa43d7e0139.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1527,13 +1527,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="個室" data-translation="private room"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/80251c217a6a.jpg" alt="private room" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/80251c217a6a.jpg" alt="private room" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;個室&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/80251c217a6a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/80251c217a6a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1543,13 +1543,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="テーブル" data-translation="table"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0b0f59b07fb2.jpg" alt="table" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/0b0f59b07fb2.jpg" alt="table" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="table"&gt;テーブル&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/0b0f59b07fb2.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/0b0f59b07fb2.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1559,13 +1559,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="カウンター" data-translation="counter"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/b6c87e1cd51e.jpg" alt="counter" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/b6c87e1cd51e.jpg" alt="counter" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;カウンター&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/b6c87e1cd51e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/b6c87e1cd51e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1575,13 +1575,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="待ち時間" data-translation="waiting time"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/0f68e01ff3a0.jpg" alt="waiting time" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/0f68e01ff3a0.jpg" alt="waiting time" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="city|town"&gt;待ち&lt;/span&gt;&lt;span class="jp-word" data-en-translation="hour|period|time"&gt;時間&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/0f68e01ff3a0.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/0f68e01ff3a0.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1591,13 +1591,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="満席" data-translation="fully booked"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/4cc6e0c55217.jpg" alt="fully booked" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/4cc6e0c55217.jpg" alt="fully booked" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;満席&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/4cc6e0c55217.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/4cc6e0c55217.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1607,13 +1607,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="空席" data-translation="available seat"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/80cb4aac6b9e.jpg" alt="available seat" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/80cb4aac6b9e.jpg" alt="available seat" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;空席&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/80cb4aac6b9e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/80cb4aac6b9e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1623,13 +1623,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="キャンセル" data-translation="cancellation"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/df872aba5e6e.jpg" alt="cancellation" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/df872aba5e6e.jpg" alt="cancellation" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word" data-en-translation="cancellation"&gt;キャンセル&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/df872aba5e6e.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/df872aba5e6e.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1639,13 +1639,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="テイクアウト" data-translation="takeout"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/e0416050b0d4.jpg" alt="takeout" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/e0416050b0d4.jpg" alt="takeout" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;テイクアウト&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/e0416050b0d4.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/e0416050b0d4.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1655,13 +1655,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="持ち帰り" data-translation="takeout"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/8386d6ad00e0.jpg" alt="takeout" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/8386d6ad00e0.jpg" alt="takeout" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;持ち帰り&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/8386d6ad00e0.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/8386d6ad00e0.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;
@@ -1671,13 +1671,13 @@
 &lt;/div&gt;
 &lt;div class="flashcard" data-word="配達" data-translation="delivery"&gt;
     &lt;div class="flashcard-front"&gt;
-        &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/wordbank/4b9a1121d78a.jpg" alt="delivery" loading="lazy"&gt;
+        &lt;img src="http://localhost:8080/images/wordbank/4b9a1121d78a.jpg" alt="delivery" loading="lazy"&gt;
         &lt;div class="flashcard-word-jp"&gt;&lt;span class="jp-word"&gt;配達&lt;/span&gt;&lt;audio class="flashcard-audio" style="display: none;"&gt;
-            &lt;source src="https://world.teds-stuff.xyz/teds_nihongo_workbook/audio/wordbank/4b9a1121d78a.aac" type="audio/aac"&gt;
+            &lt;source src="http://localhost:8080/audio/wordbank/4b9a1121d78a.aac" type="audio/aac"&gt;
             Your browser does not support the audio element.
         &lt;/audio&gt;
         &lt;button class="flashcard-audio-btn" aria-label="Play pronunciation" onclick="event.stopPropagation();"&gt;
-            &lt;img src="https://world.teds-stuff.xyz/teds_nihongo_workbook/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
+            &lt;img src="http://localhost:8080/images/audio-speaker.svg" alt="Play" width="16" height="16" style="pointer-events: none;"&gt;
         &lt;/button&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="flashcard-back" style="display: none;"&gt;

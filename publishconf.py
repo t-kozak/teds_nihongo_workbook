@@ -9,6 +9,7 @@ from pelicanconf import *
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = "https://world.teds-stuff.xyz/teds_nihongo_workbook"
+# SITEURL = "http://localhost:8080"
 RELATIVE_URLS = False
 
 # Production mode - enable full word propagation with image/audio generation
@@ -18,6 +19,9 @@ FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
+
+# Enable cache busting for production builds
+PLUGINS.append("cache_busting")
 
 # Following items are often useful when publishing
 

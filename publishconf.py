@@ -5,7 +5,7 @@ import os
 import sys
 
 sys.path.append(os.curdir)
-from pelicanconf import *
+from pelicanconf import *  # noqa: F403
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = "https://world.teds-stuff.xyz/teds_nihongo_workbook"
@@ -21,7 +21,7 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 DELETE_OUTPUT_DIRECTORY = True
 
 # Enable cache busting for production builds
-PLUGINS.append("cache_busting")
+PLUGINS.append("cache_busting")  # noqa: F405
 
 # Following items are often useful when publishing
 

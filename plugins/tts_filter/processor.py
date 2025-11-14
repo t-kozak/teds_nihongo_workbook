@@ -5,13 +5,31 @@ Handles parsing of TTS sections, generation of audio files using Google's Gemini
 and generation of HTML audio elements.
 """
 
+import asyncio
 import hashlib
 import re
+from collections.abc import Coroutine
 from pathlib import Path
-
-from tqdm import tqdm
+from typing import Any, TypedDict, cast
 
 from tts import TTS
+
+
+class DialogueSectionData(TypedDict):
+    """Type for dialogue section data."""
+
+    full_match: str
+    type: str
+    dialogue: list[tuple[str, str]]
+    text_content: str
+
+
+class SimpleSectionData(TypedDict):
+    """Type for simple (inline/full) section data."""
+
+    full_match: str
+    type: str
+    text_content: str
 
 
 class TTSProcessor:
@@ -85,7 +103,7 @@ class TTSProcessor:
         text_hash = hashlib.md5(text.encode("utf-8")).hexdigest()
         return f"{text_hash}.aac"
 
-    def generate_audio(self, text: str, voice: str | None = None) -> Path:
+    async def generate_audio(self, text: str, voice: str | None = None) -> Path:
         """
         Generate audio file for the given text.
 
@@ -121,9 +139,9 @@ class TTSProcessor:
         try:
             assert self.tts is not None
             if voice:
-                self.tts.generate(text, output_path, voice=voice)
+                await self.tts.generate(text, output_path, voice=voice)
             else:
-                self.tts.generate(text, output_path)
+                await self.tts.generate(text, output_path)
 
             self._audio_cache[cache_key] = output_path
             return output_path
@@ -224,7 +242,7 @@ class TTSProcessor:
                 f"Missing voice configuration for speakers: {', '.join(sorted(missing_speakers))}"
             )
 
-    def generate_dialogue_audio(
+    async def generate_dialogue_audio(
         self, dialogue: list[tuple[str, str]], speaker_cfg: dict[str, str]
     ) -> Path:
         """
@@ -262,7 +280,7 @@ class TTSProcessor:
         print(f"Generating dialogue audio with {len(dialogue)} turns...")
         try:
             assert self.tts is not None
-            self.tts.generate_dialogue(speaker_cfg, dialogue, output_path)
+            await self.tts.generate_dialogue(speaker_cfg, dialogue, output_path)
             self._audio_cache[cache_key] = output_path
             return output_path
         except Exception as e:
@@ -383,11 +401,12 @@ class TTSProcessor:
 
         return html
 
-    def process_content(self, content: str) -> str:
+    async def process_content(self, content: str) -> str:
         """
         Process content: extract TTS sections, generate audio, and generate HTML.
 
         This is the main entry point that combines all processing steps.
+        Audio generation is performed concurrently for all sections to improve performance.
 
         Args:
             content: The markdown content
@@ -400,10 +419,11 @@ class TTSProcessor:
         if not sections:
             return content
 
-        # Process each section
-        for full_match, tts_type, voice, speakers, text_content in tqdm(
-            sections, desc="Processing TTS sections", unit="section", leave=False
-        ):
+        # Prepare all sections and validate them first
+        tasks: list[Coroutine[Any, Any, Path]] = []
+        section_data: list[DialogueSectionData | SimpleSectionData] = []
+
+        for full_match, tts_type, voice, speakers, text_content in sections:
             try:
                 if tts_type == "dialogue":
                     # Handle dialogue type
@@ -422,31 +442,77 @@ class TTSProcessor:
                     # Validate speakers
                     self.validate_dialogue_speakers(dialogue, speaker_cfg)
 
-                    # Generate dialogue audio
-                    audio_path = self.generate_dialogue_audio(dialogue, speaker_cfg)
-                    audio_filename = audio_path.name
-
-                    # Generate HTML
-                    html = self.generate_dialogue_html(dialogue, audio_filename)
+                    # Create task for dialogue audio generation
+                    task = self.generate_dialogue_audio(dialogue, speaker_cfg)
+                    tasks.append(task)
+                    section_data.append(
+                        {
+                            "full_match": full_match,
+                            "type": tts_type,
+                            "dialogue": dialogue,
+                            "text_content": text_content,
+                        }
+                    )
                 else:
-                    # Handle inline and full types (original behavior)
-                    # Generate audio file
-                    audio_path = self.generate_audio(text_content, voice)
-                    audio_filename = audio_path.name
-
-                    # Generate HTML based on type
-                    if tts_type == "full":
-                        html = self.generate_full_html(text_content, audio_filename)
-                    else:  # inline (default)
-                        html = self.generate_inline_html(text_content, audio_filename)
-
-                # Replace the TTS section with HTML
-                content = content.replace(full_match, html)
+                    # Handle inline and full types
+                    task = self.generate_audio(text_content, voice)
+                    tasks.append(task)
+                    section_data.append(
+                        {
+                            "full_match": full_match,
+                            "type": tts_type,
+                            "text_content": text_content,
+                        }
+                    )
 
             except ValueError as e:
                 print(f"Error processing TTS section: {e}")
                 print(f"Skipping section: {full_match[:100]}...")
                 continue
+
+        # Generate all audio files concurrently
+        if tasks:
+            print(f"Generating audio for {len(tasks)} TTS sections concurrently...")
+            audio_paths = await asyncio.gather(*tasks, return_exceptions=True)
+
+            # Process results and generate HTML
+            for i, (audio_result, section_info) in enumerate(
+                zip(audio_paths, section_data)
+            ):
+                try:
+                    # Check if audio generation failed
+                    if isinstance(audio_result, Exception):
+                        print(f"Error generating audio for section: {audio_result}")
+                        continue
+
+                    # Type narrowing: audio_result is Path after exception check
+                    audio_path = cast(Path, audio_result)
+                    audio_filename = audio_path.name
+                    full_match = section_info["full_match"]
+                    tts_type = section_info["type"]
+
+                    # Generate HTML based on type
+                    if tts_type == "dialogue":
+                        # Type narrowing: section_info is DialogueSectionData
+                        dialogue_section = cast(DialogueSectionData, section_info)
+                        dialogue = dialogue_section["dialogue"]
+                        html = self.generate_dialogue_html(dialogue, audio_filename)
+                    elif tts_type == "full":
+                        text_content = section_info["text_content"]
+                        html = self.generate_full_html(text_content, audio_filename)
+                    else:  # inline (default)
+                        text_content = section_info["text_content"]
+                        html = self.generate_inline_html(text_content, audio_filename)
+
+                    # Replace the TTS section with HTML
+                    content = content.replace(full_match, html)
+
+                except Exception as e:
+                    print(f"Error processing TTS section result: {e}")
+                    import traceback
+
+                    traceback.print_exc()
+                    continue
 
         return content
 

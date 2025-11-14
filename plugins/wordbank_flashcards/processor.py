@@ -5,6 +5,7 @@ Handles parsing of wordbank sections, propagation to the wordbank database,
 and generation of interactive HTML flashcards.
 """
 
+import asyncio
 import hashlib
 import json
 import re
@@ -14,6 +15,9 @@ import fugashi
 from tqdm import tqdm
 
 from wordbank import WordBank, WordbankWordDetails
+
+# Batch size for concurrent propagation
+PROPAGATE_BATCH_SIZE = 5
 
 
 class WordbankProcessor:
@@ -78,11 +82,11 @@ class WordbankProcessor:
 
         return sections
 
-    def propagate_words(
+    async def propagate_words(
         self, words: list[tuple[str, str, str]]
     ) -> list[WordbankWordDetails]:
         """
-        Propagate words to the wordbank database.
+        Propagate words to the wordbank database using async batch processing.
 
         Args:
             words: List of (japanese_word, english_translation, context) tuples
@@ -92,40 +96,53 @@ class WordbankProcessor:
         """
         results = []
 
-        # Use tqdm to show progress
-        for japanese_word, english_translation, context in tqdm(
-            words, desc="Processing wordbank entries", unit="word", leave=False
-        ):
-            cache_key = (japanese_word, english_translation)
+        # Process words in batches for better concurrency control
+        with tqdm(total=len(words), desc="Processing wordbank entries", unit="word", leave=False) as pbar:
+            for i in range(0, len(words), PROPAGATE_BATCH_SIZE):
+                batch = words[i:i + PROPAGATE_BATCH_SIZE]
+                batch_tasks = []
 
-            # Check if we already propagated this word in this session
-            if cache_key in self._propagated_cache:
-                results.append(self._propagated_cache[cache_key])
-                continue
+                for japanese_word, english_translation, context in batch:
+                    cache_key = (japanese_word, english_translation)
 
-            # In dev mode, only fetch from cache without propagating
-            if self.dev_mode:
-                details = self.wordbank.get(japanese_word, english_translation)
-                if details is None:
-                    # Word not in cache - skip image/audio generation in dev mode
-                    # Create minimal details object for HTML generation
-                    details = WordbankWordDetails(
-                        word=japanese_word,
-                        en_translation=english_translation,
-                        language_code="ja",  # Default to Japanese
-                        examples=[],
-                        description=context,
-                        image_description="",  # Empty in dev mode
-                    )
-            else:
-                # Production mode: Propagate the word (generates images/audio)
-                details = self.wordbank.propagate(
-                    japanese_word, english_translation, context
-                )
+                    # Check if we already propagated this word in this session
+                    if cache_key in self._propagated_cache:
+                        results.append(self._propagated_cache[cache_key])
+                        pbar.update(1)
+                        continue
 
-            # Cache the result
-            self._propagated_cache[cache_key] = details
-            results.append(details)
+                    # In dev mode, only fetch from cache without propagating
+                    if self.dev_mode:
+                        details = self.wordbank.get(japanese_word, english_translation)
+                        if details is None:
+                            # Word not in cache - skip image/audio generation in dev mode
+                            # Create minimal details object for HTML generation
+                            details = WordbankWordDetails(
+                                word=japanese_word,
+                                en_translation=english_translation,
+                                language_code="ja",  # Default to Japanese
+                                examples=[],
+                                description=context,
+                                image_description="",  # Empty in dev mode
+                            )
+                        # Cache the result
+                        self._propagated_cache[cache_key] = details
+                        results.append(details)
+                        pbar.update(1)
+                    else:
+                        # Production mode: Propagate the word (generates images/audio) asynchronously
+                        batch_tasks.append((cache_key, self.wordbank.propagate(
+                            japanese_word, english_translation, context
+                        )))
+
+                # Wait for all tasks in the batch to complete
+                if batch_tasks:
+                    batch_results = await asyncio.gather(*[task for _, task in batch_tasks])
+                    for (cache_key, _), details in zip(batch_tasks, batch_results):
+                        # Cache the result
+                        self._propagated_cache[cache_key] = details
+                        results.append(details)
+                        pbar.update(1)
 
         return results
 
@@ -305,11 +322,11 @@ class WordbankProcessor:
 
         return complete_html
 
-    def process_content(self, content: str) -> str:
+    async def process_content_async(self, content: str) -> str:
         """
         Process content: extract wordbank sections, propagate words, and generate HTML.
 
-        This is the main entry point that combines both passes.
+        This is the async main entry point that combines both passes with concurrent processing.
 
         Args:
             content: The markdown content
@@ -324,8 +341,8 @@ class WordbankProcessor:
 
         # Process each section
         for full_match, words in sections:
-            # First pass: propagate words
-            word_details_list = self.propagate_words(words)
+            # First pass: propagate words (async with batching)
+            word_details_list = await self.propagate_words(words)
 
             # Second pass: generate HTML
             html = self.generate_flashcard_section_html(word_details_list)
@@ -334,6 +351,34 @@ class WordbankProcessor:
             content = content.replace(full_match, html)
 
         return content
+
+    def process_content(self, content: str) -> str:
+        """
+        Process content: extract wordbank sections, propagate words, and generate HTML.
+
+        This is the sync wrapper that runs the async processing.
+
+        Args:
+            content: The markdown content
+
+        Returns:
+            Processed content with wordbank sections replaced by HTML flashcards
+        """
+        # Check if there's already a running event loop
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = None
+
+        if loop is not None:
+            # We're already in an async context, create a new loop in a thread
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(asyncio.run, self.process_content_async(content))
+                return future.result()
+        else:
+            # No event loop running, we can safely use asyncio.run
+            return asyncio.run(self.process_content_async(content))
 
     def _generate_furigana_text(self, word: str) -> str:
         """

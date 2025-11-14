@@ -1,3 +1,4 @@
+import asyncio
 import mimetypes
 import re
 import struct
@@ -22,7 +23,7 @@ class TTS:
         )
         self.tagger = fugashi.Tagger()  # type: ignore
 
-    def generate(self, content: str, output: Path, voice: str = _DEFAULT_VOICE):
+    async def generate(self, content: str, output: Path, voice: str = _DEFAULT_VOICE):
         """Generate TTS audio and save as AAC format.
 
         Converts any kanji in the input text to hiragana before generating speech.
@@ -56,15 +57,16 @@ class TTS:
             ),
         )
 
-        # Collect all audio chunks
+        # Collect all audio chunks using native async API
         audio_data = None
         mime_type = None
 
-        for chunk in self.client.models.generate_content_stream(
+        stream = await self.client.aio.models.generate_content_stream(
             model=self.model,
             contents=contents,
             config=generate_content_config,
-        ):
+        )
+        async for chunk in stream:
             if (
                 chunk.candidates is None
                 or chunk.candidates[0].content is None
@@ -96,19 +98,22 @@ class TTS:
             temp_wav_path = temp_wav.name
 
         try:
-            # Convert WAV to AAC using ffmpeg
-            ffmpeg_converter = (
-                FFmpeg()
-                .option("y")
-                .input(temp_wav_path)
-                .output(str(output), {"codec:a": "aac", "b:a": "128k"})
-            )
-            ffmpeg_converter.execute()
+            # Convert WAV to AAC using ffmpeg - run in thread pool since it's blocking
+            def _convert_audio():
+                ffmpeg_converter = (
+                    FFmpeg()
+                    .option("y")
+                    .input(temp_wav_path)
+                    .output(str(output), {"codec:a": "aac", "b:a": "128k"})
+                )
+                ffmpeg_converter.execute()
+
+            await asyncio.to_thread(_convert_audio)
         finally:
             # Clean up temporary WAV file
             Path(temp_wav_path).unlink()
 
-    def generate_dialogue(
+    async def generate_dialogue(
         self,
         speaker_cfg: dict[str, str],
         dialogue: list[tuple[str, str]],
@@ -127,22 +132,30 @@ class TTS:
         if isinstance(output, str):
             output = Path(output)
 
-        # Build the dialogue text with speaker labels
+        # Sanitize speaker names (remove spaces and special characters)
+        sanitized_speaker_map = {
+            speaker: self._sanitize_speaker_name(speaker)
+            for speaker in speaker_cfg.keys()
+        }
+
+        # Build the dialogue text with sanitized speaker labels
         dialogue_lines = []
         for speaker, text in dialogue:
             # Convert kanji to hiragana for each dialogue line
             hiragana_text = self._kanji_to_hiragana(text)
-            dialogue_lines.append(f"{speaker}: {hiragana_text}")
+            sanitized_speaker = sanitized_speaker_map[speaker]
+            dialogue_lines.append(f"{sanitized_speaker}: {hiragana_text}")
 
         dialogue_text = "\n".join(dialogue_lines)
         print(f"Generating multi-speaker TTS for dialogue:\n{dialogue_text}")
 
-        # Configure speaker voice configs
+        # Configure speaker voice configs with sanitized names
         speaker_voice_configs = []
         for speaker_name, voice_name in speaker_cfg.items():
+            sanitized_name = sanitized_speaker_map[speaker_name]
             speaker_voice_configs.append(
                 types.SpeakerVoiceConfig(
-                    speaker=speaker_name,
+                    speaker=sanitized_name,
                     voice_config=types.VoiceConfig(
                         prebuilt_voice_config=types.PrebuiltVoiceConfig(
                             voice_name=voice_name
@@ -172,15 +185,16 @@ class TTS:
             ),
         )
 
-        # Collect all audio chunks
+        # Collect all audio chunks using native async API
         audio_data = None
         mime_type = None
 
-        for chunk in self.client.models.generate_content_stream(
+        stream = await self.client.aio.models.generate_content_stream(
             model=self.model,
             contents=contents,
             config=generate_content_config,
-        ):
+        )
+        async for chunk in stream:
             if (
                 chunk.candidates is None
                 or chunk.candidates[0].content is None
@@ -212,14 +226,17 @@ class TTS:
             temp_wav_path = temp_wav.name
 
         try:
-            # Convert WAV to AAC using ffmpeg
-            ffmpeg_converter = (
-                FFmpeg()
-                .option("y")
-                .input(temp_wav_path)
-                .output(str(output), {"codec:a": "aac", "b:a": "128k"})
-            )
-            ffmpeg_converter.execute()
+            # Convert WAV to AAC using ffmpeg - run in thread pool since it's blocking
+            def _convert_audio():
+                ffmpeg_converter = (
+                    FFmpeg()
+                    .option("y")
+                    .input(temp_wav_path)
+                    .output(str(output), {"codec:a": "aac", "b:a": "128k"})
+                )
+                ffmpeg_converter.execute()
+
+            await asyncio.to_thread(_convert_audio)
         finally:
             # Clean up temporary WAV file
             Path(temp_wav_path).unlink()
@@ -293,6 +310,25 @@ class TTS:
                     pass
 
         return {"bits_per_sample": bits_per_sample, "rate": rate}
+
+    def _sanitize_speaker_name(self, name: str) -> str:
+        """Sanitize speaker name for Google TTS API.
+
+        Removes spaces and special characters that might cause issues.
+
+        Args:
+            name: Original speaker name
+
+        Returns:
+            Sanitized speaker name with only alphanumeric characters
+        """
+        # Replace spaces with underscores and keep only alphanumeric characters
+        sanitized = re.sub(r"[^a-zA-Z0-9]", "_", name)
+        # Remove consecutive underscores
+        sanitized = re.sub(r"_+", "_", sanitized)
+        # Remove leading/trailing underscores
+        sanitized = sanitized.strip("_")
+        return sanitized if sanitized else "Speaker"
 
     def _kanji_to_hiragana(self, text: str) -> str:
         """Convert kanji in text to hiragana.
@@ -405,29 +441,33 @@ class TTS:
 
 
 if __name__ == "__main__":
-    tts = TTS()
 
-    # Test single speaker generation
-    print("Testing single speaker TTS...")
-    tts.generate(
-        'Say the following, as an pronunciation example: "今日, 今日"',
-        Path("sample.aac"),
-    )
+    async def main():
+        tts = TTS()
 
-    # Test multi-speaker dialogue generation
-    print("\nTesting multi-speaker dialogue TTS...")
-    tts.generate_dialogue(
-        speaker_cfg={
-            "Student": "Puck",
-            "Teacher": "Zephyr",
-        },
-        dialogue=[
-            ("Student", "おはようございます、先生"),
-            ("Teacher", "おはよう。今日は元気ですか？"),
-            ("Student", "はい、元気です。ありがとうございます"),
-            ("Teacher", "それは良かったです。勉強を始めましょう"),
-        ],
-        output=Path("dialogue.aac"),
-    )
+        # Test single speaker generation
+        print("Testing single speaker TTS...")
+        await tts.generate(
+            'Say the following, as an pronunciation example: "今日, 今日"',
+            Path("sample.aac"),
+        )
 
-    print("\nGenerated files: sample.aac, dialogue.aac")
+        # Test multi-speaker dialogue generation
+        print("\nTesting multi-speaker dialogue TTS...")
+        await tts.generate_dialogue(
+            speaker_cfg={
+                "Student": "Puck",
+                "Teacher": "Zephyr",
+            },
+            dialogue=[
+                ("Student", "おはようございます、先生"),
+                ("Teacher", "おはよう。今日は元気ですか？"),
+                ("Student", "はい、元気です。ありがとうございます"),
+                ("Teacher", "それは良かったです。勉強を始めましょう"),
+            ],
+            output=Path("dialogue.aac"),
+        )
+
+        print("\nGenerated files: sample.aac, dialogue.aac")
+
+    asyncio.run(main())

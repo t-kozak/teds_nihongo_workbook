@@ -1,3 +1,4 @@
+import asyncio
 import hashlib
 import json
 from dataclasses import asdict, dataclass
@@ -128,7 +129,7 @@ class WordBank:
         wordbank[key] = details
         self._save()
 
-    def _generate_word_details(
+    async def _generate_word_details(
         self, word: str, en_translation: str, description: str
     ) -> WordbankWordDetails:
         """
@@ -159,8 +160,8 @@ class WordBank:
             word=word, en_translation=en_translation, description=description
         )
 
-        # Use the agent to generate the structured output
-        result = self.agent.run(
+        # Use the agent to generate the structured output asynchronously
+        result = await self.agent.run_async(
             prompt,
             result_type=WordbankWordDetails,
         )
@@ -172,7 +173,7 @@ class WordBank:
 
         return result
 
-    def propagate(
+    async def propagate(
         self, word: str, en_translation: str, description: str
     ) -> WordbankWordDetails:
         """
@@ -196,13 +197,18 @@ class WordBank:
         Returns:
             Complete WordbankWordDetails object
         """
-        result = self._generate_word_details(word, en_translation, description)
-        self._generate_img(result)
-        self._generate_audio(result)
+        result = await self._generate_word_details(word, en_translation, description)
+
+        # Run image and audio generation concurrently
+        await asyncio.gather(
+            self._generate_img(result),
+            self._generate_audio(result)
+        )
+
         self.upsert(result)
         return result
 
-    def _generate_img(self, details: WordbankWordDetails):
+    async def _generate_img(self, details: WordbankWordDetails):
         """
         Generate flashcard image for the word details.
 
@@ -229,9 +235,9 @@ class WordBank:
         # Generate new image
         print(f"Generating new image for '{details.word}'")
         prompt = IMG_GEN_PROMPT.format(word_descr=details.image_description)
-        self.tti.generate(prompt, output_file)
+        await self.tti.generate(prompt, output_file)
 
-    def _generate_audio(self, details: WordbankWordDetails):
+    async def _generate_audio(self, details: WordbankWordDetails):
         """
         Generate audio pronunciation for the word.
 
@@ -266,7 +272,7 @@ class WordBank:
             prompt = AUDIO_GEN_PROMPT.format(
                 word=details.word, example=details.examples[0]
             )
-            self.tts.generate(prompt, output_file)
+            await self.tts.generate(prompt, output_file)
 
             # Update the details with the audio file name
 
@@ -357,8 +363,11 @@ AUDIO_GEN_PROMPT = (
 
 
 if __name__ == "__main__":
-    temp_wordbank = WordBank(data_path="./test_data.jsonl")
-    temp_wordbank.propagate("猫", "cat", "The common household pet - a cat")
+    async def main():
+        temp_wordbank = WordBank(data_path="./test_data.jsonl")
+        await temp_wordbank.propagate("猫", "cat", "The common household pet - a cat")
 
-    for itm in temp_wordbank.get_all():
-        print(itm)
+        for itm in temp_wordbank.get_all():
+            print(itm)
+
+    asyncio.run(main())

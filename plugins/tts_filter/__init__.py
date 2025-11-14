@@ -10,6 +10,8 @@ This plugin:
 3. Replaces TTS tags with HTML audio elements (inline or full player)
 """
 
+import asyncio
+
 from pelican import signals
 
 from tts_filter.processor import TTSProcessor
@@ -17,6 +19,7 @@ from tts_filter.processor import TTSProcessor
 # Global processor instance to share cache across all articles
 _processor = None
 _current_siteurl = None
+_event_loop = None
 
 
 def get_processor(siteurl: str = "", generate_content: bool = True):
@@ -32,6 +35,15 @@ def get_processor(siteurl: str = "", generate_content: bool = True):
         _processor = TTSProcessor(siteurl, not generate_content)
         _current_siteurl = siteurl
     return _processor
+
+
+def get_event_loop():
+    """Get or create a persistent event loop for the plugin."""
+    global _event_loop
+    if _event_loop is None or _event_loop.is_closed():
+        _event_loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(_event_loop)
+    return _event_loop
 
 
 def process_tts_content(content):
@@ -58,9 +70,12 @@ def process_tts_content(content):
     # Get the processor with the correct SITEURL and generate_content
     processor = get_processor(siteurl, generate_content)
 
-    # Process the content
+    # Process the content using a persistent event loop
     try:
-        processed_content = processor.process_content(content._content)
+        loop = get_event_loop()
+        processed_content = loop.run_until_complete(
+            processor.process_content(content._content)
+        )
         content._content = processed_content
     except Exception as e:
         print(
@@ -71,6 +86,14 @@ def process_tts_content(content):
         traceback.print_exc()
 
 
+def cleanup_event_loop(*_args, **_kwargs):
+    """Clean up the event loop when Pelican finishes."""
+    global _event_loop
+    if _event_loop is not None and not _event_loop.is_closed():
+        _event_loop.close()
+        _event_loop = None
+
+
 def register():
     """
     Plugin registration - required by Pelican.
@@ -79,3 +102,4 @@ def register():
     which fires when a content object is initialized but before it's fully processed.
     """
     signals.content_object_init.connect(process_tts_content)
+    signals.finalized.connect(cleanup_event_loop)

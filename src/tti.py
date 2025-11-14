@@ -10,10 +10,10 @@ _DEFAULT_MODEL = "models/imagen-4.0-generate-001"
 
 class TTI:
     def __init__(self):
-        self.imagen = Client(api_key=load_google_api_key())
+        self.client = Client(api_key=load_google_api_key())
         self.model = _DEFAULT_MODEL
 
-    def generate(self, prompt: str, output_file: Path | str):
+    async def generate(self, prompt: str, output_file: Path | str):
         """
         Generate flashcard image for the word details.
 
@@ -32,10 +32,10 @@ class TTI:
             print(f"Image file already exists at {output_file} - skipping generation")
             return
 
-        # Generate new image
+        # Generate new image using native async API
         print(f"Generating new image for '{prompt}'")
 
-        result = self.imagen.models.generate_images(
+        result = await self.client.aio.models.generate_images(
             model=self.model,
             prompt=prompt,
             config=GenerateImagesConfig(
@@ -61,11 +61,16 @@ class TTI:
 
 
 if __name__ == "__main__":
-    tti = TTI()
-    tti.generate(
-        """A student is sitting at a desk in their bedroom. The desk is neat, with an open textbook, a notebook, and a pen. The student is looking at the textbook and taking notes, preparing for a future class. A calendar on the wall has a circle around 'tomorrow's lesson'.
+    import asyncio
+
+    async def main():
+        tti = TTI()
+        await tti.generate(
+            """A student is sitting at a desk in their bedroom. The desk is neat, with an open textbook, a notebook, and a pen. The student is looking at the textbook and taking notes, preparing for a future class. A calendar on the wall has a circle around 'tomorrow's lesson'.
 
 Generate the image as a colourful illustration, with minimal amount of details. Make sure that the background is not white. Make sure that the image fills all complete square, without corner radius.
 """,
-        "sample.jpg",
-    )
+            "sample.jpg",
+        )
+
+    asyncio.run(main())

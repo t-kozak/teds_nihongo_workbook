@@ -24,12 +24,13 @@ Generate the following sections:
    Provide a list of example phrases relevant to the lesson content using the phrasebank plugin format:
    ```
    <phrasebank>
-   - ${phrase in Japanese}: ${English translation} (${additional context or description in English})
+   - ${phrase in Japanese}: ${English translation} (${analysis in English})
    </phrasebank>
    ```
    Each phrase should be on its own line starting with a dash, with the Japanese phrase followed by a colon,
    then the English translation, and finally contextual information in parentheses. The site generator will
    render these as interactive widgets with text-to-speech functionality.
+   In the analysis, I'd like you to discuss all the words and constructs used in the phrase. Things like もらえ - "for mine benefit" etc
 
 4. Dialogues
    Include 1 or more dialogues relevant to the lesson subject. 
@@ -50,6 +51,7 @@ Generate the following sections:
    - Leda - younger female character
    - Gacrux - older female character
    - Sadaltager - older male character
+   Also, when generating the character names - let's use Japanese names, to keep all of the dialogue content consistently in Japanese.
 
 5. Short story
 Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson. Please wrap the content of the story in a tts tag:
@@ -74,18 +76,18 @@ ${story}
    that is relevant to this lesson subject.
 
 General notes: 
+- when generating the content, I'd like you to first "think" about the sample phrases as this will influence the
+  grammar explanation or context. I'd like all the constructs used in the sample phrases explained there.
 - when writing in Japanese, for word, phrases or any reading material - always use kanji when appropriate. 
   The website generator has a plugin that creates furigana or romanji if requested by the user.
 - Please use H1 ("#") and H2 ("##") for sections (e.g. dialogs, short story, phrases) and sub-sections (dialog 1, dialog 2)
 
 Given the context above, generate a lesson article for the following lesson description:
 
-A lesson covering interactions at a restaurant
-
-I would like to cover things like:
-- making reservations and changes to the reservations
-- ordering foods, starting from simple "this" and "that" please 
-- a lot of wording around different dishes, dish types etc.
-- checking how spicy something is 
+A lesson covering conversations during Japanese lessons. I'd like to focus on ability to:
+- ask explanation about meaning of given words or constructs, its use, alternatives
+- ask to explain something again, speak more slowly
+- making polite requests
+- talking about class, class room, some basic equipment and stationary
 
 Please generate the content as a markdown artefact I can copy or download.

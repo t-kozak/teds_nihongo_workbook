@@ -70,7 +70,8 @@ class WordBank:
 
         Args:
             data_path: Path to the JSONL file. If None, uses default path.
-            agent: Marvin agent for LLM operations. If None, uses default Gemini agent.
+            agent: Marvin agent for LLM operations. If None, a new agent will be created
+                   per request to enable true concurrent execution.
         """
         if data_path is None:
             self.data_path = (
@@ -79,7 +80,8 @@ class WordBank:
         else:
             self.data_path = Path(data_path).absolute()
 
-        self.agent = agent if agent is not None else _create_default_agent()
+        # Store agent as optional - if None, we'll create per-request agents for concurrency
+        self._agent = agent
         self.imagen = genai.Client(api_key=load_google_api_key())
         self.tts = TTS()
         self.tti = TTI()
@@ -160,10 +162,12 @@ class WordBank:
             word=word, en_translation=en_translation, description=description
         )
 
+        # Create a new agent per request for true concurrency, or use the shared one if provided
+        agent = self._agent if self._agent is not None else _create_default_agent()
+
         # Use the agent to generate the structured output asynchronously
-        result = await self.agent.run_async(
-            prompt,
-            result_type=WordbankWordDetails,
+        result = await agent.run_async(
+            prompt, result_type=WordbankWordDetails, handlers=[]
         )
 
         print(f"Got result from agent: {result}")
@@ -200,10 +204,7 @@ class WordBank:
         result = await self._generate_word_details(word, en_translation, description)
 
         # Run image and audio generation concurrently
-        await asyncio.gather(
-            self._generate_img(result),
-            self._generate_audio(result)
-        )
+        await asyncio.gather(self._generate_img(result), self._generate_audio(result))
 
         self.upsert(result)
         return result
@@ -363,6 +364,7 @@ AUDIO_GEN_PROMPT = (
 
 
 if __name__ == "__main__":
+
     async def main():
         temp_wordbank = WordBank(data_path="./test_data.jsonl")
         await temp_wordbank.propagate("猫", "cat", "The common household pet - a cat")

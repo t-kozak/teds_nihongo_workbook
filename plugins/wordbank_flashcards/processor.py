@@ -17,7 +17,7 @@ from tqdm import tqdm
 from wordbank import WordBank, WordbankWordDetails
 
 # Batch size for concurrent propagation
-PROPAGATE_BATCH_SIZE = 5
+PROPAGATE_BATCH_SIZE = 15
 
 
 class WordbankProcessor:
@@ -97,9 +97,14 @@ class WordbankProcessor:
         results = []
 
         # Process words in batches for better concurrency control
-        with tqdm(total=len(words), desc="Processing wordbank entries", unit="word", leave=False) as pbar:
+        with tqdm(
+            total=len(words),
+            desc="Processing wordbank entries",
+            unit="word",
+            leave=False,
+        ) as pbar:
             for i in range(0, len(words), PROPAGATE_BATCH_SIZE):
-                batch = words[i:i + PROPAGATE_BATCH_SIZE]
+                batch = words[i : i + PROPAGATE_BATCH_SIZE]
                 batch_tasks = []
 
                 for japanese_word, english_translation, context in batch:
@@ -131,13 +136,20 @@ class WordbankProcessor:
                         pbar.update(1)
                     else:
                         # Production mode: Propagate the word (generates images/audio) asynchronously
-                        batch_tasks.append((cache_key, self.wordbank.propagate(
-                            japanese_word, english_translation, context
-                        )))
+                        batch_tasks.append(
+                            (
+                                cache_key,
+                                self.wordbank.propagate(
+                                    japanese_word, english_translation, context
+                                ),
+                            )
+                        )
 
                 # Wait for all tasks in the batch to complete
                 if batch_tasks:
-                    batch_results = await asyncio.gather(*[task for _, task in batch_tasks])
+                    batch_results = await asyncio.gather(
+                        *[task for _, task in batch_tasks]
+                    )
                     for (cache_key, _), details in zip(batch_tasks, batch_results):
                         # Cache the result
                         self._propagated_cache[cache_key] = details
@@ -373,8 +385,11 @@ class WordbankProcessor:
         if loop is not None:
             # We're already in an async context, create a new loop in a thread
             import concurrent.futures
+
             with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(asyncio.run, self.process_content_async(content))
+                future = executor.submit(
+                    asyncio.run, self.process_content_async(content)
+                )
                 return future.result()
         else:
             # No event loop running, we can safely use asyncio.run

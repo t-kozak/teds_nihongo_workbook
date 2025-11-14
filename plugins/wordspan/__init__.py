@@ -5,8 +5,13 @@ Automatically wraps Japanese words in span elements for dictionary functionality
 This plugin should be loaded BEFORE the furigana plugin to preserve word
 boundaries for dictionary lookups and other word-level functionality.
 """
+from pathlib import Path
 from pelican import signals
 from .filters import wrap_japanese_words
+
+# Media file extensions to exclude from processing
+EXCLUDED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp',
+                       '.aac', '.mp3', '.wav', '.ogg', '.m4a', '.flac'}
 
 
 def process_wordspan(content):
@@ -16,7 +21,14 @@ def process_wordspan(content):
     This is called by Pelican during content processing.
     """
     if hasattr(content, "_content"):
-        print(f"[wordspan] Processing content for: {getattr(content, 'source_path', 'unknown')}")
+        # Skip processing for media files
+        source_path = getattr(content, 'source_path', '')
+        if source_path:
+            file_ext = Path(source_path).suffix.lower()
+            if file_ext in EXCLUDED_EXTENSIONS:
+                return
+
+        print(f"[wordspan] Processing content for: {source_path or 'unknown'}")
         # Process the content
         content._content = wrap_japanese_words(content._content)
 

@@ -11,10 +11,15 @@ This plugin:
 """
 
 import asyncio
+from pathlib import Path
 
 from pelican import signals
 
 from tts_filter.processor import TTSProcessor
+
+# Media file extensions to exclude from processing
+EXCLUDED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp',
+                       '.aac', '.mp3', '.wav', '.ogg', '.m4a', '.flac'}
 
 # Global processor instance to share cache across all articles
 _processor = None
@@ -59,6 +64,13 @@ def process_tts_content(content):
     # Only process if the content has a _content attribute (contains the markdown)
     if not hasattr(content, "_content"):
         return
+
+    # Skip processing for media files
+    source_path = getattr(content, 'source_path', '')
+    if source_path:
+        file_ext = Path(source_path).suffix.lower()
+        if file_ext in EXCLUDED_EXTENSIONS:
+            return
 
     # Get SITEURL and generate_content from settings
     siteurl = ""

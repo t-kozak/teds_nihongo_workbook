@@ -84,10 +84,12 @@ General notes:
 
 Given the context above, generate a lesson article for the following lesson description:
 
-A lesson covering conversations during Japanese lessons. I'd like to focus on ability to:
-- ask explanation about meaning of given words or constructs, its use, alternatives
-- ask to explain something again, speak more slowly
-- making polite requests
-- talking about class, class room, some basic equipment and stationary
+A lesson covering public transport. Things like:
+- navigating a train station
+- buying tickets
+- asking about time until train
+- asking what train to take from A to B
+- other forms of transport - bus, ferry and changing between them
+- when is next train? what is next station? does X go to station A
 
 Please generate the content as a markdown artefact I can copy or download.

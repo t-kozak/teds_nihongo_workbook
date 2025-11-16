@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import mimetypes
 import re
 import struct
@@ -10,6 +11,8 @@ from ffmpeg import FFmpeg
 from google.genai import Client, types
 
 from tools import load_google_api_key
+
+_log = logging.getLogger(__name__)
 
 _DEFAULT_MODEL = "gemini-2.5-flash-preview-tts"
 _DEFAULT_VOICE = "Zephyr"
@@ -35,7 +38,7 @@ class TTS:
         # Convert kanji to hiragana before generating speech
         hiragana_content = self._kanji_to_hiragana(content)
 
-        print(f"Generating TTS for hiragana content: {hiragana_content}")
+        _log.info(f"Generating TTS for hiragana content: {hiragana_content}")
         # Generate audio using Gemini TTS
         contents = [
             types.Content(
@@ -147,7 +150,7 @@ class TTS:
             dialogue_lines.append(f"{sanitized_speaker}: {hiragana_text}")
 
         dialogue_text = "\n".join(dialogue_lines)
-        print(f"Generating multi-speaker TTS for dialogue:\n{dialogue_text}")
+        _log.info(f"Generating multi-speaker TTS for dialogue:\n{dialogue_text}")
 
         # Configure speaker voice configs with sanitized names
         speaker_voice_configs = []
@@ -446,14 +449,14 @@ if __name__ == "__main__":
         tts = TTS()
 
         # Test single speaker generation
-        print("Testing single speaker TTS...")
+        _log.info("Testing single speaker TTS...")
         await tts.generate(
             'Say the following, as an pronunciation example: "今日, 今日"',
             Path("sample.aac"),
         )
 
         # Test multi-speaker dialogue generation
-        print("\nTesting multi-speaker dialogue TTS...")
+        _log.info("\nTesting multi-speaker dialogue TTS...")
         await tts.generate_dialogue(
             speaker_cfg={
                 "Student": "Puck",
@@ -468,6 +471,6 @@ if __name__ == "__main__":
             output=Path("dialogue.aac"),
         )
 
-        print("\nGenerated files: sample.aac, dialogue.aac")
+        _log.info("\nGenerated files: sample.aac, dialogue.aac")
 
     asyncio.run(main())

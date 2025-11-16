@@ -1,6 +1,7 @@
 import asyncio
 import hashlib
 import json
+import logging
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -12,6 +13,8 @@ from pydantic_ai.providers.google import GoogleProvider
 from tools import load_google_api_key
 from tti import TTI
 from tts import TTS
+
+_log = logging.getLogger(__name__)
 
 IMG_FORMAT = "jpg"
 AUDIO_FORMAT = "aac"
@@ -153,11 +156,11 @@ class WordBank:
 
         # If we have existing data with an image description, use it
         if existing and existing.image_description:
-            print(f"Found existing data for '{word}' - skipping LLM generation")
+            _log.info(f"Found existing data for '{word}' - skipping LLM generation")
             return existing
 
         # Generate new data using LLM
-        print(f"Generating new data for '{word}' using LLM")
+        _log.info(f"Generating new data for '{word}' using LLM")
         prompt = FLASHCARD_GENERATION_PROMPT.format(
             word=word, en_translation=en_translation, description=description
         )
@@ -170,7 +173,7 @@ class WordBank:
             prompt, result_type=WordbankWordDetails, handlers=[]
         )
 
-        print(f"Got result from agent: {result}")
+        _log.info(f"Got result from agent: {result}")
         # Ensure the word and en_translation match the input
         result.word = word
         result.en_translation = en_translation
@@ -230,11 +233,13 @@ class WordBank:
 
         # Check if image already exists
         if details.image_file and output_file.exists():
-            print(f"Image file already exists at {output_file} - skipping generation")
+            _log.info(
+                f"Image file already exists at {output_file} - skipping generation"
+            )
             return
 
         # Generate new image
-        print(f"Generating new image for '{details.word}'")
+        _log.info(f"Generating new image for '{details.word}'")
         prompt = IMG_GEN_PROMPT.format(word_descr=details.image_description)
         await self.tti.generate(prompt, output_file)
 
@@ -259,11 +264,13 @@ class WordBank:
 
         # Check if audio already exists
         if details.audio_file and output_file.exists():
-            print(f"Audio file already exists at {output_file} - skipping generation")
+            _log.info(
+                f"Audio file already exists at {output_file} - skipping generation"
+            )
             return
 
         # Generate new audio
-        print(f"Generating new audio for '{details.word}'")
+        _log.info(f"Generating new audio for '{details.word}'")
 
         # Ensure the output directory exists
         output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -279,8 +286,8 @@ class WordBank:
 
         except Exception as e:
             # Handle TTS generation errors gracefully (e.g., preview API limitations)
-            print(f"Warning: Failed to generate audio for '{details.word}': {e}")
-            print("Continuing without audio file...")
+            _log.info(f"Warning: Failed to generate audio for '{details.word}': {e}")
+            _log.info("Continuing without audio file...")
 
     def _load(self) -> dict[tuple[str, str], WordbankWordDetails]:
         """Load all wordbank data from JSONL file into memory."""
@@ -370,6 +377,6 @@ if __name__ == "__main__":
         await temp_wordbank.propagate("猫", "cat", "The common household pet - a cat")
 
         for itm in temp_wordbank.get_all():
-            print(itm)
+            _log.info(itm)
 
     asyncio.run(main())

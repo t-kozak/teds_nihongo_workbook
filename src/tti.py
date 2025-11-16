@@ -1,9 +1,12 @@
+import logging
 from pathlib import Path
 
 from google.genai import Client
 from google.genai.types import GenerateImagesConfig
 
 from tools import load_google_api_key
+
+_log = logging.getLogger(__name__)
 
 _DEFAULT_MODEL = "models/imagen-4.0-generate-001"
 
@@ -29,11 +32,13 @@ class TTI:
 
         # Check if image already exists
         if output_file.exists():
-            print(f"Image file already exists at {output_file} - skipping generation")
+            _log.info(
+                f"Image file already exists at {output_file} - skipping generation"
+            )
             return
 
         # Generate new image using native async API
-        print(f"Generating new image for '{prompt}'")
+        _log.info(f"Generating new image for '{prompt}'")
 
         result = await self.client.aio.models.generate_images(
             model=self.model,
@@ -47,11 +52,11 @@ class TTI:
         )
 
         if not result.generated_images:
-            print("No images generated.")
+            _log.info("No images generated.")
             return
 
         if len(result.generated_images) != 1:
-            print("Number of images generated does not match the requested number.")
+            _log.info("Number of images generated does not match the requested number.")
 
         for _, generated_image in enumerate(result.generated_images):
             if generated_image.image is None:

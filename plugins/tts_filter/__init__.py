@@ -11,15 +11,30 @@ This plugin:
 """
 
 import asyncio
+import logging
 from pathlib import Path
 
 from pelican import signals
 
 from tts_filter.processor import TTSProcessor
 
+_log = logging.getLogger(__name__)
+
 # Media file extensions to exclude from processing
-EXCLUDED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp',
-                       '.aac', '.mp3', '.wav', '.ogg', '.m4a', '.flac'}
+EXCLUDED_EXTENSIONS = {
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".svg",
+    ".webp",
+    ".aac",
+    ".mp3",
+    ".wav",
+    ".ogg",
+    ".m4a",
+    ".flac",
+}
 
 # Global processor instance to share cache across all articles
 _processor = None
@@ -66,7 +81,7 @@ def process_tts_content(content):
         return
 
     # Skip processing for media files
-    source_path = getattr(content, 'source_path', '')
+    source_path = getattr(content, "source_path", "")
     if source_path:
         file_ext = Path(source_path).suffix.lower()
         if file_ext in EXCLUDED_EXTENSIONS:
@@ -89,13 +104,10 @@ def process_tts_content(content):
             processor.process_content(content._content)
         )
         content._content = processed_content
-    except Exception as e:
-        print(
-            f"Error processing TTS in {getattr(content, 'source_path', 'unknown')}: {e}"
+    except Exception:
+        _log.exception(
+            f"Error processing TTS in {getattr(content, 'source_path', 'unknown')}"
         )
-        import traceback
-
-        traceback.print_exc()
 
 
 def cleanup_event_loop(*_args, **_kwargs):

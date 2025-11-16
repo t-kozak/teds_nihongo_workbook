@@ -1,11 +1,14 @@
 """Custom Jinja2 filters for wrapping Japanese words in span elements."""
 
 import json
+import logging
 import re
 from pathlib import Path
 
 import fugashi
 from markupsafe import Markup
+
+_log = logging.getLogger(__name__)
 
 # Global dictionary cache for translations (lazy loaded)
 _translations_cache = None
@@ -23,19 +26,23 @@ def _load_translations():
     if _translations_cache is not None:
         return _translations_cache
 
-    translations_file = Path(__file__).parent.parent.parent / "data" / "ja-translations.json"
+    translations_file = (
+        Path(__file__).parent.parent.parent / "data" / "ja-translations.json"
+    )
 
-    print(f"[wordspan] Loading translations from {translations_file}")
+    _log.info(f"Loading translations from {translations_file}")
 
     try:
-        with open(translations_file, 'r', encoding='utf-8') as f:
+        with open(translations_file, "r", encoding="utf-8") as f:
             _translations_cache = json.load(f)
-        print(f"[wordspan] Loaded {len(_translations_cache):,} translation entries")
+        _log.info(f"Loaded {len(_translations_cache):,} translation entries")
     except FileNotFoundError:
-        print(f"[wordspan] Warning: Translation file not found at {translations_file}")
+        _log.info(
+            f"[wordspan] Warning: Translation file not found at {translations_file}"
+        )
         _translations_cache = {}
     except json.JSONDecodeError as e:
-        print(f"[wordspan] Warning: Failed to parse translations JSON: {e}")
+        _log.info(f"Warning: Failed to parse translations JSON: {e}")
         _translations_cache = {}
 
     return _translations_cache
@@ -62,10 +69,10 @@ def wrap_japanese_words(html_content):
         Output: "<p><span class="jp-word">日本</span><span class="jp-word">語</span><span class="jp-word">を</span><span class="jp-word">勉強</span><span class="jp-word">し</span><span class="jp-word">ます</span>。</p>"
     """
     if not html_content:
-        print("[wordspan] Empty content, skipping")
+        _log.info(" Empty content, skipping")
         return html_content
 
-    print(f"[wordspan] Processing content (length: {len(str(html_content))} chars)")
+    _log.info(f"Processing content (length: {len(str(html_content))} chars)")
 
     # Load translations dictionary (lazy loaded on first use)
     translations = _load_translations()
@@ -90,9 +97,9 @@ def wrap_japanese_words(html_content):
         # If this is an HTML tag, check if it's a script tag
         if html_tag_pattern.match(segment):
             # Check for opening or closing script tags
-            if segment.lower().startswith('<script'):
+            if segment.lower().startswith("<script"):
                 inside_script = True
-            elif segment.lower() == '</script>':
+            elif segment.lower() == "</script>":
                 inside_script = False
             processed_segments.append(segment)
         else:
@@ -103,11 +110,13 @@ def wrap_japanese_words(html_content):
             else:
                 # Outside script tag - process it for word wrapping
                 processed_segments.append(
-                    _process_text_for_wordspan(segment, tagger, word_counter, translations)
+                    _process_text_for_wordspan(
+                        segment, tagger, word_counter, translations
+                    )
                 )
 
     result = "".join(processed_segments)
-    print(f"[wordspan] Wrapped {word_counter['count']} Japanese words")
+    _log.info(f"Wrapped {word_counter['count']} Japanese words")
     return Markup(result)
 
 
@@ -143,7 +152,11 @@ def _process_text_for_wordspan(text, tagger, word_counter, translations):
 
         # Process the Japanese segment with fugashi
         japanese_segment = match.group()
-        output.append(_process_japanese_segment(japanese_segment, tagger, word_counter, translations))
+        output.append(
+            _process_japanese_segment(
+                japanese_segment, tagger, word_counter, translations
+            )
+        )
 
         last_end = match.end()
 
@@ -180,23 +193,31 @@ def _try_merge_tokens(words, index):
 
     # Get POS tags safely
     try:
-        current_pos1 = current.feature.pos1 if hasattr(current.feature, 'pos1') else None
-        current_lemma = current.feature.lemma if hasattr(current.feature, 'lemma') else None
+        current_pos1 = (
+            current.feature.pos1 if hasattr(current.feature, "pos1") else None
+        )
+        current_lemma = (
+            current.feature.lemma if hasattr(current.feature, "lemma") else None
+        )
     except (AttributeError, IndexError):
         return current.surface, None, 0
 
     # Pattern 1: Verb + auxiliary verb (ます/ました/etc)
     # Example: 行き (動詞) + ます (助動詞)
-    if current_pos1 == '動詞' and index + 1 < len(words):
+    if current_pos1 == "動詞" and index + 1 < len(words):
         next_word = words[index + 1]
         try:
-            next_pos1 = next_word.feature.pos1 if hasattr(next_word.feature, 'pos1') else None
-            next_lemma = next_word.feature.lemma if hasattr(next_word.feature, 'lemma') else None
+            next_pos1 = (
+                next_word.feature.pos1 if hasattr(next_word.feature, "pos1") else None
+            )
+            next_lemma = (
+                next_word.feature.lemma if hasattr(next_word.feature, "lemma") else None
+            )
         except (AttributeError, IndexError):
             return current.surface, None, 0
 
         # Merge verb + ます/た/etc
-        if next_pos1 == '助動詞':
+        if next_pos1 == "助動詞":
             merged_surface = current.surface + next_word.surface
             merged_lemma = current_lemma  # Use the verb's base form for lookup
 
@@ -204,11 +225,15 @@ def _try_merge_tokens(words, index):
             if index + 2 < len(words):
                 third_word = words[index + 2]
                 try:
-                    third_pos1 = third_word.feature.pos1 if hasattr(third_word.feature, 'pos1') else None
+                    third_pos1 = (
+                        third_word.feature.pos1
+                        if hasattr(third_word.feature, "pos1")
+                        else None
+                    )
                 except (AttributeError, IndexError):
                     return merged_surface, merged_lemma, 1
 
-                if third_pos1 == '助動詞':
+                if third_pos1 == "助動詞":
                     merged_surface = merged_surface + third_word.surface
                     return merged_surface, merged_lemma, 2
 
@@ -216,16 +241,20 @@ def _try_merge_tokens(words, index):
 
     # Pattern 2: Noun + する verb pattern
     # Example: 勉強 (名詞) + し (動詞) + ます (助動詞)
-    if current_pos1 == '名詞' and index + 1 < len(words):
+    if current_pos1 == "名詞" and index + 1 < len(words):
         next_word = words[index + 1]
         try:
-            next_pos1 = next_word.feature.pos1 if hasattr(next_word.feature, 'pos1') else None
-            next_lemma = next_word.feature.lemma if hasattr(next_word.feature, 'lemma') else None
+            next_pos1 = (
+                next_word.feature.pos1 if hasattr(next_word.feature, "pos1") else None
+            )
+            next_lemma = (
+                next_word.feature.lemma if hasattr(next_word.feature, "lemma") else None
+            )
         except (AttributeError, IndexError):
             return current.surface, None, 0
 
         # Check if next is する (為る)
-        if next_pos1 == '動詞' and next_lemma == '為る':
+        if next_pos1 == "動詞" and next_lemma == "為る":
             merged_surface = current.surface + next_word.surface
             # Use the noun as the lemma (e.g., "勉強" not "勉強する")
             # Many dictionaries have the noun form, not the verb form
@@ -235,22 +264,30 @@ def _try_merge_tokens(words, index):
             if index + 2 < len(words):
                 third_word = words[index + 2]
                 try:
-                    third_pos1 = third_word.feature.pos1 if hasattr(third_word.feature, 'pos1') else None
+                    third_pos1 = (
+                        third_word.feature.pos1
+                        if hasattr(third_word.feature, "pos1")
+                        else None
+                    )
                 except (AttributeError, IndexError):
                     return merged_surface, merged_lemma, 1
 
-                if third_pos1 == '助動詞':
+                if third_pos1 == "助動詞":
                     merged_surface = merged_surface + third_word.surface
 
                     # Check for た after ます
                     if index + 3 < len(words):
                         fourth_word = words[index + 3]
                         try:
-                            fourth_pos1 = fourth_word.feature.pos1 if hasattr(fourth_word.feature, 'pos1') else None
+                            fourth_pos1 = (
+                                fourth_word.feature.pos1
+                                if hasattr(fourth_word.feature, "pos1")
+                                else None
+                            )
                         except (AttributeError, IndexError):
                             return merged_surface, merged_lemma, 2
 
-                        if fourth_pos1 == '助動詞':
+                        if fourth_pos1 == "助動詞":
                             merged_surface = merged_surface + fourth_word.surface
                             return merged_surface, merged_lemma, 3
 
@@ -297,7 +334,9 @@ def _process_japanese_segment(text, tagger, word_counter, translations):
             else:
                 # Single token, get its lemma
                 try:
-                    lemma = word.feature.lemma if hasattr(word.feature, 'lemma') else None
+                    lemma = (
+                        word.feature.lemma if hasattr(word.feature, "lemma") else None
+                    )
                 except (AttributeError, IndexError):
                     lemma = None
 
@@ -314,7 +353,9 @@ def _process_japanese_segment(text, tagger, word_counter, translations):
 
             # Get lemma in kana form (better for dictionary lookup than kanji lemma)
             try:
-                lemma_kana = word.feature.kanaBase if hasattr(word.feature, 'kanaBase') else None
+                lemma_kana = (
+                    word.feature.kanaBase if hasattr(word.feature, "kanaBase") else None
+                )
                 lemma_kana = _katakana_to_hiragana(lemma_kana) if lemma_kana else None
             except (AttributeError, IndexError):
                 lemma_kana = None
@@ -328,9 +369,19 @@ def _process_japanese_segment(text, tagger, word_counter, translations):
             english_translations = translations.get(orig)
             if not english_translations and lemma_kana and lemma_kana != orig:
                 english_translations = translations.get(lemma_kana)
-            if not english_translations and lemma and lemma != orig and lemma != lemma_kana:
+            if (
+                not english_translations
+                and lemma
+                and lemma != orig
+                and lemma != lemma_kana
+            ):
                 english_translations = translations.get(lemma)
-            if not english_translations and reading and reading != orig and reading != lemma_kana:
+            if (
+                not english_translations
+                and reading
+                and reading != orig
+                and reading != lemma_kana
+            ):
                 english_translations = translations.get(reading)
             if not english_translations:
                 english_translations = []
@@ -338,8 +389,13 @@ def _process_japanese_segment(text, tagger, word_counter, translations):
             # Build the span element with translations
             if english_translations:
                 # Escape pipe characters and quotes in translations for HTML attribute
-                escaped_translations = [t.replace('"', '&quot;').replace('|', '&#124;') for t in english_translations]
-                translation_attr = f' data-en-translation="{"|".join(escaped_translations)}"'
+                escaped_translations = [
+                    t.replace('"', "&quot;").replace("|", "&#124;")
+                    for t in english_translations
+                ]
+                translation_attr = (
+                    f' data-en-translation="{"|".join(escaped_translations)}"'
+                )
                 output.append(f'<span class="jp-word"{translation_attr}>{orig}</span>')
             else:
                 # No translation found
@@ -376,7 +432,7 @@ def _katakana_to_hiragana(text):
             result.append(chr(code - 0x60))
         else:
             result.append(char)
-    return ''.join(result)
+    return "".join(result)
 
 
 def _is_japanese_word(text):

@@ -8,6 +8,7 @@ and generation of interactive HTML flashcards.
 import asyncio
 import hashlib
 import json
+import logging
 import re
 from pathlib import Path
 
@@ -15,6 +16,8 @@ import fugashi
 from tqdm import tqdm
 
 from wordbank import WordBank, WordbankWordDetails
+
+_log = logging.getLogger(__name__)
 
 # Batch size for concurrent propagation
 PROPAGATE_BATCH_SIZE = 15
@@ -178,14 +181,14 @@ class WordbankProcessor:
                 / details.image_file
             )
             if not image_file_path.exists():
-                print(
+                _log.info(
                     f"Warning: Skipping flashcard for '{details.word}' - image file not found: {details.image_file}"
                 )
                 return ""
             image_path = f"{self.siteurl}/images/wordbank/{details.image_file}"
         else:
             # No image file specified - skip this flashcard
-            print(
+            _log.info(
                 f"Warning: Skipping flashcard for '{details.word}' - no image file specified"
             )
             return ""
@@ -215,7 +218,7 @@ class WordbankProcessor:
             <img src="{speaker_icon_path}" alt="Play" width="16" height="16" style="pointer-events: none;">
         </button>"""
             else:
-                print(
+                _log.info(
                     f"Warning: Audio file not found for '{details.word}' - skipping audio button: {details.audio_file}"
                 )
 

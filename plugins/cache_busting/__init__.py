@@ -1,7 +1,7 @@
 """
 Cache Busting Plugin for Pelican
 
-Adds content-based hash fingerprinting to static assets (CSS, JS) for better
+Adds content-based hash finger_log.infoing to static assets (CSS, JS) for better
 cache invalidation. Only runs during production builds.
 
 This plugin:
@@ -14,8 +14,13 @@ Usage:
     Add 'cache_busting' to PLUGINS in publishconf.py (production only)
 """
 
+import logging
+
 from pelican import signals
+
 from .processor import CacheBustingProcessor
+
+_log = logging.getLogger(__name__)
 
 # Global processor instance
 _processor = None
@@ -47,8 +52,8 @@ def process_cache_busting(pelican):
     # Get settings
     settings = pelican.settings
     output_path = pelican.output_path
-    siteurl = settings.get('SITEURL', '')
-    theme_static_dir = settings.get('THEME_STATIC_DIR', 'theme')
+    siteurl = settings.get("SITEURL", "")
+    theme_static_dir = settings.get("THEME_STATIC_DIR", "theme")
 
     # Get the processor
     processor = get_processor(output_path, siteurl, theme_static_dir)
@@ -56,11 +61,9 @@ def process_cache_busting(pelican):
     # Process all assets
     try:
         processor.process()
-        print("[Cache Busting] Successfully fingerprinted static assets")
-    except Exception as e:
-        print(f"[Cache Busting] Error processing assets: {e}")
-        import traceback
-        traceback.print_exc()
+        _log.info(" Successfully finger_log.infoed static assets")
+    except Exception:
+        _log.exception("Error processing assets")
 
 
 def register():

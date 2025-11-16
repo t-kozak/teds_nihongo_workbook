@@ -12,5 +12,7 @@ dependencies = [
     "google-genai",
     "uuid",
     "tdqm",
-    "python-ffmpeg"
+    "python-ffmpeg",
+    "redis>=5.0.0",
+    "bs4"
 ]

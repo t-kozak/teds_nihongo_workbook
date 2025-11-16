@@ -194,3 +194,6 @@ Students make polite requests to borrow classroom materials from each other.
 - 復習: review (going over material again)
 - 練習: practice (repeated exercise to improve skills)
 </wordbank>
+
+言葉
+単語

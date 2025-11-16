@@ -7,12 +7,15 @@ and generation of HTML audio elements.
 
 import asyncio
 import hashlib
+import logging
 import re
 from collections.abc import Coroutine
 from pathlib import Path
 from typing import Any, TypedDict, cast
 
 from tts import TTS
+
+_log = logging.getLogger(__name__)
 
 
 class DialogueSectionData(TypedDict):
@@ -124,7 +127,7 @@ class TTSProcessor:
 
         # Check if file already exists on disk
         if output_path.exists():
-            print(f"Using cached audio file: {filename}")
+            _log.info(f"Using cached audio file: {filename}")
             self._audio_cache[cache_key] = output_path
             return output_path
 
@@ -135,7 +138,7 @@ class TTSProcessor:
             return output_path
 
         # Generate the audio file
-        print(f"Generating audio for: {text[:50]}{'...' if len(text) > 50 else ''}")
+        _log.info(f"Generating audio for: {text[:50]}{'...' if len(text) > 50 else ''}")
         try:
             assert self.tts is not None
             if voice:
@@ -145,11 +148,9 @@ class TTSProcessor:
 
             self._audio_cache[cache_key] = output_path
             return output_path
-        except Exception as e:
-            print(f"Error generating audio for '{text[:50]}...': {e}")
-            import traceback
+        except Exception:
+            _log.exception(f"Error generating audio for '{text[:50]}...'")
 
-            traceback.print_exc()
             return output_path
 
     def parse_speakers_config(self, speakers_str: str) -> dict[str, str]:
@@ -267,7 +268,7 @@ class TTSProcessor:
 
         # Check if file already exists on disk
         if output_path.exists():
-            print(f"Using cached dialogue audio file: {filename}")
+            _log.info(f"Using cached dialogue audio file: {filename}")
             self._audio_cache[cache_key] = output_path
             return output_path
 
@@ -277,17 +278,15 @@ class TTSProcessor:
             return output_path
 
         # Generate the audio file
-        print(f"Generating dialogue audio with {len(dialogue)} turns...")
+        _log.info(f"Generating dialogue audio with {len(dialogue)} turns...")
         try:
             assert self.tts is not None
             await self.tts.generate_dialogue(speaker_cfg, dialogue, output_path)
             self._audio_cache[cache_key] = output_path
             return output_path
-        except Exception as e:
-            print(f"Error generating dialogue audio: {e}")
-            import traceback
+        except Exception:
+            _log.exception("Error generating dialogue audio")
 
-            traceback.print_exc()
             return output_path
 
     def generate_inline_html(self, text: str, audio_filename: str) -> str:
@@ -304,7 +303,7 @@ class TTSProcessor:
         # Check if audio file exists
         audio_file_path = self.audio_base_path / audio_filename
         if not audio_file_path.exists():
-            print(
+            _log.info(
                 f"Warning: Audio file not found for inline TTS - skipping audio button: {audio_filename}"
             )
             return text
@@ -337,7 +336,7 @@ class TTSProcessor:
         # Check if audio file exists
         audio_file_path = self.audio_base_path / audio_filename
         if not audio_file_path.exists():
-            print(
+            _log.info(
                 f"Warning: Audio file not found for full TTS - skipping audio controls: {audio_filename}"
             )
             return text
@@ -371,7 +370,7 @@ class TTSProcessor:
         # Check if audio file exists
         audio_file_path = self.audio_base_path / audio_filename
         if not audio_file_path.exists():
-            print(
+            _log.info(
                 f"Warning: Audio file not found for dialogue TTS - skipping audio controls: {audio_filename}"
             )
             # Return plain dialogue text if audio is missing
@@ -428,7 +427,7 @@ class TTSProcessor:
                 if tts_type == "dialogue":
                     # Handle dialogue type
                     if not speakers:
-                        print(
+                        _log.info(
                             f"Warning: Dialogue type requires 'speakers' attribute - skipping: {full_match[:50]}..."
                         )
                         continue
@@ -466,13 +465,13 @@ class TTSProcessor:
                     )
 
             except ValueError as e:
-                print(f"Error processing TTS section: {e}")
-                print(f"Skipping section: {full_match[:100]}...")
+                _log.info(f"Error processing TTS section: {e}")
+                _log.info(f"Skipping section: {full_match[:100]}...")
                 continue
 
         # Generate all audio files concurrently
         if tasks:
-            print(f"Generating audio for {len(tasks)} TTS sections concurrently...")
+            _log.info(f"Generating audio for {len(tasks)} TTS sections concurrently...")
             audio_paths = await asyncio.gather(*tasks, return_exceptions=True)
 
             # Process results and generate HTML
@@ -482,7 +481,7 @@ class TTSProcessor:
                 try:
                     # Check if audio generation failed
                     if isinstance(audio_result, Exception):
-                        print(f"Error generating audio for section: {audio_result}")
+                        _log.info(f"Error generating audio for section: {audio_result}")
                         continue
 
                     # Type narrowing: audio_result is Path after exception check
@@ -507,11 +506,8 @@ class TTSProcessor:
                     # Replace the TTS section with HTML
                     content = content.replace(full_match, html)
 
-                except Exception as e:
-                    print(f"Error processing TTS section result: {e}")
-                    import traceback
-
-                    traceback.print_exc()
+                except Exception:
+                    _log.exception("Error processing TTS section result")
                     continue
 
         return content

@@ -10,6 +10,9 @@ case "$1" in
   build)
     echo "Building site..."
     uv run pelican content -o output -s pelicanconf.py
+    pushd output
+    uv run python -m http.server
+    popd output
     ;;
   build-prod)
     echo "Building site for production..."

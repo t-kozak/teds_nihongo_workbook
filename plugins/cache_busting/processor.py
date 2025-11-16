@@ -1,14 +1,17 @@
 """
 Cache Busting Processor
 
-Handles the actual asset fingerprinting and HTML rewriting logic.
+Handles the actual asset finger_log.infoing and HTML rewriting logic.
 """
 
 import hashlib
+import logging
 import re
 import shutil
 from pathlib import Path
 from typing import Dict, Set
+
+_log = logging.getLogger(__name__)
 
 
 class CacheBustingProcessor:
@@ -24,12 +27,12 @@ class CacheBustingProcessor:
             theme_static_dir: The THEME_STATIC_DIR from Pelican settings
         """
         self.output_path = Path(output_path)
-        self.siteurl = siteurl.rstrip('/')
+        self.siteurl = siteurl.rstrip("/")
         self.theme_static_dir = theme_static_dir
         # Maps original filename to hashed filename (relative paths from output root)
         self.asset_map: Dict[str, str] = {}
         # Extensions to process
-        self.asset_extensions = {'.css', '.js'}
+        self.asset_extensions = {".css", ".js"}
 
     def _calculate_hash(self, file_path: Path) -> str:
         """
@@ -42,7 +45,7 @@ class CacheBustingProcessor:
             First 8 characters of the MD5 hash
         """
         hasher = hashlib.md5()
-        with open(file_path, 'rb') as f:
+        with open(file_path, "rb") as f:
             hasher.update(f.read())
         return hasher.hexdigest()[:8]
 
@@ -72,7 +75,7 @@ class CacheBustingProcessor:
         assets = set()
         for ext in self.asset_extensions:
             # Use rglob to find files recursively
-            assets.update(self.output_path.rglob(f'*{ext}'))
+            assets.update(self.output_path.rglob(f"*{ext}"))
         return assets
 
     def _create_hashed_assets(self):
@@ -96,22 +99,22 @@ class CacheBustingProcessor:
             hashed_rel = hashed_path.relative_to(self.output_path)
 
             # Convert to forward slashes for URLs
-            original_url = str(original_rel).replace('\\', '/')
-            hashed_url = str(hashed_rel).replace('\\', '/')
+            original_url = str(original_rel).replace("\\", "/")
+            hashed_url = str(hashed_rel).replace("\\", "/")
 
             self.asset_map[original_url] = hashed_url
 
-            print(f"[Cache Busting] {original_url} -> {hashed_url}")
+            _log.info(f"{original_url} -> {hashed_url}")
 
     def _update_html_files(self):
         """
         Update all HTML files to reference hashed assets.
         """
-        html_files = list(self.output_path.rglob('*.html'))
+        html_files = list(self.output_path.rglob("*.html"))
 
         for html_path in html_files:
             # Read the HTML content
-            with open(html_path, 'r', encoding='utf-8') as f:
+            with open(html_path, "r", encoding="utf-8") as f:
                 content = f.read()
 
             # Track if we made any changes
@@ -126,16 +129,18 @@ class CacheBustingProcessor:
                     # With SITEURL prefix
                     (
                         rf'((?:href|src)=")({re.escape(self.siteurl)}/)?{re.escape(original_url)}(")',
-                        rf'\1\2{hashed_url}\3'
+                        rf"\1\2{hashed_url}\3",
                     ),
                 ]
 
                 # Also handle root-relative URLs (starting with /)
                 if not self.siteurl:
-                    patterns.append((
-                        rf'((?:href|src)=")/{re.escape(original_url)}(")',
-                        rf'\1/{hashed_url}\2'
-                    ))
+                    patterns.append(
+                        (
+                            rf'((?:href|src)=")/{re.escape(original_url)}(")',
+                            rf"\1/{hashed_url}\2",
+                        )
+                    )
 
                 for pattern, replacement in patterns:
                     new_content = re.sub(pattern, replacement, content)
@@ -149,11 +154,11 @@ class CacheBustingProcessor:
                 import_patterns = [
                     (
                         rf"(from\s+['\"])({re.escape(self.siteurl)}/)?{re.escape(original_url)}(['\"])",
-                        rf"\1\2{hashed_url}\3"
+                        rf"\1\2{hashed_url}\3",
                     ),
                     (
                         rf"(import\s*\(['\"])({re.escape(self.siteurl)}/)?{re.escape(original_url)}(['\"])",
-                        rf"\1\2{hashed_url}\3"
+                        rf"\1\2{hashed_url}\3",
                     ),
                 ]
 
@@ -165,25 +170,25 @@ class CacheBustingProcessor:
 
             # Write back if modified
             if modified:
-                with open(html_path, 'w', encoding='utf-8') as f:
+                with open(html_path, "w", encoding="utf-8") as f:
                     f.write(content)
                 rel_path = html_path.relative_to(self.output_path)
-                print(f"[Cache Busting] Updated references in {rel_path}")
+                _log.info(f"Updated references in {rel_path}")
 
     def _update_js_files(self):
         """
         Update JavaScript files to reference hashed assets in import statements.
         """
-        js_files = list(self.output_path.rglob('*.js'))
+        js_files = list(self.output_path.rglob("*.js"))
 
         for js_path in js_files:
             # Skip if this is one of the original (unhashed) files
             # We want to update the hashed versions
             rel_path = js_path.relative_to(self.output_path)
-            rel_url = str(rel_path).replace('\\', '/')
+            rel_url = str(rel_path).replace("\\", "/")
 
             # Read the JS content
-            with open(js_path, 'r', encoding='utf-8') as f:
+            with open(js_path, "r", encoding="utf-8") as f:
                 content = f.read()
 
             modified = False
@@ -202,12 +207,12 @@ class CacheBustingProcessor:
                     # from './file.js' or from "../file.js"
                     (
                         rf"(from\s+['\"]\.+/.*?){re.escape(original_filename)}(['\"])",
-                        rf"\1{hashed_filename}\2"
+                        rf"\1{hashed_filename}\2",
                     ),
                     # import('./file.js') or import("../file.js")
                     (
                         rf"(import\s*\(['\"]\.+/.*?){re.escape(original_filename)}(['\"])",
-                        rf"\1{hashed_filename}\2"
+                        rf"\1{hashed_filename}\2",
                     ),
                 ]
 
@@ -219,22 +224,22 @@ class CacheBustingProcessor:
 
             # Write back if modified
             if modified:
-                with open(js_path, 'w', encoding='utf-8') as f:
+                with open(js_path, "w", encoding="utf-8") as f:
                     f.write(content)
-                print(f"[Cache Busting] Updated imports in {rel_url}")
+                _log.info(f"Updated imports in {rel_url}")
 
     def _update_css_files(self):
         """
         Update CSS files to reference hashed assets in @import and url() statements.
         """
-        css_files = list(self.output_path.rglob('*.css'))
+        css_files = list(self.output_path.rglob("*.css"))
 
         for css_path in css_files:
             rel_path = css_path.relative_to(self.output_path)
-            rel_url = str(rel_path).replace('\\', '/')
+            rel_url = str(rel_path).replace("\\", "/")
 
             # Read the CSS content
-            with open(css_path, 'r', encoding='utf-8') as f:
+            with open(css_path, "r", encoding="utf-8") as f:
                 content = f.read()
 
             modified = False
@@ -250,17 +255,17 @@ class CacheBustingProcessor:
                     # @import url("file.css")
                     (
                         rf'(@import\s+url\(["\']?)([^"\']*?){re.escape(original_filename)}(["\']?\))',
-                        rf'\1\2{hashed_filename}\3'
+                        rf"\1\2{hashed_filename}\3",
                     ),
                     # @import "file.css"
                     (
                         rf'(@import\s+["\'])([^"\']*?){re.escape(original_filename)}(["\'])',
-                        rf'\1\2{hashed_filename}\3'
+                        rf"\1\2{hashed_filename}\3",
                     ),
                     # url("file.css") or url('file.css') - for other references
                     (
                         rf'(url\(["\']?)([^"\']*?){re.escape(original_filename)}(["\']?\))',
-                        rf'\1\2{hashed_filename}\3'
+                        rf"\1\2{hashed_filename}\3",
                     ),
                 ]
 
@@ -272,9 +277,9 @@ class CacheBustingProcessor:
 
             # Write back if modified
             if modified:
-                with open(css_path, 'w', encoding='utf-8') as f:
+                with open(css_path, "w", encoding="utf-8") as f:
                     f.write(content)
-                print(f"[Cache Busting] Updated @import/url() in {rel_url}")
+                _log.info(f"Updated @import/url() in {rel_url}")
 
     def _remove_original_assets(self):
         """
@@ -284,19 +289,19 @@ class CacheBustingProcessor:
             original_path = self.output_path / original_url
             if original_path.exists():
                 original_path.unlink()
-                print(f"[Cache Busting] Removed original {original_url}")
+                _log.info(f"Removed original {original_url}")
 
     def process(self):
         """
         Main processing method. Orchestrates the entire cache busting process.
         """
-        print("[Cache Busting] Starting asset fingerprinting...")
+        _log.info(" Starting asset finger_log.infoing...")
 
         # Step 1: Create hashed versions of all assets
         self._create_hashed_assets()
 
         if not self.asset_map:
-            print("[Cache Busting] No assets found to fingerprint")
+            _log.info(" No assets found to finger_log.info")
             return
 
         # Step 2: Update HTML files to reference hashed assets
@@ -311,4 +316,4 @@ class CacheBustingProcessor:
         # Step 5: Remove original unhashed files
         self._remove_original_assets()
 
-        print(f"[Cache Busting] Processed {len(self.asset_map)} assets")
+        _log.info(f"Processed {len(self.asset_map)} assets")

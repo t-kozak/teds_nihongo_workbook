@@ -9,13 +9,31 @@ This plugin:
 2. Propagates them to the site-wide wordbank database using WordBank.propagate()
 3. Generates HTML flashcards with images and interactive flip functionality
 """
+
+import logging
 from pathlib import Path
+
 from pelican import signals
+
 from .processor import WordbankProcessor
 
+_log = logging.getLogger(__name__)
+
 # Media file extensions to exclude from processing
-EXCLUDED_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp',
-                       '.aac', '.mp3', '.wav', '.ogg', '.m4a', '.flac'}
+EXCLUDED_EXTENSIONS = {
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".gif",
+    ".svg",
+    ".webp",
+    ".aac",
+    ".mp3",
+    ".wav",
+    ".ogg",
+    ".m4a",
+    ".flac",
+}
 
 
 # Global processor instance to share cache across all articles
@@ -49,11 +67,11 @@ def process_wordbank_content(content):
         content: The Pelican content object (Article or Page)
     """
     # Only process if the content has a _content attribute (contains the markdown)
-    if not hasattr(content, '_content'):
+    if not hasattr(content, "_content"):
         return
 
     # Skip processing for media files
-    source_path = getattr(content, 'source_path', '')
+    source_path = getattr(content, "source_path", "")
     if source_path:
         file_ext = Path(source_path).suffix.lower()
         if file_ext in EXCLUDED_EXTENSIONS:
@@ -62,9 +80,9 @@ def process_wordbank_content(content):
     # Get SITEURL and generate_content from settings
     siteurl = ""
     generate_content = True
-    if hasattr(content, 'settings'):
-        siteurl = content.settings.get('SITEURL', '')
-        generate_content = content.settings.get('GENERATE_CONTENT', True)
+    if hasattr(content, "settings"):
+        siteurl = content.settings.get("SITEURL", "")
+        generate_content = content.settings.get("GENERATE_CONTENT", True)
 
     # Get the processor with the correct SITEURL and generate_content
     processor = get_processor(siteurl, generate_content)
@@ -73,10 +91,10 @@ def process_wordbank_content(content):
     try:
         processed_content = processor.process_content(content._content)
         content._content = processed_content
-    except Exception as e:
-        print(f"Error processing wordbank in {getattr(content, 'source_path', 'unknown')}: {e}")
-        import traceback
-        traceback.print_exc()
+    except Exception:
+        _log.exception(
+            f"Error processing wordbank in {getattr(content, 'source_path', 'unknown')}"
+        )
 
 
 def register():

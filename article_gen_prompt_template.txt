@@ -127,5 +127,8 @@ The subject of the lesson is: Accomodation. Cover things like:
 - reporting issues
 - asking for help with taxi or advice on getting to a place
 
+When generating dialogue instructions for the LLM via the dialogue_practice, make sure that the LLM
+always plays role of staff or owner (hotel, ryokan, AirBnB) and the user is always the guest.
+
 Please note that the lesson should be on an entry level, A2 level. Please use language as simple as possible
 while still allowing to achieve the needed communication goals.  

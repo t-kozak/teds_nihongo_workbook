@@ -245,6 +245,8 @@ class QuizUI {
         this.overlay = null;
         this.inputElement = null;
         this.isAnimating = false;
+        this.viewportHandler = null;
+        this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
     /**
@@ -278,11 +280,11 @@ class QuizUI {
                         <div class="quiz-card-image-container">
                             <img class="quiz-card-image" src="" alt="" loading="lazy">
                             <div class="quiz-card-translation"></div>
+                            <div class="quiz-feedback"></div>
                         </div>
                         <div class="quiz-card-input-container">
                             <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
                         </div>
-                        <div class="quiz-feedback"></div>
                     </div>
                 </div>
             </div>
@@ -295,11 +297,75 @@ class QuizUI {
         // Setup event listeners
         this.setupEventListeners();
 
-        // Focus input
-        setTimeout(() => this.inputElement.focus(), 100);
+        // Setup mobile keyboard handling
+        if (this.isMobile) {
+            this.setupMobileKeyboardHandling();
+
+            // On mobile: hide overlay initially, focus input to trigger keyboard,
+            // then show overlay after keyboard is up
+            overlay.style.opacity = '0';
+            overlay.style.pointerEvents = 'none';
+
+            // Focus input to trigger keyboard
+            this.inputElement.focus();
+
+            // Wait for keyboard to appear, then show overlay
+            setTimeout(() => {
+                overlay.style.opacity = '';
+                overlay.style.pointerEvents = '';
+            }, 300);
+        } else {
+            // Desktop: normal flow
+            setTimeout(() => this.inputElement.focus(), 100);
+        }
 
         // Show first word
         this.nextWord();
+    }
+
+    /**
+     * Setup mobile keyboard handling using Visual Viewport API
+     */
+    setupMobileKeyboardHandling() {
+        if (!window.visualViewport) {
+            // Fallback for browsers without Visual Viewport API
+            return;
+        }
+
+        const viewport = window.visualViewport;
+        let isFirstResize = true;
+
+        this.viewportHandler = () => {
+            // Calculate available height (viewport height minus some padding)
+            const availableHeight = viewport.height - 20; // 20px for padding
+
+            // Update CSS variable for available height
+            this.overlay.style.setProperty('--available-height', `${availableHeight}px`);
+
+            // Add class to indicate keyboard is active
+            // Keyboard is considered active when viewport is significantly smaller than window
+            const keyboardActive = viewport.height < window.innerHeight * 0.75;
+
+            if (keyboardActive) {
+                this.overlay.classList.add('mobile-keyboard-active');
+
+                // On first keyboard appearance, make overlay visible
+                if (isFirstResize && this.overlay.style.opacity === '0') {
+                    this.overlay.style.opacity = '';
+                    this.overlay.style.pointerEvents = '';
+                    isFirstResize = false;
+                }
+            } else {
+                this.overlay.classList.remove('mobile-keyboard-active');
+            }
+        };
+
+        // Listen to viewport changes
+        viewport.addEventListener('resize', this.viewportHandler);
+        viewport.addEventListener('scroll', this.viewportHandler);
+
+        // Initial call
+        this.viewportHandler();
     }
 
     /**
@@ -320,11 +386,39 @@ class QuizUI {
         document.addEventListener('keydown', escHandler);
         this.overlay.dataset.escHandler = 'attached';
 
-        // Input submission
-        this.inputElement.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
+        // Input submission - detect Enter key in input value
+        this.inputElement.addEventListener('input', (e) => {
+            const value = this.inputElement.value;
+
+            // Check if Enter was pressed (newline in text)
+            if (value.includes('\n')) {
+                e.preventDefault();
+
+                // Remove the newline
+                const cleanValue = value.replace(/\n/g, '');
+                this.inputElement.value = cleanValue;
+
                 if (this.isAnimating) {
-                    // If showing incorrect answer, move to next word on Enter
+                    // If showing feedback, move to next word
+                    this.nextWord();
+                } else {
+                    // Only check answer if input is not empty
+                    if (cleanValue.trim().length > 0) {
+                        this.checkAnswer();
+                    }
+                }
+
+                return;
+            }
+        });
+
+        // Also listen to keydown for Enter key (backup method)
+        this.inputElement.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+
+                if (this.isAnimating) {
+                    // If showing feedback, move to next word
                     this.nextWord();
                 } else {
                     // Only check answer if input is not empty
@@ -347,6 +441,13 @@ class QuizUI {
      * Hide the overlay
      */
     hide() {
+        // Clean up viewport listeners
+        if (this.viewportHandler && window.visualViewport) {
+            window.visualViewport.removeEventListener('resize', this.viewportHandler);
+            window.visualViewport.removeEventListener('scroll', this.viewportHandler);
+            this.viewportHandler = null;
+        }
+
         if (this.overlay) {
             this.overlay.remove();
             this.overlay = null;
@@ -391,20 +492,24 @@ class QuizUI {
         const translation = this.overlay.querySelector('.quiz-card-translation');
         translation.textContent = item.question.text;
 
-        // Clear input
+        // Clear input but keep it focused and enabled
         this.inputElement.value = '';
-        this.inputElement.disabled = false;
 
         // Clear feedback
         const feedback = this.overlay.querySelector('.quiz-feedback');
         feedback.className = 'quiz-feedback';
-        feedback.textContent = '';
+        feedback.innerHTML = '';
 
         // Update progress
         this.updateProgress();
 
-        // Focus input
-        this.inputElement.focus();
+        // Always maintain focus to keep keyboard visible
+        // Use a small delay to ensure DOM updates complete
+        if (document.activeElement !== this.inputElement) {
+            setTimeout(() => {
+                this.inputElement.focus();
+            }, 50);
+        }
     }
 
     /**
@@ -430,47 +535,64 @@ class QuizUI {
      */
     showFeedback(correct) {
         this.isAnimating = true;
-        this.inputElement.disabled = true;
 
         const feedback = this.overlay.querySelector('.quiz-feedback');
         feedback.innerHTML = ''; // Clear previous content
 
         if (correct) {
-            feedback.textContent = '✓ Correct!';
+            // Show correct feedback overlay
             feedback.className = 'quiz-feedback correct show';
+
+            const icon = document.createElement('div');
+            icon.className = 'quiz-feedback-icon';
+            icon.textContent = '✓';
+            feedback.appendChild(icon);
+
+            const text = document.createElement('div');
+            text.className = 'quiz-feedback-text';
+            text.textContent = 'Correct!';
+            feedback.appendChild(text);
 
             // Automatically move to next word after brief delay
             setTimeout(() => {
                 this.nextWord();
-            }, 1500);
+            }, 1200);
         } else {
-            // Show incorrect feedback with all correct answers and continue button
+            // Show incorrect feedback overlay with correct answers
             feedback.className = 'quiz-feedback incorrect show';
 
-            const incorrectText = document.createElement('div');
-            incorrectText.textContent = '✗ Incorrect';
-            feedback.appendChild(incorrectText);
+            const icon = document.createElement('div');
+            icon.className = 'quiz-feedback-icon';
+            icon.textContent = '✗';
+            feedback.appendChild(icon);
+
+            const text = document.createElement('div');
+            text.className = 'quiz-feedback-text';
+            text.textContent = 'Incorrect';
+            feedback.appendChild(text);
 
             const correctAnswer = document.createElement('div');
             correctAnswer.className = 'quiz-correct-answer';
             // Show all possible answers (strip HTML tags for display)
             const answers = this.quiz.currentWord.answers.map(ans => ans.replace(/<[^>]*>/g, ''));
             if (answers.length === 1) {
-                correctAnswer.textContent = `Correct answer: ${answers[0]}`;
+                correctAnswer.textContent = `Answer: ${answers[0]}`;
             } else {
-                correctAnswer.textContent = `Correct answers: ${answers.join(', ')}`;
+                correctAnswer.textContent = `Answers: ${answers.join(', ')}`;
             }
             feedback.appendChild(correctAnswer);
 
-            const continueBtn = document.createElement('button');
-            continueBtn.className = 'quiz-continue-btn';
-            continueBtn.textContent = 'Continue (Press Enter)';
-            continueBtn.onclick = () => this.nextWord();
-            feedback.appendChild(continueBtn);
-
-            // Focus on continue button for accessibility
-            setTimeout(() => continueBtn.focus(), 100);
+            // Show hint to press Enter
+            const hint = document.createElement('div');
+            hint.style.cssText = 'margin-top: 8px; font-size: 14px; color: rgba(255, 255, 255, 0.9);';
+            hint.textContent = 'Press Enter to continue';
+            feedback.appendChild(hint);
         }
+
+        // Always keep focus on input to maintain keyboard
+        setTimeout(() => {
+            this.inputElement.focus();
+        }, 100);
     }
 
     /**

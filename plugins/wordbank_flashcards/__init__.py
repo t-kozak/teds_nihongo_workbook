@@ -15,7 +15,7 @@ from pathlib import Path
 
 from pelican import signals
 
-from .processor import WordbankProcessor
+from wordbank_flashcards.processor import WordbankProcessor
 
 _log = logging.getLogger(__name__)
 

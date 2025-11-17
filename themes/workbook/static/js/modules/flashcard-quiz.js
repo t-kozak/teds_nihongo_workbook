@@ -379,13 +379,31 @@ class QuizUI {
 
         // ESC key to close
         const escHandler = (e) => {
-            if (e.key === 'Escape' && !this.overlay.querySelector('.quiz-settings-panel').style.display.includes('block')) {
-                this.hide();
+            if (e.key === 'Escape') {
+                const settingsPanel = this.overlay.querySelector('.quiz-settings-panel');
+                if (!settingsPanel || !settingsPanel.style.display.includes('block')) {
+                    this.hide();
+                }
             }
         };
         document.addEventListener('keydown', escHandler);
         this.overlay.dataset.escHandler = 'attached';
 
+        // Setup input listeners
+        this.setupInputListeners();
+
+        // Click outside to close
+        this.overlay.addEventListener('click', (e) => {
+            if (e.target === this.overlay) {
+                this.hide();
+            }
+        });
+    }
+
+    /**
+     * Setup input event listeners (can be called multiple times when restoring quiz card)
+     */
+    setupInputListeners() {
         // Input submission - detect Enter key in input value
         this.inputElement.addEventListener('input', (e) => {
             const value = this.inputElement.value;
@@ -428,13 +446,6 @@ class QuizUI {
                 }
             }
         });
-
-        // Click outside to close
-        this.overlay.addEventListener('click', (e) => {
-            if (e.target === this.overlay) {
-                this.hide();
-            }
-        });
     }
 
     /**
@@ -462,6 +473,31 @@ class QuizUI {
         const totalCount = this.quiz.allWords.length;
         const progressText = this.overlay.querySelector('.quiz-progress-text');
         progressText.textContent = `${memorizedCount} / ${totalCount} memorized`;
+    }
+
+    /**
+     * Restore the quiz card structure (after showing completion screens)
+     */
+    restoreQuizCard() {
+        const content = this.overlay.querySelector('.quiz-content');
+        content.innerHTML = `
+            <div class="quiz-card">
+                <div class="quiz-card-image-container">
+                    <img class="quiz-card-image" src="" alt="" loading="lazy">
+                    <div class="quiz-card-translation"></div>
+                    <div class="quiz-feedback"></div>
+                </div>
+                <div class="quiz-card-input-container">
+                    <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
+                </div>
+            </div>
+        `;
+
+        // Re-assign input element reference
+        this.inputElement = content.querySelector('.quiz-card-input');
+
+        // Re-setup input event listeners
+        this.setupInputListeners();
     }
 
     /**
@@ -621,6 +657,8 @@ class QuizUI {
         // Setup next batch button
         content.querySelector('.quiz-next-batch-btn').addEventListener('click', () => {
             if (this.quiz.nextBatch()) {
+                // Restore the quiz card structure before showing next word
+                this.restoreQuizCard();
                 this.nextWord();
             } else {
                 this.showCompletion();
@@ -659,6 +697,8 @@ class QuizUI {
                 this.quiz.resetProgress();
                 this.quiz.currentBatchIndex = 0;
                 if (this.quiz.startNewBatch()) {
+                    // Restore the quiz card structure before showing next word
+                    this.restoreQuizCard();
                     this.nextWord();
                 } else {
                     this.hide();

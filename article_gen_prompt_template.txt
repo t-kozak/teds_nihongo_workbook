@@ -2,94 +2,119 @@ Generate a markdown file for a Japanese lesson on the subject described below.
 
 The article will be used by Pelican, a static website generator, to generate a webpage.
 
-Prefix the article with markdown-style metadata. Include the following fields:
-- Title: (generate an appropriate title)
-- Date: (use current date)
-- Modified: (use current date)
-- Category: (generate based on lesson content)
-- Tags: (generate relevant tags)
-- Author: "Ted K. via Claude" (use exactly as written)
-- Summary: (generate a brief summary)
+Below you can find the template to fill.
 
-Generate the following sections:
+```markdown
+Title: (generate an appropriate title)
+Date: (use current date)
+Modified: (use current date)
+Category: (generate based on lesson content)
+Tags: (generate relevant tags)
+Author: "Ted K. via Claude" (use exactly as written)
+Summary: (generate a brief summary)
 
-1. Context/Summary (in English)
-   Provide a brief overview of what will be covered in the lesson
+# Lesson overview
 
-2. Grammar Explanation (optional)
-   If the lesson description below explicitly mentions grammar concepts to be covered, write a
-   section explaining those concepts. Use a mixture of English and Japanese where appropriate
+In Engligh, provide a brief overview of what will be covered in the lesson.
 
-3. Useful Phrases
-   Provide a list of example phrases relevant to the lesson content using the phrasebank plugin format:
-   ```
-   <phrasebank>
-   - ${phrase in Japanese}: ${English translation} (${analysis in English})
-   </phrasebank>
-   ```
-   Each phrase should be on its own line starting with a dash, with the Japanese phrase followed by a colon,
-   then the English translation, and finally contextual information in parentheses. The site generator will
-   render these as interactive widgets with text-to-speech functionality.
-   In the analysis, I'd like you to discuss all the words and constructs used in the phrase. Things like もらえ - "for mine benefit" etc
+# Preparation
 
-4. Dialogues
-   Include 1 or more dialogues relevant to the lesson subject. 
-   Each dialogue should follow this format:
-   ```
-   ## Dialogue $N: ${Title}
+## Grammar Explanation
 
-   ${Brief description in English for context}
-   <tts type="dialogue" speakers="${speaker1}:${voice1},${speaker2}:${voice2},...">
-   - ${speaker1}: ${Dialogue content}
-   - ${speaker2}: ${Dialogue content}
-   - ...
-   </tts>
-   ```
-   For the tts tag, the speakers attribute configures speakers and the voices they use. You can use the following voices:
-   - Zephyr - female character
-   - Puck - male character
-   - Leda - younger female character
-   - Gacrux - older female character
-   - Sadaltager - older male character
-   Also, when generating the character names - let's use Japanese names, to keep all of the dialogue content consistently in Japanese.
+If the lesson description below explicitly mentions grammar concepts to be covered, write a
+section explaining those concepts. Use a mixture of English and Japanese where appropriate
 
-5. Short story
-Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson. Please wrap the content of the story in a tts tag:
+## Useful Phrases
+
+Provide a list of example phrases relevant to the lesson content using the phrasebank plugin format:
+```
+<phrasebank>
+- ${phrase in Japanese}: ${English translation} (${analysis in English})
+</phrasebank>
+```
+Each phrase should be on its own line starting with a dash, with the Japanese phrase followed by a colon,
+then the English translation, and finally contextual information in parentheses. The site generator will
+render these as interactive widgets with text-to-speech functionality.
+In the analysis, I'd like you to discuss all the words and constructs used in the phrase. 
+Things like もらえ - "for mine benefit" etc.
+
+## Dialogues
+
+(Include 1 or more dialogues relevant to the lesson subject + anything dialogues that are explicitly requested in lesson description)
+
+### Dialogue $N: ${Title}
+
+${Brief description in English for context}
+<tts type="dialogue" speakers="${speaker1}:${voice1},${speaker2}:${voice2},...">
+- ${speaker1}: ${Dialogue content}
+- ${speaker2}: ${Dialogue content}
+- ...
+</tts>
+<dialogue_practice>
+Instructions to be passed to LLM to setup a live audio chat practive for the dialogue. Describe the dialogue
+situation, the role the LLM plays and the role of the user. Describe the goal of the dialogue.
+</dialogue_practice>
+
+### Short story
+
 ```
 <tts type="full">
-${story}
+Write a custom 1-2 paragraphs short story that leverages the words and phrases covered in the lesson.
 </tts>
 ```
 
-6. Wordbank
-   Create a wordbank containing useful words relevant to the lesson subject. Include each word's
-   English translation and contextual information. The site generator will render these as
-   interactive widgets. Use the following format:
-   ```
-   <wordbank>
-   - ${word_in_Japanese}: ${direct translation to English} (${additional description for context})
-   </wordbank>
-   ```
+### Wordbank
+<wordbank>
+- ${word_in_Japanese}: ${meaning in English} (${additional description for context})
+...
+</wordbank>
 
-   Important: For the wordbank, focus only on word pairs with a single, specific meaning.
-   While many Japanese words have multiple English translations, include only the meaning
-   that is relevant to this lesson subject.
+// Notes:
+// Create a wordbank containing useful words relevant to the lesson subject. Include each word's
+// English meaning and contextual information. The site generator will render these as
+// interactive widgets.
+// Focus only on word pairs with a single, specific meaning.
+// While many Japanese words have multiple English translations, include only the meaning
+// that is relevant to this lesson subject.
+
+# In-person lesson material
+
+// In this section, include practice tasks to be used when having a lesson with a professional teacher.
+
+## Warmup 1: vocab
+
+List the most crucial words that the person has to master before it makes sense for them to advance any further.
+List them as English words or meaning description, in bullet points.
+
+During lesson the user will go through the list with their teacher to confirm common understanding.
+
+## Warmup 1: phrases
+
+Similar as above but with multi-word constructs, phrases or sentences. 
+
+## Conversation
+
+// Include 1 to 3 conversation starters. The starters should be a plain text description in English. 
+should define the roles for both the teacher and the studend, should include the situational context 
+for the dialogue as well as objectives for both parties
+
+### Dialogue N
+
+Dialgue description as above.
+
+```
 
 General notes: 
-- when generating the content, I'd like you to first "think" about the sample phrases as this will influence the
-  grammar explanation or context. I'd like all the constructs used in the sample phrases explained there.
+- when generating the content, first "think" about the sample phrases as this will influence the
+  grammar explanation or context. All the constructs used in the sample phrases explained there.
 - when writing in Japanese, for word, phrases or any reading material - always use kanji when appropriate. 
   The website generator has a plugin that creates furigana or romanji if requested by the user.
-- Please use H1 ("#") and H2 ("##") for sections (e.g. dialogs, short story, phrases) and sub-sections (dialog 1, dialog 2)
 
-Given the context above, generate a lesson article for the following lesson description:
+Generate the content as a markdown artefact I can copy or download.
 
-A lesson covering public transport. Things like:
-- navigating a train station
-- buying tickets
-- asking about time until train
-- asking what train to take from A to B
-- other forms of transport - bus, ferry and changing between them
-- when is next train? what is next station? does X go to station A
-
-Please generate the content as a markdown artefact I can copy or download.
+The subject of the lesson is: Accomodation. Cover things like:
+- dealings with hotels, ryokans and AirBnBs
+- making reservations and changes to the reservations
+- checking in and out
+- reporting issues
+- asking for help with taxi or advice on getting to a place

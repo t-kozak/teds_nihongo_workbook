@@ -50,6 +50,14 @@ ${Brief description in English for context}
 - ${speaker2}: ${Dialogue content}
 - ...
 </tts>
+
+// Note, you can use one of the following voices:
+// - Zephyr - female character
+// - Puck - male character
+// - Leda - younger female character
+// - Gacrux - older female character
+// - Sadaltager - older male character
+
 <dialogue_practice>
 Instructions to be passed to LLM to setup a live audio chat practive for the dialogue. Describe the dialogue
 situation, the role the LLM plays and the role of the user. Describe the goal of the dialogue.
@@ -118,3 +126,6 @@ The subject of the lesson is: Accomodation. Cover things like:
 - checking in and out
 - reporting issues
 - asking for help with taxi or advice on getting to a place
+
+Please note that the lesson should be on an entry level, A2 level. Please use language as simple as possible
+while still allowing to achieve the needed communication goals.  

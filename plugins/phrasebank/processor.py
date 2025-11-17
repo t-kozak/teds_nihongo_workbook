@@ -164,11 +164,14 @@ class PhrasebankProcessor:
         # Convert quiz data to JSON for the script tag
         quiz_data_json = json.dumps(quiz_data, ensure_ascii=False)
 
-        # Complete HTML with header, quiz button, phrase list, and quiz data
+        # Complete HTML with header, quiz button, settings button, phrase list, and quiz data
         complete_html = f"""<div class="phrasebank-section">
     <div class="phrasebank-header">
         <h2>Phrasebank</h2>
-        <button class="quiz-button" type="button" data-quiz-data-id="quiz-data-{quiz_data_id}">Quiz</button>
+        <div class="wordbank-header-controls">
+            <button class="quiz-button" type="button" data-quiz-data-id="quiz-data-{quiz_data_id}">Quiz</button>
+            <button class="quiz-settings-external-btn" type="button" aria-label="Settings">⚙️</button>
+        </div>
     </div>
     <div class="phrase-list">
 {phrases_html}    </div>

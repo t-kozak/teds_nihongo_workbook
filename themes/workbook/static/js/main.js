@@ -8,6 +8,7 @@ import { initFlashcards } from './modules/flashcards.js';
 import { initFlashcardQuiz } from './modules/flashcard-quiz.js';
 import { initWordSpanTooltips } from './modules/wordspan.js';
 import { initRealtimeCall, makeCall, endCall, clearStoredApiKey } from './modules/realtime-call.js';
+import { initDialoguePractice } from './modules/dialogue-practice.js';
 
 // Initialize all features when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initFlashcardQuiz();
     initWordSpanTooltips();
     initRealtimeCall();
+    initDialoguePractice();
 });
 
 // Export realtime call functions for global access

@@ -9,7 +9,7 @@
 */
 
 /* Imports */
-@import url("reset.css");
+/* @import url("reset.css"); */
 @import url("pygment.css");
 @import url("typogrify.css");
 @import url("fonts.css");
@@ -19,7 +19,7 @@
 body {
     background: #F5F4EF;
     color: #000305;
-    font-size: 100%; /* Base font size: 16px */
+    font-size: 105%; /* Base font size: 16px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
     margin: 0;

@@ -109,6 +109,7 @@ PLUGINS = [
     "wordbank_flashcards",
     "tts_filter",
     "japanese_processor",
+    "dialogue_practice",
 ]
 
 # Content Generation Configuration

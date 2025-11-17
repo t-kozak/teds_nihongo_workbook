@@ -21,7 +21,7 @@ from .cache import get_cache
 _log = logging.getLogger(__name__)
 
 # Configuration
-BATCH_SIZE = 1  # Number of Japanese text chunks to process concurrently
+BATCH_SIZE = 30  # Number of Japanese text chunks to process concurrently
 MAX_RETRIES = 1  # Number of retry attempts for failed LLM calls
 
 # Cache configuration (can be overridden via environment variables)

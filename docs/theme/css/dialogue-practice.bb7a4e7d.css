@@ -1,0 +1,134 @@
+/**
+ * Dialogue Practice Styles
+ *
+ * Styling for interactive AI conversation practice buttons
+ */
+
+/* Section container */
+.dialogue-practice-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Header with title and button */
+.dialogue-practice-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.dialogue-practice-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Button base styles */
+.dialogue-practice-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    white-space: nowrap;
+    min-width: 140px;
+}
+
+/* Idle state - purple gradient (matches quiz-button) */
+.dialogue-practice-button[data-state="idle"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.dialogue-practice-button[data-state="idle"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.dialogue-practice-button[data-state="idle"]:active {
+    transform: translateY(0);
+}
+
+/* Connecting state - disabled with pulse animation */
+.dialogue-practice-button[data-state="connecting"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    opacity: 0.7;
+    cursor: not-allowed;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.9;
+    }
+}
+
+/* Connected state - orange/red gradient for active call */
+.dialogue-practice-button[data-state="connected"] {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+.dialogue-practice-button[data-state="connected"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+.dialogue-practice-button[data-state="connected"]:active {
+    transform: translateY(0);
+}
+
+/* Error state - returns to idle appearance but with subtle red border */
+.dialogue-practice-button[data-state="error"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: 2px solid #dc3545;
+}
+
+/* Feedback message container */
+.dialogue-practice-feedback {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    color: #856404;
+    font-size: 0.9rem;
+}
+
+.dialogue-practice-feedback:empty {
+    display: none !important;
+}
+
+/* Error feedback variant */
+.dialogue-practice-feedback.error {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .dialogue-practice-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dialogue-practice-button {
+        width: 100%;
+    }
+}

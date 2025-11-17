@@ -11,7 +11,7 @@ case "$1" in
     echo "Building site..."
     uv run pelican content -o output -s pelicanconf.py
     pushd output
-    uv run python -m http.server
+    uv run python -m http.server -b 0.0.0.0 8000
     popd output
     ;;
   build-prod)

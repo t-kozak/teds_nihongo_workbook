@@ -282,9 +282,11 @@ class QuizUI {
                             <div class="quiz-card-translation"></div>
                             <div class="quiz-feedback"></div>
                         </div>
-                        <div class="quiz-card-input-container">
-                            <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
-                        </div>
+                        <form class="quiz-card-form">
+                            <div class="quiz-card-input-container">
+                                <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -404,45 +406,20 @@ class QuizUI {
      * Setup input event listeners (can be called multiple times when restoring quiz card)
      */
     setupInputListeners() {
-        // Input submission - detect Enter key in input value
-        this.inputElement.addEventListener('input', (e) => {
-            const value = this.inputElement.value;
+        // Get form element
+        const form = this.overlay.querySelector('.quiz-card-form');
 
-            // Check if Enter was pressed (newline in text)
-            if (value.includes('\n')) {
-                e.preventDefault();
+        // Form submit handler
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-                // Remove the newline
-                const cleanValue = value.replace(/\n/g, '');
-                this.inputElement.value = cleanValue;
-
-                if (this.isAnimating) {
-                    // If showing feedback, move to next word
-                    this.nextWord();
-                } else {
-                    // Only check answer if input is not empty
-                    if (cleanValue.trim().length > 0) {
-                        this.checkAnswer();
-                    }
-                }
-
-                return;
-            }
-        });
-
-        // Also listen to keydown for Enter key (backup method)
-        this.inputElement.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-
-                if (this.isAnimating) {
-                    // If showing feedback, move to next word
-                    this.nextWord();
-                } else {
-                    // Only check answer if input is not empty
-                    if (this.inputElement.value.trim().length > 0) {
-                        this.checkAnswer();
-                    }
+            if (this.isAnimating) {
+                // If showing feedback, move to next word
+                this.nextWord();
+            } else {
+                // Only check answer if input is not empty
+                if (this.inputElement.value.trim().length > 0) {
+                    this.checkAnswer();
                 }
             }
         });
@@ -487,9 +464,11 @@ class QuizUI {
                     <div class="quiz-card-translation"></div>
                     <div class="quiz-feedback"></div>
                 </div>
-                <div class="quiz-card-input-container">
-                    <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
-                </div>
+                <form class="quiz-card-form">
+                    <div class="quiz-card-input-container">
+                        <input type="text" class="quiz-card-input" placeholder="Type the Japanese word..." autocomplete="off" spellcheck="false" lang="ja" inputmode="text">
+                    </div>
+                </form>
             </div>
         `;
 
@@ -611,10 +590,25 @@ class QuizUI {
             correctAnswer.className = 'quiz-correct-answer';
             // Show all possible answers (strip HTML tags for display)
             const answers = this.quiz.currentWord.answers.map(ans => ans.replace(/<[^>]*>/g, ''));
+
             if (answers.length === 1) {
                 correctAnswer.textContent = `Answer: ${answers[0]}`;
             } else {
-                correctAnswer.textContent = `Answers: ${answers.join(', ')}`;
+                // Use a list for multiple answers to avoid comma confusion
+                const heading = document.createElement('div');
+                heading.textContent = 'Correct answers:';
+                heading.style.marginBottom = '4px';
+                correctAnswer.appendChild(heading);
+
+                const list = document.createElement('ul');
+                list.style.cssText = 'margin: 0; padding-left: 20px; text-align: left; line-height: 1.3;';
+                answers.forEach(answer => {
+                    const li = document.createElement('li');
+                    li.style.marginBottom = '2px';
+                    li.textContent = answer;
+                    list.appendChild(li);
+                });
+                correctAnswer.appendChild(list);
             }
             feedback.appendChild(correctAnswer);
 
